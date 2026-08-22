@@ -16,105 +16,105 @@ Timeframes: ['15m', '1h', '4h']
 Modules: ['111']
 
 ------------------------------------------------------------
-[22:24:09] Loaded 21 modules: ['001', '002', '003', '004', '005', '006', '007', '008', '009', '010', '011', '012', '013', '015', '016', '017', '018', '019', '020', '021', '022']
-[22:24:09] Loaded 3 datasets
+[22:46:21] Loaded 21 modules: ['001', '002', '003', '004', '005', '006', '007', '008', '009', '010', '011', '012', '013', '015', '016', '017', '018', '019', '020', '021', '022']
+[22:46:21] Loaded 3 datasets
 [DEBUG] Modules path: D:\delta bot\Project_Atlas\atlas\modules
 [DEBUG] Exists: True
-2026-08-22 22:24:09 - INFO - Loading datasets...
+2026-08-22 22:46:21 - INFO - Loading datasets...
   ✓ Loaded BTCUSD_15m: 86548 rows
   ✓ Loaded BTCUSD_1h: 21681 rows
   ✓ Loaded BTCUSD_4h: 5421 rows
-2026-08-22 22:24:10 - INFO - Loaded 3 datasets: ['15m', '1h', '4h']
-2026-08-22 22:24:10 - INFO - Discovering modules...
+2026-08-22 22:46:22 - INFO - Loaded 3 datasets: ['15m', '1h', '4h']
+2026-08-22 22:46:22 - INFO - Discovering modules...
 
 [DEBUG] Scanning: D:\delta bot\Project_Atlas\atlas\modules
 
 [DEBUG] Total modules discovered: 71
-2026-08-22 22:24:13 - INFO - Filtering to modules: ['111']
-2026-08-22 22:24:13 - INFO - Found 71 modules
-2026-08-22 22:24:13 - INFO - Execution order: ['005', '035', '036', '037', '102', '100', '103', '108', '111']
-2026-08-22 22:24:13 - INFO - ============================================================
-2026-08-22 22:24:13 - INFO - RESEARCH CAMPAIGN: Research Campaign v1
-2026-08-22 22:24:13 - INFO - ============================================================
-2026-08-22 22:24:13 - INFO - Modules: 9
-2026-08-22 22:24:13 - INFO - Datasets: ['15m', '1h', '4h']
-2026-08-22 22:24:13 - INFO - Timestamp: 2026-08-22T22:24:13.663602
-2026-08-22 22:24:13 - INFO -
+2026-08-22 22:46:25 - INFO - Filtering to modules: ['111']
+2026-08-22 22:46:25 - INFO - Found 71 modules
+2026-08-22 22:46:25 - INFO - Execution order: ['005', '035', '036', '037', '102', '100', '103', '108', '111']
+2026-08-22 22:46:25 - INFO - ============================================================
+2026-08-22 22:46:25 - INFO - RESEARCH CAMPAIGN: Research Campaign v1
+2026-08-22 22:46:25 - INFO - ============================================================
+2026-08-22 22:46:25 - INFO - Modules: 9
+2026-08-22 22:46:25 - INFO - Datasets: ['15m', '1h', '4h']
+2026-08-22 22:46:25 - INFO - Timestamp: 2026-08-22T22:46:25.791756
+2026-08-22 22:46:25 - INFO -
 ============================================================
-2026-08-22 22:24:13 - INFO - PROCESSING DATASET: 15m
-2026-08-22 22:24:13 - INFO - ============================================================
-2026-08-22 22:24:13 - INFO -
+2026-08-22 22:46:25 - INFO - PROCESSING DATASET: 15m
+2026-08-22 22:46:25 - INFO - ============================================================
+2026-08-22 22:46:25 - INFO -
   Running module 005 on 15m...
-[22:24:13] Loaded 21 modules: ['001', '002', '003', '004', '005', '006', '007', '008', '009', '010', '011', '012', '013', '015', '016', '017', '018', '019', '020', '021', '022']
-[22:24:13] Loaded 3 datasets
-2026-08-22 22:24:13 - INFO -     Module 005 input shape: (86548, 6)
-2026-08-22 22:24:13 - INFO -     Module 005 input columns: ['close', 'high', 'low', 'open', 'timestamp', 'volume']
+[22:46:25] Loaded 21 modules: ['001', '002', '003', '004', '005', '006', '007', '008', '009', '010', '011', '012', '013', '015', '016', '017', '018', '019', '020', '021', '022']
+[22:46:25] Loaded 3 datasets
+2026-08-22 22:46:25 - INFO -     Module 005 input shape: (86548, 6)
+2026-08-22 22:46:25 - INFO -     Module 005 input columns: ['close', 'high', 'low', 'open', 'timestamp', 'volume']
 
 ================================================================================
 PROJECT ATLAS
 MODULE TrendPersistence
 RESEARCH EXECUTION [005_15M]
 ================================================================================
-[22:24:13] Loading from DataFrame: 005_15m
-[22:24:13] Loaded 86,548 rows from DataFrame (copy)
+[22:46:25] Loading from DataFrame: 005_15m
+[22:46:25] Loaded 86,548 rows from DataFrame (copy)
 
 ------------------------------------------------------------
   Data Validation
 ------------------------------------------------------------
-[22:24:13] Validation passed
+[22:46:25] Validation passed
 
 ------------------------------------------------------------
   Running Computation Pipeline
 ------------------------------------------------------------
-[22:24:13] Step: returns
-[22:24:13] Calculating log returns from close prices
+[22:46:25] Step: returns
+[22:46:25] Calculating log returns from close prices
     Return observations            86,547
     Mean return                    0.00000318
     Std return                     0.00259438
-[22:24:13] Step: trend_direction
-[22:24:13] Determining trend direction for each candle
+[22:46:25] Step: trend_direction
+[22:46:25] Determining trend direction for each candle
     Up candles                     42,117 (48.7%)
     Down candles                   41,979 (48.5%)
     Flat candles                   2,451 (2.8%)
-[22:24:13] Step: trend_segments
-[22:24:13] Segmenting consecutive trends (min length=3)
+[22:46:25] Step: trend_segments
+[22:46:25] Segmenting consecutive trends (min length=3)
     Total segments                 10,239
     Up segments                    5,167
     Down segments                  5,072
     Mean length                    3.80
     Max length                     16
-[22:24:17] Step: summary
-[22:24:17] Computing trend summary statistics
-[22:24:17]
+[22:46:29] Step: summary
+[22:46:29] Computing trend summary statistics
+[22:46:29]
 Trend Summary (min_length=3):
-[22:24:17]   Total segments: 10,239
-[22:24:17]   Up trends: 5,167 (mean: 3.78)
-[22:24:17]   Down trends: 5,072 (mean: 3.81)
-[22:24:17]   Overall mean: 3.80
-[22:24:17]   Overall median: 3.0
-[22:24:17]   Maximum: 16
-[22:24:17]   Expected under H0: 2.00
-[22:24:17]   Ratio: 1.90x
-[22:24:17]
+[22:46:29]   Total segments: 10,239
+[22:46:29]   Up trends: 5,167 (mean: 3.78)
+[22:46:29]   Down trends: 5,072 (mean: 3.81)
+[22:46:29]   Overall mean: 3.80
+[22:46:29]   Overall median: 3.0
+[22:46:29]   Maximum: 16
+[22:46:29]   Expected under H0: 2.00
+[22:46:29]   Ratio: 1.90x
+[22:46:29]
   Observed trends 1.9x longer than expected
-[22:24:17]   Evidence AGAINST H0 - trends exhibit persistence
-[22:25:06] Phase 1 complete: Trend segmentation finished
-[22:25:06] Created 'statistics' from result.statistics
-[22:25:06] Created 'report' from summary()
-[22:25:06] Created 'validation' with default values
+[22:46:29]   Evidence AGAINST H0 - trends exhibit persistence
+[22:47:18] Phase 1 complete: Trend segmentation finished
+[22:47:18] Created 'statistics' from result.statistics
+[22:47:18] Created 'report' from summary()
+[22:47:18] Created 'validation' with default values
 
 ------------------------------------------------------------
   Exporting Results
 ------------------------------------------------------------
-[22:25:06] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module005\15m\trend_segments.csv (10,239 rows)
-[22:25:06] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module005\15m\trend_summary.csv (12 rows)
-[22:25:07] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module005\15m\features.csv (86,548 rows)
-[22:25:07] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module005\15m\statistics.csv (1 rows)
-[22:25:07] Text → D:\delta bot\Project_Atlas\research_results\raw\module005\15m\report.txt (1,230 chars)
-[22:25:07] JSON → D:\delta bot\Project_Atlas\research_results\raw\module005\15m\validation.json
-[22:25:07] Statistics → D:\delta bot\Project_Atlas\research_results\raw\module005\15m\statistics.csv
-[22:25:07] Report → D:\delta bot\Project_Atlas\research_results\raw\module005\15m\report.txt
-[22:25:07] Exported to D:\delta bot\Project_Atlas\research_results\raw\module005\15m
+[22:47:18] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module005\15m\trend_segments.csv (10,239 rows)
+[22:47:18] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module005\15m\trend_summary.csv (12 rows)
+[22:47:18] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module005\15m\features.csv (86,548 rows)
+[22:47:18] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module005\15m\statistics.csv (1 rows)
+[22:47:18] Text → D:\delta bot\Project_Atlas\research_results\raw\module005\15m\report.txt (1,230 chars)
+[22:47:18] JSON → D:\delta bot\Project_Atlas\research_results\raw\module005\15m\validation.json
+[22:47:18] Statistics → D:\delta bot\Project_Atlas\research_results\raw\module005\15m\statistics.csv
+[22:47:18] Report → D:\delta bot\Project_Atlas\research_results\raw\module005\15m\report.txt
+[22:47:18] Exported to D:\delta bot\Project_Atlas\research_results\raw\module005\15m
 
 ------------------------------------------------------------
   Summary
@@ -169,28 +169,28 @@ Data Sources:
   market_df: 86548 rows, 6 cols (copy)
   feature_df: None
   df (merged): 86548 rows, 6 cols
-[22:25:07] Research complete
-2026-08-22 22:25:07 - INFO -     Stored 6 artifacts for 15m
-2026-08-22 22:25:07 - INFO -     ✓ PASSED in 53.45s (30 stats)
-2026-08-22 22:25:07 - INFO -
+[22:47:18] Research complete
+2026-08-22 22:47:18 - INFO -     Stored 6 artifacts for 15m
+2026-08-22 22:47:19 - INFO -     ✓ PASSED in 53.08s (30 stats)
+2026-08-22 22:47:19 - INFO -
   Running module 035 on 15m...
-[22:25:07] Loaded 21 modules: ['001', '002', '003', '004', '005', '006', '007', '008', '009', '010', '011', '012', '013', '015', '016', '017', '018', '019', '020', '021', '022']
-[22:25:07] Loaded 3 datasets
-2026-08-22 22:25:07 - INFO -     Module 035 input shape: (86548, 6)
-2026-08-22 22:25:07 - INFO -     Module 035 input columns: ['close', 'high', 'low', 'open', 'timestamp', 'volume']
+[22:47:19] Loaded 21 modules: ['001', '002', '003', '004', '005', '006', '007', '008', '009', '010', '011', '012', '013', '015', '016', '017', '018', '019', '020', '021', '022']
+[22:47:19] Loaded 3 datasets
+2026-08-22 22:47:19 - INFO -     Module 035 input shape: (86548, 6)
+2026-08-22 22:47:19 - INFO -     Module 035 input columns: ['close', 'high', 'low', 'open', 'timestamp', 'volume']
 
 ================================================================================
 PROJECT ATLAS
 MODULE Hurst Exponent
 RESEARCH EXECUTION [035_15M]
 ================================================================================
-[22:25:07] Loading from DataFrame: 035_15m
-[22:25:07] Loaded 86,548 rows from DataFrame (copy)
+[22:47:19] Loading from DataFrame: 035_15m
+[22:47:19] Loaded 86,548 rows from DataFrame (copy)
 
 ------------------------------------------------------------
   Data Validation
 ------------------------------------------------------------
-[22:25:07] Validation passed
+[22:47:19] Validation passed
 
 ------------------------------------------------------------
   Running Computation Pipeline
@@ -199,21 +199,21 @@ RESEARCH EXECUTION [035_15M]
 ------------------------------------------------------------
   Hurst Exponent Pipeline
 ------------------------------------------------------------
-[22:25:07] Step: hurst
-[22:25:07] Step 1: Computing Hurst exponent on log returns
+[22:47:19] Step: hurst
+[22:47:19] Step 1: Computing Hurst exponent on log returns
     Series type                    log_returns
     Hurst exponent                 0.5444
     Sample size                    86,547
     Windows                        20
-[22:25:09] Hurst exponent computed
-[22:25:09]   Completed in 1.478s
-[22:25:09] Step: statistics
-[22:25:09] Step 2: Computing statistics
+[22:47:20] Hurst exponent computed
+[22:47:20]   Completed in 1.477s
+[22:47:20] Step: statistics
+[22:47:20] Step 2: Computing statistics
     Regime                         Random Walk
     R-squared                      0.9994
-[22:25:09] Statistics computed
-[22:25:09] Step: validate
-[22:25:09] Step 3: Validation
+[22:47:20] Statistics computed
+[22:47:20] Step: validate
+[22:47:20] Step 3: Validation
 
 ============================================================
 HURST VALIDATION
@@ -221,29 +221,29 @@ HURST VALIDATION
 
   ✓ All validation checks passed
 ============================================================
-[22:25:09] Validation complete
-[22:25:09] Step: export
-[22:25:09] Step 4: Export
+[22:47:20] Validation complete
+[22:47:20] Step: export
+[22:47:20] Step 4: Export
     Artifacts                      4
-[22:25:09] Export complete
-[22:25:09] Module 035 complete
-[22:25:09] Created 'statistics' from result.statistics
-[22:25:09] Created 'report' from summary()
-[22:25:09] Created 'validation' with default values
+[22:47:20] Export complete
+[22:47:20] Module 035 complete
+[22:47:20] Created 'statistics' from result.statistics
+[22:47:20] Created 'report' from summary()
+[22:47:20] Created 'validation' with default values
 
 ------------------------------------------------------------
   Exporting Results
 ------------------------------------------------------------
-[22:25:09] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module035\15m\hurst_statistics.csv (1 rows)
-[22:25:09] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module035\15m\hurst_results.csv (20 rows)
-[22:25:09] Text → D:\delta bot\Project_Atlas\research_results\raw\module035\15m\hurst_report.txt (982 chars)
-[22:25:09] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module035\15m\features.csv (86,548 rows)
-[22:25:09] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module035\15m\statistics.csv (1 rows)
-[22:25:09] Text → D:\delta bot\Project_Atlas\research_results\raw\module035\15m\report.txt (1,042 chars)
-[22:25:09] JSON → D:\delta bot\Project_Atlas\research_results\raw\module035\15m\validation.json
-[22:25:09] Statistics → D:\delta bot\Project_Atlas\research_results\raw\module035\15m\statistics.csv
-[22:25:09] Report → D:\delta bot\Project_Atlas\research_results\raw\module035\15m\report.txt
-[22:25:09] Exported to D:\delta bot\Project_Atlas\research_results\raw\module035\15m
+[22:47:20] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module035\15m\hurst_statistics.csv (1 rows)
+[22:47:20] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module035\15m\hurst_results.csv (20 rows)
+[22:47:20] Text → D:\delta bot\Project_Atlas\research_results\raw\module035\15m\hurst_report.txt (982 chars)
+[22:47:21] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module035\15m\features.csv (86,548 rows)
+[22:47:21] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module035\15m\statistics.csv (1 rows)
+[22:47:21] Text → D:\delta bot\Project_Atlas\research_results\raw\module035\15m\report.txt (1,042 chars)
+[22:47:21] JSON → D:\delta bot\Project_Atlas\research_results\raw\module035\15m\validation.json
+[22:47:21] Statistics → D:\delta bot\Project_Atlas\research_results\raw\module035\15m\statistics.csv
+[22:47:21] Report → D:\delta bot\Project_Atlas\research_results\raw\module035\15m\report.txt
+[22:47:21] Exported to D:\delta bot\Project_Atlas\research_results\raw\module035\15m
 
 ------------------------------------------------------------
   Summary
@@ -257,10 +257,10 @@ Dataset: 035_15m
 Status: completed
 
 Step Timing:
-  hurst                1.478s
+  hurst                1.477s
   statistics           0.002s
-  validate             0.004s
-  export               0.006s
+  validate             0.005s
+  export               0.008s
   ──────────────────────────────
   Total pipeline       1.491s
 
@@ -292,28 +292,28 @@ Data Sources:
   market_df: 86548 rows, 6 cols (copy)
   feature_df: None
   df (merged): 86548 rows, 6 cols
-[22:25:09] Research complete
-2026-08-22 22:25:09 - INFO -     Stored 7 artifacts for 15m
-2026-08-22 22:25:09 - INFO -     ✓ PASSED in 1.91s (13 stats)
-2026-08-22 22:25:09 - INFO -
+[22:47:21] Research complete
+2026-08-22 22:47:21 - INFO -     Stored 7 artifacts for 15m
+2026-08-22 22:47:21 - INFO -     ✓ PASSED in 1.91s (13 stats)
+2026-08-22 22:47:21 - INFO -
   Running module 036 on 15m...
-[22:25:09] Loaded 21 modules: ['001', '002', '003', '004', '005', '006', '007', '008', '009', '010', '011', '012', '013', '015', '016', '017', '018', '019', '020', '021', '022']
-[22:25:09] Loaded 3 datasets
-2026-08-22 22:25:09 - INFO -     Module 036 input shape: (86548, 6)
-2026-08-22 22:25:09 - INFO -     Module 036 input columns: ['close', 'high', 'low', 'open', 'timestamp', 'volume']
+[22:47:21] Loaded 21 modules: ['001', '002', '003', '004', '005', '006', '007', '008', '009', '010', '011', '012', '013', '015', '016', '017', '018', '019', '020', '021', '022']
+[22:47:21] Loaded 3 datasets
+2026-08-22 22:47:21 - INFO -     Module 036 input shape: (86548, 6)
+2026-08-22 22:47:21 - INFO -     Module 036 input columns: ['close', 'high', 'low', 'open', 'timestamp', 'volume']
 
 ================================================================================
 PROJECT ATLAS
 MODULE DFA Analysis
 RESEARCH EXECUTION [036_15M]
 ================================================================================
-[22:25:09] Loading from DataFrame: 036_15m
-[22:25:09] Loaded 86,548 rows from DataFrame (copy)
+[22:47:21] Loading from DataFrame: 036_15m
+[22:47:21] Loaded 86,548 rows from DataFrame (copy)
 
 ------------------------------------------------------------
   Data Validation
 ------------------------------------------------------------
-[22:25:09] Validation passed
+[22:47:21] Validation passed
 
 ------------------------------------------------------------
   Running Computation Pipeline
@@ -322,21 +322,21 @@ RESEARCH EXECUTION [036_15M]
 ------------------------------------------------------------
   DFA Pipeline
 ------------------------------------------------------------
-[22:25:09] Step: dfa
-[22:25:09] Step 1: Computing DFA on log returns
+[22:47:21] Step: dfa
+[22:47:21] Step 1: Computing DFA on log returns
     Series type                    log_returns
     DFA Alpha                      0.5024
     Sample size                    86,547
     Windows                        20
-[22:25:12] DFA computed
-[22:25:12]   Completed in 2.935s
-[22:25:12] Step: statistics
-[22:25:12] Step 2: Computing statistics
+[22:47:24] DFA computed
+[22:47:24]   Completed in 2.990s
+[22:47:24] Step: statistics
+[22:47:24] Step 2: Computing statistics
     Regime                         Random Walk
     R-squared                      0.9983
-[22:25:12] Statistics computed
-[22:25:12] Step: validate
-[22:25:12] Step 3: Validation
+[22:47:24] Statistics computed
+[22:47:24] Step: validate
+[22:47:24] Step 3: Validation
 
 ============================================================
 DFA VALIDATION
@@ -344,29 +344,29 @@ DFA VALIDATION
 
   ✓ All validation checks passed
 ============================================================
-[22:25:12] Validation complete
-[22:25:12] Step: export
-[22:25:12] Step 4: Export
+[22:47:24] Validation complete
+[22:47:24] Step: export
+[22:47:24] Step 4: Export
     Artifacts                      4
-[22:25:12] Export complete
-[22:25:12] Module 036 complete
-[22:25:12] Created 'statistics' from result.statistics
-[22:25:12] Created 'report' from summary()
-[22:25:12] Created 'validation' with default values
+[22:47:24] Export complete
+[22:47:24] Module 036 complete
+[22:47:24] Created 'statistics' from result.statistics
+[22:47:24] Created 'report' from summary()
+[22:47:24] Created 'validation' with default values
 
 ------------------------------------------------------------
   Exporting Results
 ------------------------------------------------------------
-[22:25:12] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module036\15m\dfa_statistics.csv (1 rows)
-[22:25:12] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module036\15m\dfa_results.csv (20 rows)
-[22:25:12] Text → D:\delta bot\Project_Atlas\research_results\raw\module036\15m\dfa_report.txt (937 chars)
-[22:25:13] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module036\15m\features.csv (86,548 rows)
-[22:25:13] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module036\15m\statistics.csv (1 rows)
-[22:25:13] Text → D:\delta bot\Project_Atlas\research_results\raw\module036\15m\report.txt (1,031 chars)
-[22:25:13] JSON → D:\delta bot\Project_Atlas\research_results\raw\module036\15m\validation.json
-[22:25:13] Statistics → D:\delta bot\Project_Atlas\research_results\raw\module036\15m\statistics.csv
-[22:25:13] Report → D:\delta bot\Project_Atlas\research_results\raw\module036\15m\report.txt
-[22:25:13] Exported to D:\delta bot\Project_Atlas\research_results\raw\module036\15m
+[22:47:24] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module036\15m\dfa_statistics.csv (1 rows)
+[22:47:24] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module036\15m\dfa_results.csv (20 rows)
+[22:47:24] Text → D:\delta bot\Project_Atlas\research_results\raw\module036\15m\dfa_report.txt (937 chars)
+[22:47:24] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module036\15m\features.csv (86,548 rows)
+[22:47:24] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module036\15m\statistics.csv (1 rows)
+[22:47:24] Text → D:\delta bot\Project_Atlas\research_results\raw\module036\15m\report.txt (1,031 chars)
+[22:47:24] JSON → D:\delta bot\Project_Atlas\research_results\raw\module036\15m\validation.json
+[22:47:24] Statistics → D:\delta bot\Project_Atlas\research_results\raw\module036\15m\statistics.csv
+[22:47:24] Report → D:\delta bot\Project_Atlas\research_results\raw\module036\15m\report.txt
+[22:47:24] Exported to D:\delta bot\Project_Atlas\research_results\raw\module036\15m
 
 ------------------------------------------------------------
   Summary
@@ -380,12 +380,12 @@ Dataset: 036_15m
 Status: completed
 
 Step Timing:
-  dfa                  2.935s
+  dfa                  2.990s
   statistics           0.002s
   validate             0.005s
   export               0.006s
   ──────────────────────────────
-  Total pipeline       2.948s
+  Total pipeline       3.003s
 
 Statistics:
   dfa_alpha: 0.502443
@@ -414,28 +414,28 @@ Data Sources:
   market_df: 86548 rows, 6 cols (copy)
   feature_df: None
   df (merged): 86548 rows, 6 cols
-[22:25:13] Research complete
-2026-08-22 22:25:13 - INFO -     Stored 7 artifacts for 15m
-2026-08-22 22:25:13 - INFO -     ✓ PASSED in 3.36s (11 stats)
-2026-08-22 22:25:13 - INFO -
+[22:47:25] Research complete
+2026-08-22 22:47:25 - INFO -     Stored 7 artifacts for 15m
+2026-08-22 22:47:25 - INFO -     ✓ PASSED in 3.43s (11 stats)
+2026-08-22 22:47:25 - INFO -
   Running module 037 on 15m...
-[22:25:13] Loaded 21 modules: ['001', '002', '003', '004', '005', '006', '007', '008', '009', '010', '011', '012', '013', '015', '016', '017', '018', '019', '020', '021', '022']
-[22:25:13] Loaded 3 datasets
-2026-08-22 22:25:13 - INFO -     Module 037 input shape: (86548, 6)
-2026-08-22 22:25:13 - INFO -     Module 037 input columns: ['close', 'high', 'low', 'open', 'timestamp', 'volume']
+[22:47:25] Loaded 21 modules: ['001', '002', '003', '004', '005', '006', '007', '008', '009', '010', '011', '012', '013', '015', '016', '017', '018', '019', '020', '021', '022']
+[22:47:25] Loaded 3 datasets
+2026-08-22 22:47:25 - INFO -     Module 037 input shape: (86548, 6)
+2026-08-22 22:47:25 - INFO -     Module 037 input columns: ['close', 'high', 'low', 'open', 'timestamp', 'volume']
 
 ================================================================================
 PROJECT ATLAS
 MODULE Entropy Analysis
 RESEARCH EXECUTION [037_15M]
 ================================================================================
-[22:25:13] Loading from DataFrame: 037_15m
-[22:25:13] Loaded 86,548 rows from DataFrame (copy)
+[22:47:25] Loading from DataFrame: 037_15m
+[22:47:25] Loaded 86,548 rows from DataFrame (copy)
 
 ------------------------------------------------------------
   Data Validation
 ------------------------------------------------------------
-[22:25:13] Validation passed
+[22:47:25] Validation passed
 
 ------------------------------------------------------------
   Running Computation Pipeline
@@ -444,20 +444,20 @@ RESEARCH EXECUTION [037_15M]
 ------------------------------------------------------------
   Entropy Analysis Pipeline
 ------------------------------------------------------------
-[22:25:13] Step: entropy
-[22:25:13] Step 1: Computing Shannon entropy on log returns
+[22:47:25] Step: entropy
+[22:47:25] Step 1: Computing Shannon entropy on log returns
     Entropy                        6.4747 bits
     Normalized                     0.7393
     Max entropy                    8.7582 bits
     Bins                           1140
-[22:25:13] Entropy computed
-[22:25:13] Step: statistics
-[22:25:13] Step 2: Computing statistics
+[22:47:25] Entropy computed
+[22:47:25] Step: statistics
+[22:47:25] Step 2: Computing statistics
     Regime                         Moderate Structure
     Populated bins                 433/1140
-[22:25:13] Statistics computed
-[22:25:13] Step: validate
-[22:25:13] Step 3: Validation
+[22:47:25] Statistics computed
+[22:47:25] Step: validate
+[22:47:25] Step 3: Validation
 
 ============================================================
 ENTROPY VALIDATION
@@ -465,29 +465,29 @@ ENTROPY VALIDATION
 
   ✓ All validation checks passed
 ============================================================
-[22:25:13] Validation complete
-[22:25:13] Step: export
-[22:25:13] Step 4: Export
+[22:47:25] Validation complete
+[22:47:25] Step: export
+[22:47:25] Step 4: Export
     Artifacts                      4
-[22:25:13] Export complete
-[22:25:13] Module 037 complete
-[22:25:13] Created 'statistics' from result.statistics
-[22:25:13] Created 'report' from summary()
-[22:25:13] Created 'validation' with default values
+[22:47:25] Export complete
+[22:47:25] Module 037 complete
+[22:47:25] Created 'statistics' from result.statistics
+[22:47:25] Created 'report' from summary()
+[22:47:25] Created 'validation' with default values
 
 ------------------------------------------------------------
   Exporting Results
 ------------------------------------------------------------
-[22:25:13] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module037\15m\entropy_statistics.csv (1 rows)
-[22:25:13] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module037\15m\entropy_results.csv (1,140 rows)
-[22:25:13] Text → D:\delta bot\Project_Atlas\research_results\raw\module037\15m\entropy_report.txt (947 chars)
-[22:25:13] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module037\15m\features.csv (86,548 rows)
-[22:25:13] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module037\15m\statistics.csv (1 rows)
-[22:25:13] Text → D:\delta bot\Project_Atlas\research_results\raw\module037\15m\report.txt (982 chars)
-[22:25:13] JSON → D:\delta bot\Project_Atlas\research_results\raw\module037\15m\validation.json
-[22:25:13] Statistics → D:\delta bot\Project_Atlas\research_results\raw\module037\15m\statistics.csv
-[22:25:13] Report → D:\delta bot\Project_Atlas\research_results\raw\module037\15m\report.txt
-[22:25:13] Exported to D:\delta bot\Project_Atlas\research_results\raw\module037\15m
+[22:47:25] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module037\15m\entropy_statistics.csv (1 rows)
+[22:47:25] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module037\15m\entropy_results.csv (1,140 rows)
+[22:47:25] Text → D:\delta bot\Project_Atlas\research_results\raw\module037\15m\entropy_report.txt (947 chars)
+[22:47:25] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module037\15m\features.csv (86,548 rows)
+[22:47:25] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module037\15m\statistics.csv (1 rows)
+[22:47:25] Text → D:\delta bot\Project_Atlas\research_results\raw\module037\15m\report.txt (982 chars)
+[22:47:25] JSON → D:\delta bot\Project_Atlas\research_results\raw\module037\15m\validation.json
+[22:47:25] Statistics → D:\delta bot\Project_Atlas\research_results\raw\module037\15m\statistics.csv
+[22:47:25] Report → D:\delta bot\Project_Atlas\research_results\raw\module037\15m\report.txt
+[22:47:25] Exported to D:\delta bot\Project_Atlas\research_results\raw\module037\15m
 
 ------------------------------------------------------------
   Summary
@@ -501,12 +501,12 @@ Dataset: 037_15m
 Status: completed
 
 Step Timing:
-  entropy              0.012s
+  entropy              0.013s
   statistics           0.002s
   validate             0.005s
-  export               0.006s
+  export               0.008s
   ──────────────────────────────
-  Total pipeline       0.024s
+  Total pipeline       0.028s
 
 Statistics:
   entropy: 6.474706
@@ -532,28 +532,28 @@ Data Sources:
   market_df: 86548 rows, 6 cols (copy)
   feature_df: None
   df (merged): 86548 rows, 6 cols
-[22:25:13] Research complete
-2026-08-22 22:25:13 - INFO -     Stored 7 artifacts for 15m
-2026-08-22 22:25:14 - INFO -     ✓ PASSED in 0.45s (8 stats)
-2026-08-22 22:25:14 - INFO -
+[22:47:25] Research complete
+2026-08-22 22:47:25 - INFO -     Stored 7 artifacts for 15m
+2026-08-22 22:47:26 - INFO -     ✓ PASSED in 0.46s (8 stats)
+2026-08-22 22:47:26 - INFO -
   Running module 102 on 15m...
-[22:25:14] Loaded 21 modules: ['001', '002', '003', '004', '005', '006', '007', '008', '009', '010', '011', '012', '013', '015', '016', '017', '018', '019', '020', '021', '022']
-[22:25:14] Loaded 3 datasets
-2026-08-22 22:25:14 - INFO -     Module 102 input shape: (86548, 6)
-2026-08-22 22:25:14 - INFO -     Module 102 input columns: ['close', 'high', 'low', 'open', 'timestamp', 'volume']
+[22:47:26] Loaded 21 modules: ['001', '002', '003', '004', '005', '006', '007', '008', '009', '010', '011', '012', '013', '015', '016', '017', '018', '019', '020', '021', '022']
+[22:47:26] Loaded 3 datasets
+2026-08-22 22:47:26 - INFO -     Module 102 input shape: (86548, 6)
+2026-08-22 22:47:26 - INFO -     Module 102 input columns: ['close', 'high', 'low', 'open', 'timestamp', 'volume']
 
 ================================================================================
 PROJECT ATLAS
 MODULE Composite Compression Score
 RESEARCH EXECUTION [102_15M]
 ================================================================================
-[22:25:14] Loading from DataFrame: 102_15m
-[22:25:14] Loaded 86,548 rows from DataFrame (copy)
+[22:47:26] Loading from DataFrame: 102_15m
+[22:47:26] Loaded 86,548 rows from DataFrame (copy)
 
 ------------------------------------------------------------
   Data Validation
 ------------------------------------------------------------
-[22:25:14] Validation passed
+[22:47:26] Validation passed
 
 ------------------------------------------------------------
   Running Computation Pipeline
@@ -562,20 +562,20 @@ RESEARCH EXECUTION [102_15M]
 ------------------------------------------------------------
   Compression Score Pipeline
 ------------------------------------------------------------
-[22:25:14] Step: compression_score
-[22:25:14] Step 1: Computing composite compression score for each row
-[22:25:14] Computing metrics from OHLCV data
+[22:47:26] Step: compression_score
+[22:47:26] Step 1: Computing composite compression score for each row
+[22:47:26] Computing metrics from OHLCV data
     Mean Compression Score         67.86/100
     Weights                        {'atr': 0.25, 'std': 0.25, 'entropy': 0.25, 'range': 0.25}
-[22:25:19] Compression scores computed
-[22:25:19]   Completed in 5.088s
-[22:25:19] Step: statistics
-[22:25:19] Step 2: Computing statistics
+[22:47:31] Compression scores computed
+[22:47:31]   Completed in 5.031s
+[22:47:31] Step: statistics
+[22:47:31] Step 2: Computing statistics
     Mean                           67.86
     Median                         67.67
-[22:25:19] Statistics computed
-[22:25:19] Step: validate
-[22:25:19] Step 3: Validation
+[22:47:31] Statistics computed
+[22:47:31] Step: validate
+[22:47:31] Step 3: Validation
 
 ============================================================
 COMPRESSION SCORE VALIDATION
@@ -583,29 +583,29 @@ COMPRESSION SCORE VALIDATION
 
   ✓ All validation checks passed
 ============================================================
-[22:25:19] Validation complete
-[22:25:19] Step: export
-[22:25:19] Step 4: Export
-[22:25:19] Exported compression_score features (86548 rows)
+[22:47:31] Validation complete
+[22:47:31] Step: export
+[22:47:31] Step 4: Export
+[22:47:31] Exported compression_score features (86548 rows)
     Artifacts                      3
-[22:25:19] Export complete
-[22:25:19] Module 102 complete
-[22:25:19] Created 'statistics' from result.statistics
-[22:25:19] Created 'report' from summary()
-[22:25:19] Created 'validation' with default values
+[22:47:31] Export complete
+[22:47:31] Module 102 complete
+[22:47:31] Created 'statistics' from result.statistics
+[22:47:31] Created 'report' from summary()
+[22:47:31] Created 'validation' with default values
 
 ------------------------------------------------------------
   Exporting Results
 ------------------------------------------------------------
-[22:25:19] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module102\15m\compression_score_statistics.csv (1 rows)
-[22:25:19] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module102\15m\features.csv (86,548 rows)
-[22:25:19] Text → D:\delta bot\Project_Atlas\research_results\raw\module102\15m\compression_score_report.txt (873 chars)
-[22:25:19] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module102\15m\statistics.csv (1 rows)
-[22:25:19] Text → D:\delta bot\Project_Atlas\research_results\raw\module102\15m\report.txt (842 chars)
-[22:25:19] JSON → D:\delta bot\Project_Atlas\research_results\raw\module102\15m\validation.json
-[22:25:19] Statistics → D:\delta bot\Project_Atlas\research_results\raw\module102\15m\statistics.csv
-[22:25:19] Report → D:\delta bot\Project_Atlas\research_results\raw\module102\15m\report.txt
-[22:25:19] Exported to D:\delta bot\Project_Atlas\research_results\raw\module102\15m
+[22:47:31] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module102\15m\compression_score_statistics.csv (1 rows)
+[22:47:31] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module102\15m\features.csv (86,548 rows)
+[22:47:31] Text → D:\delta bot\Project_Atlas\research_results\raw\module102\15m\compression_score_report.txt (873 chars)
+[22:47:31] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module102\15m\statistics.csv (1 rows)
+[22:47:31] Text → D:\delta bot\Project_Atlas\research_results\raw\module102\15m\report.txt (842 chars)
+[22:47:31] JSON → D:\delta bot\Project_Atlas\research_results\raw\module102\15m\validation.json
+[22:47:31] Statistics → D:\delta bot\Project_Atlas\research_results\raw\module102\15m\statistics.csv
+[22:47:31] Report → D:\delta bot\Project_Atlas\research_results\raw\module102\15m\report.txt
+[22:47:31] Exported to D:\delta bot\Project_Atlas\research_results\raw\module102\15m
 
 ------------------------------------------------------------
   Summary
@@ -619,12 +619,12 @@ Dataset: 102_15m
 Status: completed
 
 Step Timing:
-  compression_score    5.088s
+  compression_score    5.031s
   statistics           0.003s
-  validate             0.004s
+  validate             0.009s
   export               0.004s
   ──────────────────────────────
-  Total pipeline       5.099s
+  Total pipeline       5.047s
 
 Statistics:
   compression_score: 67.859495
@@ -643,13 +643,13 @@ Data Sources:
   market_df: 86548 rows, 6 cols (copy)
   feature_df: None
   df (merged): 86548 rows, 6 cols
-[22:25:19] Research complete
-2026-08-22 22:25:19 - INFO -     Stored 6 artifacts for 15m
-2026-08-22 22:25:19 - INFO -     ✓ PASSED in 5.37s (3 stats)
-2026-08-22 22:25:19 - INFO -
+[22:47:31] Research complete
+2026-08-22 22:47:31 - INFO -     Stored 6 artifacts for 15m
+2026-08-22 22:47:31 - INFO -     ✓ PASSED in 5.33s (3 stats)
+2026-08-22 22:47:31 - INFO -
   Running module 100 on 15m...
-[22:25:19] Loaded 21 modules: ['001', '002', '003', '004', '005', '006', '007', '008', '009', '010', '011', '012', '013', '015', '016', '017', '018', '019', '020', '021', '022']
-[22:25:19] Loaded 3 datasets
+[22:47:31] Loaded 21 modules: ['001', '002', '003', '004', '005', '006', '007', '008', '009', '010', '011', '012', '013', '015', '016', '017', '018', '019', '020', '021', '022']
+[22:47:31] Loaded 3 datasets
 
 ============================================================
 DEPENDENCY INJECTION
@@ -675,23 +675,23 @@ Dependencies: ['005', '035', '036', '037']
   Has validation: True
   Has statistics: True
 ============================================================
-[22:25:19] Injected 10 dependency features (copy) → df now has 10 columns
-2026-08-22 22:25:19 - INFO -     Injected 10 features from 4 modules
-2026-08-22 22:25:19 - INFO -     Module 100 input shape: (86548, 6)
-2026-08-22 22:25:19 - INFO -     Module 100 input columns: ['close', 'high', 'low', 'open', 'timestamp', 'volume']
+[22:47:31] Injected 10 dependency features (copy) → df now has 10 columns
+2026-08-22 22:47:31 - INFO -     Injected 10 features from 4 modules
+2026-08-22 22:47:31 - INFO -     Module 100 input shape: (86548, 6)
+2026-08-22 22:47:31 - INFO -     Module 100 input columns: ['close', 'high', 'low', 'open', 'timestamp', 'volume']
 
 ================================================================================
 PROJECT ATLAS
 MODULE Trend Score
 RESEARCH EXECUTION [100_15M]
 ================================================================================
-[22:25:19] Loading from DataFrame: 100_15m
-[22:25:19] Loaded 86,548 rows from DataFrame (copy)
+[22:47:31] Loading from DataFrame: 100_15m
+[22:47:31] Loaded 86,548 rows from DataFrame (copy)
 
 ------------------------------------------------------------
   Data Validation
 ------------------------------------------------------------
-[22:25:19] Validation passed
+[22:47:31] Validation passed
 
 ------------------------------------------------------------
   Running Computation Pipeline
@@ -700,14 +700,14 @@ RESEARCH EXECUTION [100_15M]
 ------------------------------------------------------------
   Trend Score Pipeline
 ------------------------------------------------------------
-[22:25:19] Step: compute_trend_score
-[22:25:19] Step 1: Computing trend score for each candle
+[22:47:31] Step: compute_trend_score
+[22:47:31] Step 1: Computing trend score for each candle
     Mean Trend Score               44.46
     Sample Size                    86,548
-[22:25:33] Trend scores computed
-[22:25:33]   Completed in 13.830s
-[22:25:33] Step: statistics
-[22:25:33] Step 2: Computing statistics
+[22:47:45] Trend scores computed
+[22:47:45]   Completed in 14.106s
+[22:47:45] Step: statistics
+[22:47:45] Step 2: Computing statistics
     Mean Score                     44.46
     Median Score                   37.37
     Std Score                      9.15
@@ -715,9 +715,9 @@ RESEARCH EXECUTION [100_15M]
     Hurst                          0.5444
     DFA Alpha                      0.5024
     Normalized Entropy             0.7393
-[22:25:33] Statistics computed
-[22:25:33] Step: validate
-[22:25:33] Step 3: Validation
+[22:47:45] Statistics computed
+[22:47:45] Step: validate
+[22:47:45] Step 3: Validation
 
 ============================================================
 TREND SCORE VALIDATION
@@ -725,30 +725,30 @@ TREND SCORE VALIDATION
 
   ✓ All validation checks passed
 ============================================================
-[22:25:33] Validation complete
-[22:25:33] Step: export
-[22:25:33] Step 4: Export
+[22:47:45] Validation complete
+[22:47:45] Step: export
+[22:47:45] Step 4: Export
     Artifacts                      3
-[22:25:33] Export complete
-[22:25:33] Module 100 complete
-[22:25:33] Created 'features' from feature_df
-[22:25:33] Created 'statistics' from result.statistics
-[22:25:33] Created 'report' from summary()
-[22:25:33] Created 'validation' with default values
+[22:47:45] Export complete
+[22:47:45] Module 100 complete
+[22:47:45] Created 'features' from feature_df
+[22:47:45] Created 'statistics' from result.statistics
+[22:47:45] Created 'report' from summary()
+[22:47:45] Created 'validation' with default values
 
 ------------------------------------------------------------
   Exporting Results
 ------------------------------------------------------------
-[22:25:33] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module100\15m\trend_score_statistics.csv (1 rows)
-[22:25:34] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module100\15m\trend_score_features.csv (86,548 rows)
-[22:25:34] Text → D:\delta bot\Project_Atlas\research_results\raw\module100\15m\trend_score_report.txt (1,108 chars)
-[22:25:34] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module100\15m\features.csv (86,548 rows)
-[22:25:34] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module100\15m\statistics.csv (1 rows)
-[22:25:34] Text → D:\delta bot\Project_Atlas\research_results\raw\module100\15m\report.txt (1,114 chars)
-[22:25:34] JSON → D:\delta bot\Project_Atlas\research_results\raw\module100\15m\validation.json
-[22:25:34] Statistics → D:\delta bot\Project_Atlas\research_results\raw\module100\15m\statistics.csv
-[22:25:34] Report → D:\delta bot\Project_Atlas\research_results\raw\module100\15m\report.txt
-[22:25:34] Exported to D:\delta bot\Project_Atlas\research_results\raw\module100\15m
+[22:47:45] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module100\15m\trend_score_statistics.csv (1 rows)
+[22:47:46] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module100\15m\trend_score_features.csv (86,548 rows)
+[22:47:46] Text → D:\delta bot\Project_Atlas\research_results\raw\module100\15m\trend_score_report.txt (1,108 chars)
+[22:47:46] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module100\15m\features.csv (86,548 rows)
+[22:47:46] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module100\15m\statistics.csv (1 rows)
+[22:47:46] Text → D:\delta bot\Project_Atlas\research_results\raw\module100\15m\report.txt (1,114 chars)
+[22:47:46] JSON → D:\delta bot\Project_Atlas\research_results\raw\module100\15m\validation.json
+[22:47:46] Statistics → D:\delta bot\Project_Atlas\research_results\raw\module100\15m\statistics.csv
+[22:47:46] Report → D:\delta bot\Project_Atlas\research_results\raw\module100\15m\report.txt
+[22:47:46] Exported to D:\delta bot\Project_Atlas\research_results\raw\module100\15m
 
 ------------------------------------------------------------
   Summary
@@ -762,12 +762,12 @@ Dataset: 100_15m
 Status: completed
 
 Step Timing:
-  compute_trend_score  13.830s
-  statistics           0.015s
-  validate             0.004s
-  export               0.005s
+  compute_trend_score  14.106s
+  statistics           0.017s
+  validate             0.005s
+  export               0.006s
   ──────────────────────────────
-  Total pipeline       13.854s
+  Total pipeline       14.134s
 
 Statistics:
   trend_score: 44.463568
@@ -798,13 +798,13 @@ Data Sources:
   market_df: 86548 rows, 6 cols (copy)
   feature_df: 86548 rows, 2 cols (copy)
   df (merged): 86548 rows, 16 cols
-[22:25:34] Research complete
-2026-08-22 22:25:34 - INFO -     Stored 7 artifacts for 15m
-2026-08-22 22:25:35 - INFO -     ✓ PASSED in 14.63s (15 stats)
-2026-08-22 22:25:35 - INFO -
+[22:47:46] Research complete
+2026-08-22 22:47:46 - INFO -     Stored 7 artifacts for 15m
+2026-08-22 22:47:47 - INFO -     ✓ PASSED in 14.91s (15 stats)
+2026-08-22 22:47:47 - INFO -
   Running module 103 on 15m...
-[22:25:35] Loaded 21 modules: ['001', '002', '003', '004', '005', '006', '007', '008', '009', '010', '011', '012', '013', '015', '016', '017', '018', '019', '020', '021', '022']
-[22:25:35] Loaded 3 datasets
+[22:47:47] Loaded 21 modules: ['001', '002', '003', '004', '005', '006', '007', '008', '009', '010', '011', '012', '013', '015', '016', '017', '018', '019', '020', '021', '022']
+[22:47:47] Loaded 3 datasets
 
 ============================================================
 DEPENDENCY INJECTION
@@ -830,23 +830,23 @@ Dependencies: ['100', '102', '035', '037']
   Has validation: True
   Has statistics: True
 ============================================================
-[22:25:35] Injected 7 dependency features (copy) → df now has 7 columns
-2026-08-22 22:25:35 - INFO -     Injected 7 features from 4 modules
-2026-08-22 22:25:35 - INFO -     Module 103 input shape: (86548, 6)
-2026-08-22 22:25:35 - INFO -     Module 103 input columns: ['close', 'high', 'low', 'open', 'timestamp', 'volume']
+[22:47:47] Injected 7 dependency features (copy) → df now has 7 columns
+2026-08-22 22:47:47 - INFO -     Injected 7 features from 4 modules
+2026-08-22 22:47:47 - INFO -     Module 103 input shape: (86548, 6)
+2026-08-22 22:47:47 - INFO -     Module 103 input columns: ['close', 'high', 'low', 'open', 'timestamp', 'volume']
 
 ================================================================================
 PROJECT ATLAS
 MODULE Feature Combination Engine
 RESEARCH EXECUTION [103_15M]
 ================================================================================
-[22:25:35] Loading from DataFrame: 103_15m
-[22:25:35] Loaded 86,548 rows from DataFrame (copy)
+[22:47:47] Loading from DataFrame: 103_15m
+[22:47:47] Loaded 86,548 rows from DataFrame (copy)
 
 ------------------------------------------------------------
   Data Validation
 ------------------------------------------------------------
-[22:25:35] Validation passed
+[22:47:47] Validation passed
 
 ------------------------------------------------------------
   Running Computation Pipeline
@@ -855,8 +855,8 @@ RESEARCH EXECUTION [103_15M]
 ------------------------------------------------------------
   Feature Combination Pipeline
 ------------------------------------------------------------
-[22:25:35] Step: feature_combination
-[22:25:35] Step 1: Computing feature combination
+[22:47:47] Step: feature_combination
+[22:47:47] Step 1: Computing feature combination
 
 ======================================================================
 MODULE 103 INPUT INSPECTION
@@ -927,14 +927,14 @@ states keys: [0, 4, 8, 12]
     Total States                   4/16
     Significant States             2
     Information Coefficient        -0.0001
-[22:25:35] Feature combination computed
-[22:25:35]   Completed in 0.154s
-[22:25:35] Step: statistics
-[22:25:35] Step 2: Computing statistics
+[22:47:47] Feature combination computed
+[22:47:47]   Completed in 0.165s
+[22:47:47] Step: statistics
+[22:47:47] Step 2: Computing statistics
     Predictive Power               None
-[22:25:35] Statistics computed
-[22:25:35] Step: validate
-[22:25:35] Step 3: Validation
+[22:47:47] Statistics computed
+[22:47:47] Step: validate
+[22:47:47] Step 3: Validation
 
 ============================================================
 FEATURE COMBINATION VALIDATION
@@ -942,10 +942,10 @@ FEATURE COMBINATION VALIDATION
 
   ✓ All validation checks passed
 ============================================================
-[22:25:35] Validation complete
-[22:25:35] Step: export
-[22:25:35] Step 4: Export
-[22:25:35] Created feature artifact with timestamp and state (86548 rows)
+[22:47:47] Validation complete
+[22:47:47] Step: export
+[22:47:47] Step 4: Export
+[22:47:47] Created feature artifact with timestamp and state (86548 rows)
 
 ======================================================================
 MODULE 103 ARTIFACT INSPECTION
@@ -959,23 +959,23 @@ Columns: ['timestamp', 'state']
 ✓ All required artifacts present
 ======================================================================
     Artifacts                      9
-[22:25:35] Export complete
-[22:25:35] Module 103 complete
+[22:47:47] Export complete
+[22:47:47] Module 103 complete
 
 ------------------------------------------------------------
   Exporting Results
 ------------------------------------------------------------
-[22:25:35] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module103\15m\features.csv (86,548 rows)
-[22:25:35] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module103\15m\state_statistics.csv (4 rows)
-[22:25:35] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module103\15m\statistics.csv (1 rows)
-[22:25:35] Text → D:\delta bot\Project_Atlas\research_results\raw\module103\15m\report.txt (1,198 chars)
-[22:25:35] Text → D:\delta bot\Project_Atlas\research_results\raw\module103\15m\feature_combination_report.txt (1,198 chars)
-[22:25:35] Text → D:\delta bot\Project_Atlas\research_results\raw\module103\15m\state_report.txt (643 chars)
-[22:25:35] JSON → D:\delta bot\Project_Atlas\research_results\raw\module103\15m\detailed_results.json
-[22:25:35] JSON → D:\delta bot\Project_Atlas\research_results\raw\module103\15m\metadata.json
-[22:25:35] Statistics → D:\delta bot\Project_Atlas\research_results\raw\module103\15m\statistics.csv
-[22:25:35] Report → D:\delta bot\Project_Atlas\research_results\raw\module103\15m\report.txt
-[22:25:35] Exported to D:\delta bot\Project_Atlas\research_results\raw\module103\15m
+[22:47:47] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module103\15m\features.csv (86,548 rows)
+[22:47:47] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module103\15m\state_statistics.csv (4 rows)
+[22:47:47] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module103\15m\statistics.csv (1 rows)
+[22:47:47] Text → D:\delta bot\Project_Atlas\research_results\raw\module103\15m\report.txt (1,198 chars)
+[22:47:47] Text → D:\delta bot\Project_Atlas\research_results\raw\module103\15m\feature_combination_report.txt (1,198 chars)
+[22:47:47] Text → D:\delta bot\Project_Atlas\research_results\raw\module103\15m\state_report.txt (643 chars)
+[22:47:47] JSON → D:\delta bot\Project_Atlas\research_results\raw\module103\15m\detailed_results.json
+[22:47:47] JSON → D:\delta bot\Project_Atlas\research_results\raw\module103\15m\metadata.json
+[22:47:47] Statistics → D:\delta bot\Project_Atlas\research_results\raw\module103\15m\statistics.csv
+[22:47:47] Report → D:\delta bot\Project_Atlas\research_results\raw\module103\15m\report.txt
+[22:47:47] Exported to D:\delta bot\Project_Atlas\research_results\raw\module103\15m
 
 ------------------------------------------------------------
   Summary
@@ -989,12 +989,12 @@ Dataset: 103_15m
 Status: completed
 
 Step Timing:
-  feature_combination  0.154s
+  feature_combination  0.165s
   statistics           0.002s
   validate             0.006s
-  export               0.013s
+  export               0.011s
   ──────────────────────────────
-  Total pipeline       0.174s
+  Total pipeline       0.184s
 
 Statistics:
   total_states: 4
@@ -1023,10 +1023,10 @@ Data Sources:
   market_df: 86548 rows, 6 cols (copy)
   feature_df: 86548 rows, 7 cols (copy)
   df (merged): 86548 rows, 13 cols
-[22:25:35] Research complete
-2026-08-22 22:25:35 - INFO -     Stored 9 artifacts for 15m
-2026-08-22 22:25:35 - INFO -     ✓ PASSED in 0.47s (10 stats)
-2026-08-22 22:25:35 - INFO -
+[22:47:47] Research complete
+2026-08-22 22:47:47 - INFO -     Stored 9 artifacts for 15m
+2026-08-22 22:47:47 - INFO -     ✓ PASSED in 0.49s (10 stats)
+2026-08-22 22:47:47 - INFO -
   Running module 108 on 15m...
 
 ============================================================
@@ -1041,21 +1041,21 @@ Dependencies: ['103']
   Has validation: True
   Has statistics: True
 ============================================================
-[22:25:35] Injected 2 dependency features (copy) → df now has 2 columns
-2026-08-22 22:25:35 - INFO -     Injected 2 features from 1 modules
-2026-08-22 22:25:35 - INFO -     Module 108 input shape: (86548, 6)
-2026-08-22 22:25:35 - INFO -     Module 108 input columns: ['close', 'high', 'low', 'open', 'timestamp', 'volume']
-[22:25:35] Loading from DataFrame: 108_15m
-[22:25:35] Loaded 86,548 rows from DataFrame (copy)
+[22:47:47] Injected 2 dependency features (copy) → df now has 2 columns
+2026-08-22 22:47:47 - INFO -     Injected 2 features from 1 modules
+2026-08-22 22:47:47 - INFO -     Module 108 input shape: (86548, 6)
+2026-08-22 22:47:47 - INFO -     Module 108 input columns: ['close', 'high', 'low', 'open', 'timestamp', 'volume']
+[22:47:47] Loading from DataFrame: 108_15m
+[22:47:48] Loaded 86,548 rows from DataFrame (copy)
 
   ✓ All validations passed
   ✓ Exported results to D:\delta bot\Project_Atlas\research_results\raw\module108\15m
-2026-08-22 22:27:17 - INFO -     Stored 9 artifacts for 15m
-2026-08-22 22:27:17 - INFO -     ✓ PASSED in 101.48s (10 stats)
-2026-08-22 22:27:17 - INFO -
+2026-08-22 22:49:23 - INFO -     Stored 9 artifacts for 15m
+2026-08-22 22:49:24 - INFO -     ✓ PASSED in 96.01s (10 stats)
+2026-08-22 22:49:24 - INFO -
   Running module 111 on 15m...
-[22:27:17] Loaded 21 modules: ['001', '002', '003', '004', '005', '006', '007', '008', '009', '010', '011', '012', '013', '015', '016', '017', '018', '019', '020', '021', '022']
-[22:27:17] Loaded 3 datasets
+[22:49:24] Loaded 21 modules: ['001', '002', '003', '004', '005', '006', '007', '008', '009', '010', '011', '012', '013', '015', '016', '017', '018', '019', '020', '021', '022']
+[22:49:24] Loaded 3 datasets
 
 ============================================================
 DEPENDENCY INJECTION
@@ -1085,25 +1085,25 @@ Dependencies: ['100', '102', '035', '037', '108']
   Has validation: True
   Has statistics: True
 ============================================================
-[22:27:17] Injected 14 dependency features (copy) → df now has 14 columns
-2026-08-22 22:27:17 - INFO -     Injected 14 features from 5 modules
-2026-08-22 22:27:17 - INFO -     Target requirements for Module 111: ['future_breakout']
-2026-08-22 22:27:43 - INFO -     Verified required targets for Module 111: ['future_breakout']
-2026-08-22 22:27:43 - INFO -     Module 111 input shape: (86548, 7)
-2026-08-22 22:27:43 - INFO -     Module 111 input columns: ['close', 'high', 'low', 'open', 'timestamp', 'volume', 'future_breakout']
+[22:49:24] Injected 14 dependency features (copy) → df now has 14 columns
+2026-08-22 22:49:24 - INFO -     Injected 14 features from 5 modules
+2026-08-22 22:49:24 - INFO -     Target requirements for Module 111: ['future_breakout']
+2026-08-22 22:49:45 - INFO -     Verified required targets for Module 111: ['future_breakout']
+2026-08-22 22:49:45 - INFO -     Module 111 input shape: (86548, 7)
+2026-08-22 22:49:45 - INFO -     Module 111 input columns: ['close', 'high', 'low', 'open', 'timestamp', 'volume', 'future_breakout']
 
 ================================================================================
 PROJECT ATLAS
 MODULE Monte Carlo Validation
 RESEARCH EXECUTION [111_15M]
 ================================================================================
-[22:27:43] Loading from DataFrame: 111_15m
-[22:27:43] Loaded 86,548 rows from DataFrame (copy)
+[22:49:45] Loading from DataFrame: 111_15m
+[22:49:46] Loaded 86,548 rows from DataFrame (copy)
 
 ------------------------------------------------------------
   Data Validation
 ------------------------------------------------------------
-[22:27:43] Validation passed
+[22:49:46] Validation passed
 
 ------------------------------------------------------------
   Running Computation Pipeline
@@ -1112,2312 +1112,15 @@ RESEARCH EXECUTION [111_15M]
 ------------------------------------------------------------
   Monte Carlo Validation Pipeline
 ------------------------------------------------------------
-[22:27:43] Step: monte_carlo_validation
-[22:27:43] Step 1: Computing Monte Carlo validation
-[22:27:43] Computation failed: 'list' argument must have no negative elements
-2026-08-22 22:27:43 - ERROR -     ✗ FAILED: 'list' argument must have no negative elements
-2026-08-22 22:27:43 - ERROR - Traceback (most recent call last):
-  File "D:\delta bot\Project_Atlas\atlas\research\research_runner.py", line 282, in run
-    result = self.module_loader.run_module(
-        module,
-    ...<2 lines>...
-        output_dir=module_output_dir
-    )
-  File "D:\delta bot\Project_Atlas\atlas\research\module_loader.py", line 147, in run_module
-    return module.run_dataframe(df, dataset_id=dataset_id, output_dir=output_dir)
-           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\delta bot\Project_Atlas\atlas\modules\module111_monte_carlo_validation\module.py", line 221, in run_dataframe
-    return super().run_dataframe(df, dataset_id, output_dir)
-           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\delta bot\Project_Atlas\atlas\core\base_research_module.py", line 590, in run_dataframe
-    return self._execute_workflow(output_dir)
-           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
-  File "D:\delta bot\Project_Atlas\atlas\core\base_research_module.py", line 604, in _execute_workflow
-    results = self.compute()
-  File "D:\delta bot\Project_Atlas\atlas\modules\module111_monte_carlo_validation\module.py", line 212, in compute
-    results = self.execute_pipeline()
-  File "D:\delta bot\Project_Atlas\atlas\core\base_research_module.py", line 323, in execute_pipeline
-    result = step()
-  File "D:\delta bot\Project_Atlas\atlas\modules\module111_monte_carlo_validation\module.py", line 136, in _compute_validation
-    self.result_data = self.engine.compute(
-                       ~~~~~~~~~~~~~~~~~~~^
-        X=prepared["X"],
-        ^^^^^^^^^^^^^^^^
-        y=prepared["y"],
-        ^^^^^^^^^^^^^^^^
-        price_series=prepared["price_series"],
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "D:\delta bot\Project_Atlas\atlas\modules\module111_monte_carlo_validation\engine.py", line 1248, in compute
-    observed_score = self.compute_score(
-        X,
-        y,
-    )
-  File "D:\delta bot\Project_Atlas\atlas\modules\module111_monte_carlo_validation\engine.py", line 233, in compute_score
-    cv = self._get_cv(y, cv_folds)
-  File "D:\delta bot\Project_Atlas\atlas\modules\module111_monte_carlo_validation\engine.py", line 166, in _get_cv
-    class_counts = np.bincount(y.astype(int))
-ValueError: 'list' argument must have no negative elements
-
-2026-08-22 22:27:43 - INFO -
-============================================================
-2026-08-22 22:27:43 - INFO - PROCESSING DATASET: 1h
-2026-08-22 22:27:43 - INFO - ============================================================
-2026-08-22 22:27:43 - INFO -
-  Running module 005 on 1h...
-[22:27:43] Loaded 21 modules: ['001', '002', '003', '004', '005', '006', '007', '008', '009', '010', '011', '012', '013', '015', '016', '017', '018', '019', '020', '021', '022']
-[22:27:43] Loaded 3 datasets
-2026-08-22 22:27:43 - INFO -     Module 005 input shape: (21681, 6)
-2026-08-22 22:27:43 - INFO -     Module 005 input columns: ['close', 'high', 'low', 'open', 'timestamp', 'volume']
-
-================================================================================
-PROJECT ATLAS
-MODULE TrendPersistence
-RESEARCH EXECUTION [005_1H]
-================================================================================
-[22:27:43] Loading from DataFrame: 005_1h
-[22:27:43] Loaded 21,681 rows from DataFrame (copy)
-
-------------------------------------------------------------
-  Data Validation
-------------------------------------------------------------
-[22:27:43] Validation passed
-
-------------------------------------------------------------
-  Running Computation Pipeline
-------------------------------------------------------------
-[22:27:43] Step: returns
-[22:27:43] Calculating log returns from close prices
-    Return observations            21,680
-    Mean return                    0.00001268
-    Std return                     0.00512891
-[22:27:43] Step: trend_direction
-[22:27:43] Determining trend direction for each candle
-    Up candles                     10,636 (49.1%)
-    Down candles                   10,460 (48.2%)
-    Flat candles                   584 (2.7%)
-[22:27:43] Step: trend_segments
-[22:27:43] Segmenting consecutive trends (min length=3)
-    Total segments                 2,543
-    Up segments                    1,301
-    Down segments                  1,242
-    Mean length                    3.81
-    Max length                     14
-[22:27:45] Step: summary
-[22:27:45] Computing trend summary statistics
-[22:27:45]
-Trend Summary (min_length=3):
-[22:27:45]   Total segments: 2,543
-[22:27:45]   Up trends: 1,301 (mean: 3.80)
-[22:27:45]   Down trends: 1,242 (mean: 3.81)
-[22:27:45]   Overall mean: 3.81
-[22:27:45]   Overall median: 3.0
-[22:27:45]   Maximum: 14
-[22:27:45]   Expected under H0: 2.00
-[22:27:45]   Ratio: 1.90x
-[22:27:45]
-  Observed trends 1.9x longer than expected
-[22:27:45]   Evidence AGAINST H0 - trends exhibit persistence
-[22:27:55] Phase 1 complete: Trend segmentation finished
-[22:27:55] Created 'statistics' from result.statistics
-[22:27:55] Created 'report' from summary()
-[22:27:55] Created 'validation' with default values
-
-------------------------------------------------------------
-  Exporting Results
-------------------------------------------------------------
-[22:27:56] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module005\1h\trend_segments.csv (2,543 rows)
-[22:27:56] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module005\1h\trend_summary.csv (12 rows)
-[22:27:56] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module005\1h\features.csv (21,681 rows)
-[22:27:56] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module005\1h\statistics.csv (1 rows)
-[22:27:56] Text → D:\delta bot\Project_Atlas\research_results\raw\module005\1h\report.txt (1,227 chars)
-[22:27:56] JSON → D:\delta bot\Project_Atlas\research_results\raw\module005\1h\validation.json
-[22:27:56] Statistics → D:\delta bot\Project_Atlas\research_results\raw\module005\1h\statistics.csv
-[22:27:56] Report → D:\delta bot\Project_Atlas\research_results\raw\module005\1h\report.txt
-[22:27:56] Exported to D:\delta bot\Project_Atlas\research_results\raw\module005\1h
-
-------------------------------------------------------------
-  Summary
-------------------------------------------------------------
-============================================================
-MODULE: TrendPersistence
-VERSION: 0.1.0-phase1
-============================================================
-
-Dataset: 005_1h
-Status: completed
-
-Statistics:
-  total_segments: 2543
-  mean_trend_length: 3.807707
-  median_trend_length: 3.000000
-  max_trend_length: 14
-  min_trend_length: 3
-  std_trend_length: 1.211499
-  up_trend_count: 1301
-  up_mean_length: 3.803997
-  up_median_length: 3.000000
-  up_max_length: 14
-  down_trend_count: 1242
-  down_mean_length: 3.811594
-  down_median_length: 3.000000
-  down_max_length: 13
-  length_p25: 3.000000
-  length_p50: 3.000000
-  length_p75: 4.000000
-  length_p90: 5.000000
-  length_p95: 6.000000
-  length_p99: 8.000000
-  expected_length_under_h0: 2.000278
-  observed_vs_expected_ratio: 1.903589
-  return_observations: 21680
-  return_mean: 0.000013
-  return_std: 0.005129
-  up_candles: 10636
-  down_candles: 10460
-  flat_candles: 584
-  up_segments: 1301
-  down_segments: 1242
-
-Artifacts:
-  ✓ features: DataFrame (21681 rows, 4 cols)
-  ✓ statistics: DataFrame (1 rows, 30 cols)
-  ✓ report: Text (1227 chars)
-  ✓ validation: Dict (3 keys)
-
-Data Sources:
-  market_df: 21681 rows, 6 cols (copy)
-  feature_df: None
-  df (merged): 21681 rows, 6 cols
-[22:27:56] Research complete
-2026-08-22 22:27:56 - INFO -     Stored 6 artifacts for 1h
-2026-08-22 22:27:56 - INFO -     ✓ PASSED in 12.23s (30 stats)
-2026-08-22 22:27:56 - INFO -
-  Running module 035 on 1h...
-[22:27:56] Loaded 21 modules: ['001', '002', '003', '004', '005', '006', '007', '008', '009', '010', '011', '012', '013', '015', '016', '017', '018', '019', '020', '021', '022']
-[22:27:56] Loaded 3 datasets
-2026-08-22 22:27:56 - INFO -     Module 035 input shape: (21681, 6)
-2026-08-22 22:27:56 - INFO -     Module 035 input columns: ['close', 'high', 'low', 'open', 'timestamp', 'volume']
-
-================================================================================
-PROJECT ATLAS
-MODULE Hurst Exponent
-RESEARCH EXECUTION [035_1H]
-================================================================================
-[22:27:56] Loading from DataFrame: 035_1h
-[22:27:56] Loaded 21,681 rows from DataFrame (copy)
-
-------------------------------------------------------------
-  Data Validation
-------------------------------------------------------------
-[22:27:56] Validation passed
-
-------------------------------------------------------------
-  Running Computation Pipeline
-------------------------------------------------------------
-
-------------------------------------------------------------
-  Hurst Exponent Pipeline
-------------------------------------------------------------
-[22:27:56] Step: hurst
-[22:27:56] Step 1: Computing Hurst exponent on log returns
-    Series type                    log_returns
-    Hurst exponent                 0.5537
-    Sample size                    21,680
-    Windows                        20
-[22:27:56] Hurst exponent computed
-[22:27:56]   Completed in 0.468s
-[22:27:56] Step: statistics
-[22:27:56] Step 2: Computing statistics
-    Regime                         Persistent
-    R-squared                      0.9998
-[22:27:56] Statistics computed
-[22:27:56] Step: validate
-[22:27:56] Step 3: Validation
-
-============================================================
-HURST VALIDATION
-============================================================
-
-  ✓ All validation checks passed
-============================================================
-[22:27:56] Validation complete
-[22:27:56] Step: export
-[22:27:56] Step 4: Export
-    Artifacts                      4
-[22:27:56] Export complete
-[22:27:56] Module 035 complete
-[22:27:56] Created 'statistics' from result.statistics
-[22:27:56] Created 'report' from summary()
-[22:27:56] Created 'validation' with default values
-
-------------------------------------------------------------
-  Exporting Results
-------------------------------------------------------------
-[22:27:56] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module035\1h\hurst_statistics.csv (1 rows)
-[22:27:56] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module035\1h\hurst_results.csv (20 rows)
-[22:27:56] Text → D:\delta bot\Project_Atlas\research_results\raw\module035\1h\hurst_report.txt (984 chars)
-[22:27:56] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module035\1h\features.csv (21,681 rows)
-[22:27:56] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module035\1h\statistics.csv (1 rows)
-[22:27:56] Text → D:\delta bot\Project_Atlas\research_results\raw\module035\1h\report.txt (1,040 chars)
-[22:27:56] JSON → D:\delta bot\Project_Atlas\research_results\raw\module035\1h\validation.json
-[22:27:56] Statistics → D:\delta bot\Project_Atlas\research_results\raw\module035\1h\statistics.csv
-[22:27:56] Report → D:\delta bot\Project_Atlas\research_results\raw\module035\1h\report.txt
-[22:27:56] Exported to D:\delta bot\Project_Atlas\research_results\raw\module035\1h
-
-------------------------------------------------------------
-  Summary
-------------------------------------------------------------
-============================================================
-MODULE: Hurst Exponent
-VERSION: 1.0.0
-============================================================
-
-Dataset: 035_1h
-Status: completed
-
-Step Timing:
-  hurst                0.468s
-  statistics           0.002s
-  validate             0.004s
-  export               0.008s
-  ──────────────────────────────
-  Total pipeline       0.483s
-
-Statistics:
-  hurst_exponent: 0.553695
-  sample_size: 21680
-  series_type: log_returns
-  slope: 0.553695
-  intercept: -0.161989
-  expected_random: 0.500000
-  deviation_from_random: 0.053700
-  regime: Persistent
-  is_persistent: True
-  is_mean_reverting: False
-  is_random_walk: False
-  r_squared: 0.999800
-  num_windows: 20
-  validation_passed: True
-  export_status: complete
-  artifact_count: 4
-
-Artifacts:
-  ✓ features: DataFrame (21681 rows, 2 cols)
-  ✓ statistics: DataFrame (1 rows, 16 cols)
-  ✓ report: Text (1040 chars)
-  ✓ validation: Dict (3 keys)
-
-Data Sources:
-  market_df: 21681 rows, 6 cols (copy)
-  feature_df: None
-  df (merged): 21681 rows, 6 cols
-[22:27:56] Research complete
-2026-08-22 22:27:56 - INFO -     Stored 7 artifacts for 1h
-2026-08-22 22:27:57 - INFO -     ✓ PASSED in 0.66s (13 stats)
-2026-08-22 22:27:57 - INFO -
-  Running module 036 on 1h...
-[22:27:57] Loaded 21 modules: ['001', '002', '003', '004', '005', '006', '007', '008', '009', '010', '011', '012', '013', '015', '016', '017', '018', '019', '020', '021', '022']
-[22:27:57] Loaded 3 datasets
-2026-08-22 22:27:57 - INFO -     Module 036 input shape: (21681, 6)
-2026-08-22 22:27:57 - INFO -     Module 036 input columns: ['close', 'high', 'low', 'open', 'timestamp', 'volume']
-
-================================================================================
-PROJECT ATLAS
-MODULE DFA Analysis
-RESEARCH EXECUTION [036_1H]
-================================================================================
-[22:27:57] Loading from DataFrame: 036_1h
-[22:27:57] Loaded 21,681 rows from DataFrame (copy)
-
-------------------------------------------------------------
-  Data Validation
-------------------------------------------------------------
-[22:27:57] Validation passed
-
-------------------------------------------------------------
-  Running Computation Pipeline
-------------------------------------------------------------
-
-------------------------------------------------------------
-  DFA Pipeline
-------------------------------------------------------------
-[22:27:57] Step: dfa
-[22:27:57] Step 1: Computing DFA on log returns
-    Series type                    log_returns
-    DFA Alpha                      0.5112
-    Sample size                    21,680
-    Windows                        20
-[22:27:58] DFA computed
-[22:27:58]   Completed in 1.051s
-[22:27:58] Step: statistics
-[22:27:58] Step 2: Computing statistics
-    Regime                         Random Walk
-    R-squared                      0.9966
-[22:27:58] Statistics computed
-[22:27:58] Step: validate
-[22:27:58] Step 3: Validation
-
-============================================================
-DFA VALIDATION
-============================================================
-
-  ✓ All validation checks passed
-============================================================
-[22:27:58] Validation complete
-[22:27:58] Step: export
-[22:27:58] Step 4: Export
-    Artifacts                      4
-[22:27:58] Export complete
-[22:27:58] Module 036 complete
-[22:27:58] Created 'statistics' from result.statistics
-[22:27:58] Created 'report' from summary()
-[22:27:58] Created 'validation' with default values
-
-------------------------------------------------------------
-  Exporting Results
-------------------------------------------------------------
-[22:27:58] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module036\1h\dfa_statistics.csv (1 rows)
-[22:27:58] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module036\1h\dfa_results.csv (20 rows)
-[22:27:58] Text → D:\delta bot\Project_Atlas\research_results\raw\module036\1h\dfa_report.txt (936 chars)
-[22:27:58] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module036\1h\features.csv (21,681 rows)
-[22:27:58] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module036\1h\statistics.csv (1 rows)
-[22:27:58] Text → D:\delta bot\Project_Atlas\research_results\raw\module036\1h\report.txt (1,030 chars)
-[22:27:58] JSON → D:\delta bot\Project_Atlas\research_results\raw\module036\1h\validation.json
-[22:27:58] Statistics → D:\delta bot\Project_Atlas\research_results\raw\module036\1h\statistics.csv
-[22:27:58] Report → D:\delta bot\Project_Atlas\research_results\raw\module036\1h\report.txt
-[22:27:58] Exported to D:\delta bot\Project_Atlas\research_results\raw\module036\1h
-
-------------------------------------------------------------
-  Summary
-------------------------------------------------------------
-============================================================
-MODULE: DFA Analysis
-VERSION: 1.0.0
-============================================================
-
-Dataset: 036_1h
-Status: completed
-
-Step Timing:
-  dfa                  1.051s
-  statistics           0.002s
-  validate             0.008s
-  export               0.006s
-  ──────────────────────────────
-  Total pipeline       1.068s
-
-Statistics:
-  dfa_alpha: 0.511218
-  sample_size: 21680
-  series_type: log_returns
-  alpha: 0.511218
-  slope: 0.511218
-  intercept: -6.701150
-  expected_random: 0.500000
-  deviation_from_random: 0.011200
-  regime: Random Walk
-  regime_detail: No long-range dependence detected
-  r_squared: 0.996600
-  num_windows: 20
-  validation_passed: True
-  export_status: complete
-  artifact_count: 4
-
-Artifacts:
-  ✓ features: DataFrame (21681 rows, 2 cols)
-  ✓ statistics: DataFrame (1 rows, 15 cols)
-  ✓ report: Text (1030 chars)
-  ✓ validation: Dict (3 keys)
-
-Data Sources:
-  market_df: 21681 rows, 6 cols (copy)
-  feature_df: None
-  df (merged): 21681 rows, 6 cols
-[22:27:58] Research complete
-2026-08-22 22:27:58 - INFO -     Stored 7 artifacts for 1h
-2026-08-22 22:27:58 - INFO -     ✓ PASSED in 1.24s (11 stats)
-2026-08-22 22:27:58 - INFO -
-  Running module 037 on 1h...
-[22:27:58] Loaded 21 modules: ['001', '002', '003', '004', '005', '006', '007', '008', '009', '010', '011', '012', '013', '015', '016', '017', '018', '019', '020', '021', '022']
-[22:27:58] Loaded 3 datasets
-2026-08-22 22:27:58 - INFO -     Module 037 input shape: (21681, 6)
-2026-08-22 22:27:58 - INFO -     Module 037 input columns: ['close', 'high', 'low', 'open', 'timestamp', 'volume']
-
-================================================================================
-PROJECT ATLAS
-MODULE Entropy Analysis
-RESEARCH EXECUTION [037_1H]
-================================================================================
-[22:27:58] Loading from DataFrame: 037_1h
-[22:27:58] Loaded 21,681 rows from DataFrame (copy)
-
-------------------------------------------------------------
-  Data Validation
-------------------------------------------------------------
-[22:27:58] Validation passed
-
-------------------------------------------------------------
-  Running Computation Pipeline
-------------------------------------------------------------
-
-------------------------------------------------------------
-  Entropy Analysis Pipeline
-------------------------------------------------------------
-[22:27:58] Step: entropy
-[22:27:58] Step 1: Computing Shannon entropy on log returns
-    Entropy                        5.8552 bits
-    Normalized                     0.7500
-    Max entropy                    7.8074 bits
-    Bins                           375
-[22:27:58] Entropy computed
-[22:27:58] Step: statistics
-[22:27:58] Step 2: Computing statistics
-    Regime                         Moderate Structure
-    Populated bins                 224/375
-[22:27:58] Statistics computed
-[22:27:58] Step: validate
-[22:27:58] Step 3: Validation
-
-============================================================
-ENTROPY VALIDATION
-============================================================
-
-  ✓ All validation checks passed
-============================================================
-[22:27:58] Validation complete
-[22:27:58] Step: export
-[22:27:58] Step 4: Export
-    Artifacts                      4
-[22:27:58] Export complete
-[22:27:58] Module 037 complete
-[22:27:58] Created 'statistics' from result.statistics
-[22:27:58] Created 'report' from summary()
-[22:27:58] Created 'validation' with default values
-
-------------------------------------------------------------
-  Exporting Results
-------------------------------------------------------------
-[22:27:58] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module037\1h\entropy_statistics.csv (1 rows)
-[22:27:58] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module037\1h\entropy_results.csv (375 rows)
-[22:27:58] Text → D:\delta bot\Project_Atlas\research_results\raw\module037\1h\entropy_report.txt (945 chars)
-[22:27:58] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module037\1h\features.csv (21,681 rows)
-[22:27:58] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module037\1h\statistics.csv (1 rows)
-[22:27:58] Text → D:\delta bot\Project_Atlas\research_results\raw\module037\1h\report.txt (980 chars)
-[22:27:58] JSON → D:\delta bot\Project_Atlas\research_results\raw\module037\1h\validation.json
-[22:27:58] Statistics → D:\delta bot\Project_Atlas\research_results\raw\module037\1h\statistics.csv
-[22:27:58] Report → D:\delta bot\Project_Atlas\research_results\raw\module037\1h\report.txt
-[22:27:58] Exported to D:\delta bot\Project_Atlas\research_results\raw\module037\1h
-
-------------------------------------------------------------
-  Summary
-------------------------------------------------------------
-============================================================
-MODULE: Entropy Analysis
-VERSION: 1.0.0
-============================================================
-
-Dataset: 037_1h
-Status: completed
-
-Step Timing:
-  entropy              0.010s
-  statistics           0.005s
-  validate             0.009s
-  export               0.014s
-  ──────────────────────────────
-  Total pipeline       0.038s
-
-Statistics:
-  entropy: 5.855179
-  normalized_entropy: 0.749957
-  sample_size: 21680
-  maximum_entropy: 7.807355
-  series_type: log_returns
-  regime: Moderate Structure
-  regime_detail: Returns show moderate predictability
-  num_bins: 375
-  num_nonzero_bins: 224
-  validation_passed: True
-  export_status: complete
-  artifact_count: 4
-
-Artifacts:
-  ✓ features: DataFrame (21681 rows, 2 cols)
-  ✓ statistics: DataFrame (1 rows, 12 cols)
-  ✓ report: Text (980 chars)
-  ✓ validation: Dict (3 keys)
-
-Data Sources:
-  market_df: 21681 rows, 6 cols (copy)
-  feature_df: None
-  df (merged): 21681 rows, 6 cols
-[22:27:58] Research complete
-2026-08-22 22:27:58 - INFO -     Stored 7 artifacts for 1h
-2026-08-22 22:27:58 - INFO -     ✓ PASSED in 0.27s (8 stats)
-2026-08-22 22:27:58 - INFO -
-  Running module 102 on 1h...
-[22:27:58] Loaded 21 modules: ['001', '002', '003', '004', '005', '006', '007', '008', '009', '010', '011', '012', '013', '015', '016', '017', '018', '019', '020', '021', '022']
-[22:27:58] Loaded 3 datasets
-2026-08-22 22:27:58 - INFO -     Module 102 input shape: (21681, 6)
-2026-08-22 22:27:58 - INFO -     Module 102 input columns: ['close', 'high', 'low', 'open', 'timestamp', 'volume']
-
-================================================================================
-PROJECT ATLAS
-MODULE Composite Compression Score
-RESEARCH EXECUTION [102_1H]
-================================================================================
-[22:27:58] Loading from DataFrame: 102_1h
-[22:27:58] Loaded 21,681 rows from DataFrame (copy)
-
-------------------------------------------------------------
-  Data Validation
-------------------------------------------------------------
-[22:27:58] Validation passed
-
-------------------------------------------------------------
-  Running Computation Pipeline
-------------------------------------------------------------
-
-------------------------------------------------------------
-  Compression Score Pipeline
-------------------------------------------------------------
-[22:27:58] Step: compression_score
-[22:27:58] Step 1: Computing composite compression score for each row
-[22:27:58] Computing metrics from OHLCV data
-    Mean Compression Score         64.28/100
-    Weights                        {'atr': 0.25, 'std': 0.25, 'entropy': 0.25, 'range': 0.25}
-[22:28:00] Compression scores computed
-[22:28:00]   Completed in 1.441s
-[22:28:00] Step: statistics
-[22:28:00] Step 2: Computing statistics
-    Mean                           64.28
-    Median                         63.81
-[22:28:00] Statistics computed
-[22:28:00] Step: validate
-[22:28:00] Step 3: Validation
-
-============================================================
-COMPRESSION SCORE VALIDATION
-============================================================
-
-  ✓ All validation checks passed
-============================================================
-[22:28:00] Validation complete
-[22:28:00] Step: export
-[22:28:00] Step 4: Export
-[22:28:00] Exported compression_score features (21681 rows)
-    Artifacts                      3
-[22:28:00] Export complete
-[22:28:00] Module 102 complete
-[22:28:00] Created 'statistics' from result.statistics
-[22:28:00] Created 'report' from summary()
-[22:28:00] Created 'validation' with default values
-
-------------------------------------------------------------
-  Exporting Results
-------------------------------------------------------------
-[22:28:00] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module102\1h\compression_score_statistics.csv (1 rows)
-[22:28:00] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module102\1h\features.csv (21,681 rows)
-[22:28:00] Text → D:\delta bot\Project_Atlas\research_results\raw\module102\1h\compression_score_report.txt (872 chars)
-[22:28:00] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module102\1h\statistics.csv (1 rows)
-[22:28:00] Text → D:\delta bot\Project_Atlas\research_results\raw\module102\1h\report.txt (841 chars)
-[22:28:00] JSON → D:\delta bot\Project_Atlas\research_results\raw\module102\1h\validation.json
-[22:28:00] Statistics → D:\delta bot\Project_Atlas\research_results\raw\module102\1h\statistics.csv
-[22:28:00] Report → D:\delta bot\Project_Atlas\research_results\raw\module102\1h\report.txt
-[22:28:00] Exported to D:\delta bot\Project_Atlas\research_results\raw\module102\1h
-
-------------------------------------------------------------
-  Summary
-------------------------------------------------------------
-============================================================
-MODULE: Composite Compression Score
-VERSION: 1.0.0
-============================================================
-
-Dataset: 102_1h
-Status: completed
-
-Step Timing:
-  compression_score    1.441s
-  statistics           0.002s
-  validate             0.004s
-  export               0.003s
-  ──────────────────────────────
-  Total pipeline       1.451s
-
-Statistics:
-  compression_score: 64.282012
-  weights: {'atr': 0.25, 'std': 0.25, 'entropy': 0.25, 'range': 0.25}
-  validation_passed: True
-  export_status: complete
-  artifact_count: 3
-
-Artifacts:
-  ✓ features: DataFrame (21681 rows, 1 cols)
-  ✓ statistics: DataFrame (1 rows, 5 cols)
-  ✓ report: Text (841 chars)
-  ✓ validation: Dict (3 keys)
-
-Data Sources:
-  market_df: 21681 rows, 6 cols (copy)
-  feature_df: None
-  df (merged): 21681 rows, 6 cols
-[22:28:00] Research complete
-2026-08-22 22:28:00 - INFO -     Stored 6 artifacts for 1h
-2026-08-22 22:28:00 - INFO -     ✓ PASSED in 1.58s (3 stats)
-2026-08-22 22:28:00 - INFO -
-  Running module 100 on 1h...
-[22:28:00] Loaded 21 modules: ['001', '002', '003', '004', '005', '006', '007', '008', '009', '010', '011', '012', '013', '015', '016', '017', '018', '019', '020', '021', '022']
-[22:28:00] Loaded 3 datasets
-
-============================================================
-DEPENDENCY INJECTION
-============================================================
-Module: 100
-Dataset: 1h
-Dependencies: ['005', '035', '036', '037']
-----------------------------------------
-✓ 005: 4 columns, 21681 rows
-  Columns: ['timestamp', 'trend_direction', 'trend_run_length', 'trend_persistence']
-  Has validation: True
-  Has statistics: True
-✓ 035: 2 columns, 21681 rows
-  Columns: ['timestamp', 'hurst_exponent']
-  Has validation: True
-  Has statistics: True
-✓ 036: 2 columns, 21681 rows
-  Columns: ['timestamp', 'dfa_alpha']
-  Has validation: True
-  Has statistics: True
-✓ 037: 2 columns, 21681 rows
-  Columns: ['timestamp', 'normalized_entropy']
-  Has validation: True
-  Has statistics: True
-============================================================
-[22:28:00] Injected 10 dependency features (copy) → df now has 10 columns
-2026-08-22 22:28:00 - INFO -     Injected 10 features from 4 modules
-2026-08-22 22:28:00 - INFO -     Module 100 input shape: (21681, 6)
-2026-08-22 22:28:00 - INFO -     Module 100 input columns: ['close', 'high', 'low', 'open', 'timestamp', 'volume']
-
-================================================================================
-PROJECT ATLAS
-MODULE Trend Score
-RESEARCH EXECUTION [100_1H]
-================================================================================
-[22:28:00] Loading from DataFrame: 100_1h
-[22:28:00] Loaded 21,681 rows from DataFrame (copy)
-
-------------------------------------------------------------
-  Data Validation
-------------------------------------------------------------
-[22:28:00] Validation passed
-
-------------------------------------------------------------
-  Running Computation Pipeline
-------------------------------------------------------------
-
-------------------------------------------------------------
-  Trend Score Pipeline
-------------------------------------------------------------
-[22:28:00] Step: compute_trend_score
-[22:28:00] Step 1: Computing trend score for each candle
-    Mean Trend Score               46.41
-    Sample Size                    21,681
-[22:28:04] Trend scores computed
-[22:28:04]   Completed in 4.062s
-[22:28:04] Step: statistics
-[22:28:04] Step 2: Computing statistics
-    Mean Score                     46.41
-    Median Score                   39.37
-    Std Score                      9.14
-    Trend Persistence              0.2820
-    Hurst                          0.5537
-    DFA Alpha                      0.5112
-    Normalized Entropy             0.7500
-[22:28:04] Statistics computed
-[22:28:04] Step: validate
-[22:28:04] Step 3: Validation
-
-============================================================
-TREND SCORE VALIDATION
-============================================================
-
-  ✓ All validation checks passed
-============================================================
-[22:28:04] Validation complete
-[22:28:04] Step: export
-[22:28:04] Step 4: Export
-    Artifacts                      3
-[22:28:04] Export complete
-[22:28:04] Module 100 complete
-[22:28:04] Created 'features' from feature_df
-[22:28:04] Created 'statistics' from result.statistics
-[22:28:04] Created 'report' from summary()
-[22:28:04] Created 'validation' with default values
-
-------------------------------------------------------------
-  Exporting Results
-------------------------------------------------------------
-[22:28:04] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module100\1h\trend_score_statistics.csv (1 rows)
-[22:28:04] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module100\1h\trend_score_features.csv (21,681 rows)
-[22:28:04] Text → D:\delta bot\Project_Atlas\research_results\raw\module100\1h\trend_score_report.txt (1,107 chars)
-[22:28:04] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module100\1h\features.csv (21,681 rows)
-[22:28:04] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module100\1h\statistics.csv (1 rows)
-[22:28:04] Text → D:\delta bot\Project_Atlas\research_results\raw\module100\1h\report.txt (1,111 chars)
-[22:28:04] JSON → D:\delta bot\Project_Atlas\research_results\raw\module100\1h\validation.json
-[22:28:04] Statistics → D:\delta bot\Project_Atlas\research_results\raw\module100\1h\statistics.csv
-[22:28:04] Report → D:\delta bot\Project_Atlas\research_results\raw\module100\1h\report.txt
-[22:28:04] Exported to D:\delta bot\Project_Atlas\research_results\raw\module100\1h
-
-------------------------------------------------------------
-  Summary
-------------------------------------------------------------
-============================================================
-MODULE: Trend Score
-VERSION: 1.0.0
-============================================================
-
-Dataset: 100_1h
-Status: completed
-
-Step Timing:
-  compute_trend_score  4.062s
-  statistics           0.011s
-  validate             0.004s
-  export               0.002s
-  ──────────────────────────────
-  Total pipeline       4.079s
-
-Statistics:
-  trend_score: 46.414033
-  trend_persistence: 0.281952
-  hurst: 0.553695
-  dfa_alpha: 0.511218
-  normalized_entropy: 0.749957
-  median_score: 39.365235
-  std_score: 9.135261
-  min_score: 39.365235
-  max_score: 64.365235
-  q25: 39.365235
-  q75: 54.365235
-  q90: 64.365235
-  sample_size: 21681
-  weights: {'trend': 0.25, 'hurst': 0.25, 'dfa': 0.25, 'entropy': 0.25}
-  validation_passed: True
-  export_status: complete
-  artifact_count: 3
-
-Artifacts:
-  ✓ features: DataFrame (21681 rows, 2 cols)
-  ✓ statistics: DataFrame (1 rows, 17 cols)
-  ✓ report: Text (1111 chars)
-  ✓ validation: Dict (3 keys)
-
-Data Sources:
-  market_df: 21681 rows, 6 cols (copy)
-  feature_df: 21681 rows, 2 cols (copy)
-  df (merged): 21681 rows, 16 cols
-[22:28:04] Research complete
-2026-08-22 22:28:04 - INFO -     Stored 7 artifacts for 1h
-2026-08-22 22:28:04 - INFO -     ✓ PASSED in 4.35s (15 stats)
-2026-08-22 22:28:04 - INFO -
-  Running module 103 on 1h...
-[22:28:04] Loaded 21 modules: ['001', '002', '003', '004', '005', '006', '007', '008', '009', '010', '011', '012', '013', '015', '016', '017', '018', '019', '020', '021', '022']
-[22:28:04] Loaded 3 datasets
-
-============================================================
-DEPENDENCY INJECTION
-============================================================
-Module: 103
-Dataset: 1h
-Dependencies: ['100', '102', '035', '037']
-----------------------------------------
-✓ 100: 2 columns, 21681 rows
-  Columns: ['timestamp', 'trend_score']
-  Has validation: True
-  Has statistics: True
-✓ 102: 1 columns, 21681 rows
-  Columns: ['compression_score']
-  Has validation: True
-  Has statistics: True
-✓ 035: 2 columns, 21681 rows
-  Columns: ['timestamp', 'hurst_exponent']
-  Has validation: True
-  Has statistics: True
-✓ 037: 2 columns, 21681 rows
-  Columns: ['timestamp', 'normalized_entropy']
-  Has validation: True
-  Has statistics: True
-============================================================
-[22:28:04] Injected 7 dependency features (copy) → df now has 7 columns
-2026-08-22 22:28:04 - INFO -     Injected 7 features from 4 modules
-2026-08-22 22:28:04 - INFO -     Module 103 input shape: (21681, 6)
-2026-08-22 22:28:04 - INFO -     Module 103 input columns: ['close', 'high', 'low', 'open', 'timestamp', 'volume']
-
-================================================================================
-PROJECT ATLAS
-MODULE Feature Combination Engine
-RESEARCH EXECUTION [103_1H]
-================================================================================
-[22:28:04] Loading from DataFrame: 103_1h
-[22:28:05] Loaded 21,681 rows from DataFrame (copy)
-
-------------------------------------------------------------
-  Data Validation
-------------------------------------------------------------
-[22:28:05] Validation passed
-
-------------------------------------------------------------
-  Running Computation Pipeline
-------------------------------------------------------------
-
-------------------------------------------------------------
-  Feature Combination Pipeline
-------------------------------------------------------------
-[22:28:05] Step: feature_combination
-[22:28:05] Step 1: Computing feature combination
-
-======================================================================
-MODULE 103 INPUT INSPECTION
-======================================================================
-
-market_df columns (6):
-['close', 'high', 'low', 'open', 'timestamp', 'volume']
-
-feature_df columns (7):
-['100_timestamp', 'trend_score', 'compression_score', '100_timestamp', 'hurst_exponent', '100_timestamp', 'normalized_entropy']
-
-df columns (13):
-['close', 'high', 'low', 'open', 'timestamp', 'volume', '100_timestamp', 'trend_score', 'compression_score', '100_timestamp', 'hurst_exponent', '100_timestamp', 'normalized_entropy']
-======================================================================
-
-============================================================
-FEATURE STATISTICS FOR STATE CREATION
-============================================================
-        trend_score  compression_score  hurst_exponent  normalized_entropy
-count  21681.000000       21681.000000    21681.000000        2.168100e+04
-mean      46.414033          64.282012        0.553695        7.499568e-01
-std        9.135261          13.745714        0.000000        2.220497e-16
-min       39.365235          36.655091        0.553695        7.499568e-01
-25%       39.365235          53.061161        0.553695        7.499568e-01
-50%       39.365235          63.811954        0.553695        7.499568e-01
-75%       54.365235          75.649024        0.553695        7.499568e-01
-max       64.365235          89.111262        0.553695        7.499568e-01
-============================================================
-
-BINARY CONDITION STATISTICS:
-  trend_high >= 60: 2,761 (12.7%)
-  compression_high >= 60: 12,840 (59.2%)
-  entropy_low <= 0.30: 0 (0.0%)
-  hurst_high >= 0.55: 21,681 (100.0%)
-
-============================================================
-STATE DISTRIBUTION
-============================================================
-Unique states: [ 1  5  9 13]
-Number of unique states: 4
-
-State counts:
-1      7649
-5     11271
-9      1192
-13     1569
-Name: count, dtype: int64
-============================================================
-
-========== ENGINE OUTPUT ==========
-type(result_data): <class 'atlas.modules.module103_feature_combination.engine.FeatureCombinationResult'>
-attributes: ['states', 'state_statistics', 'information_coefficient', 'ic_p_value', 'best_state', 'significant_states', 'total_states', 'sample_size', 'future_horizon', 'features_used', 'state_series', 'state_assignments']
-state_series exists
-state_series length: 21681
-0    5
-1    5
-2    5
-3    5
-4    5
-Name: state, dtype: int64
-state_assignments exists
-state_assignments length: 21671
-[5 5 5 5 5 5 5 5 5 5]
-states exists
-type(states): <class 'dict'>
-states keys: [1, 5, 9, 13]
-first state: StateResult(state=1, count=7649, mean=np.float64(0.0002773032368637499), median=np.float64(0.0005770548562773481), std=np.float64(0.01812614742069197), win_rate=np.float64(0.5181069420839325), sharpe=np.float64(0.015298520441905647), p_value=np.float64(0.18096910027380184), is_significant=np.False_)
-==================================
-    Total States                   4/16
-    Significant States             0
-    Information Coefficient        -0.0038
-[22:28:05] Feature combination computed
-[22:28:05]   Completed in 0.109s
-[22:28:05] Step: statistics
-[22:28:05] Step 2: Computing statistics
-    Predictive Power               None
-[22:28:05] Statistics computed
-[22:28:05] Step: validate
-[22:28:05] Step 3: Validation
-
-============================================================
-FEATURE COMBINATION VALIDATION
-============================================================
-
-  ✓ All validation checks passed
-============================================================
-[22:28:05] Validation complete
-[22:28:05] Step: export
-[22:28:05] Step 4: Export
-[22:28:05] Created feature artifact with timestamp and state (21681 rows)
-
-======================================================================
-MODULE 103 ARTIFACT INSPECTION
-======================================================================
-Artifacts keys:
-['features', 'state_statistics', 'statistics', 'report', 'feature_combination_report', 'validation', 'state_report', 'metadata', 'detailed_results']
-
-Feature artifact: 21681 rows, 2 columns
-Columns: ['timestamp', 'state']
-
-✓ All required artifacts present
-======================================================================
-    Artifacts                      9
-[22:28:05] Export complete
-[22:28:05] Module 103 complete
-
-------------------------------------------------------------
-  Exporting Results
-------------------------------------------------------------
-[22:28:05] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module103\1h\features.csv (21,681 rows)
-[22:28:05] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module103\1h\state_statistics.csv (4 rows)
-[22:28:05] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module103\1h\statistics.csv (1 rows)
-[22:28:05] Text → D:\delta bot\Project_Atlas\research_results\raw\module103\1h\report.txt (1,197 chars)
-[22:28:05] Text → D:\delta bot\Project_Atlas\research_results\raw\module103\1h\feature_combination_report.txt (1,197 chars)
-[22:28:05] Text → D:\delta bot\Project_Atlas\research_results\raw\module103\1h\state_report.txt (643 chars)
-[22:28:05] JSON → D:\delta bot\Project_Atlas\research_results\raw\module103\1h\detailed_results.json
-[22:28:05] JSON → D:\delta bot\Project_Atlas\research_results\raw\module103\1h\metadata.json
-[22:28:05] Statistics → D:\delta bot\Project_Atlas\research_results\raw\module103\1h\statistics.csv
-[22:28:05] Report → D:\delta bot\Project_Atlas\research_results\raw\module103\1h\report.txt
-[22:28:05] Exported to D:\delta bot\Project_Atlas\research_results\raw\module103\1h
-
-------------------------------------------------------------
-  Summary
-------------------------------------------------------------
-============================================================
-MODULE: Feature Combination Engine
-VERSION: 1.0.0
-============================================================
-
-Dataset: 103_1h
-Status: completed
-
-Step Timing:
-  feature_combination  0.109s
-  statistics           0.002s
-  validate             0.007s
-  export               0.014s
-  ──────────────────────────────
-  Total pipeline       0.133s
-
-Statistics:
-  total_states: 4
-  significant_states: 0
-  best_state: 9
-  information_coefficient: -0.003824
-  best_state_mean: 0.082637
-  best_state_win_rate: 52.013423
-  best_state_sharpe: 0.045945
-  best_state_samples: 1192
-  predictive_power: None
-  sample_size: 21671
-  future_horizon: 10
-  features_used: ['trend_score', 'compression_score', 'hurst_exponent', 'normalized_entropy']
-  validation_passed: True
-  export_status: complete
-  artifact_count: 9
-
-Artifacts:
-  ✓ features: DataFrame (21681 rows, 2 cols)
-  ✓ statistics: DataFrame (1 rows, 12 cols)
-  ✓ report: Text (1197 chars)
-  ✓ validation: bool
-
-Data Sources:
-  market_df: 21681 rows, 6 cols (copy)
-  feature_df: 21681 rows, 7 cols (copy)
-  df (merged): 21681 rows, 13 cols
-[22:28:05] Research complete
-2026-08-22 22:28:05 - INFO -     Stored 9 artifacts for 1h
-2026-08-22 22:28:05 - INFO -     ✓ PASSED in 0.29s (10 stats)
-2026-08-22 22:28:05 - INFO -
-  Running module 108 on 1h...
-
-============================================================
-DEPENDENCY INJECTION
-============================================================
-Module: 108
-Dataset: 1h
-Dependencies: ['103']
-----------------------------------------
-✓ 103: 2 columns, 21681 rows
-  Columns: ['timestamp', 'state']
-  Has validation: True
-  Has statistics: True
-============================================================
-[22:28:05] Injected 2 dependency features (copy) → df now has 2 columns
-2026-08-22 22:28:05 - INFO -     Injected 2 features from 1 modules
-2026-08-22 22:28:05 - INFO -     Module 108 input shape: (21681, 6)
-2026-08-22 22:28:05 - INFO -     Module 108 input columns: ['close', 'high', 'low', 'open', 'timestamp', 'volume']
-[22:28:05] Loading from DataFrame: 108_1h
-[22:28:05] Loaded 21,681 rows from DataFrame (copy)
-
-  ✓ All validations passed
-  ✓ Exported results to D:\delta bot\Project_Atlas\research_results\raw\module108\1h
-2026-08-22 22:28:31 - INFO -     Stored 9 artifacts for 1h
-2026-08-22 22:28:31 - INFO -     ✓ PASSED in 26.53s (10 stats)
-2026-08-22 22:28:31 - INFO -
-  Running module 111 on 1h...
-[22:28:31] Loaded 21 modules: ['001', '002', '003', '004', '005', '006', '007', '008', '009', '010', '011', '012', '013', '015', '016', '017', '018', '019', '020', '021', '022']
-[22:28:31] Loaded 3 datasets
-
-============================================================
-DEPENDENCY INJECTION
-============================================================
-Module: 111
-Dataset: 1h
-Dependencies: ['100', '102', '035', '037', '108']
-----------------------------------------
-✓ 100: 2 columns, 21681 rows
-  Columns: ['timestamp', 'trend_score']
-  Has validation: True
-  Has statistics: True
-✓ 102: 1 columns, 21681 rows
-  Columns: ['compression_score']
-  Has validation: True
-  Has statistics: True
-✓ 035: 2 columns, 21681 rows
-  Columns: ['timestamp', 'hurst_exponent']
-  Has validation: True
-  Has statistics: True
-✓ 037: 2 columns, 21681 rows
-  Columns: ['timestamp', 'normalized_entropy']
-  Has validation: True
-  Has statistics: True
-✓ 108: 7 columns, 21681 rows
-  Columns: ['timestamp', 'state', 'breakout_1', 'breakout_3', 'breakout_5']...
-  Has validation: True
-  Has statistics: True
-============================================================
-[22:28:31] Injected 14 dependency features (copy) → df now has 14 columns
-2026-08-22 22:28:31 - INFO -     Injected 14 features from 5 modules
-2026-08-22 22:28:31 - INFO -     Target requirements for Module 111: ['future_breakout']
-2026-08-22 22:28:37 - INFO -     Verified required targets for Module 111: ['future_breakout']
-2026-08-22 22:28:37 - INFO -     Module 111 input shape: (21681, 7)
-2026-08-22 22:28:37 - INFO -     Module 111 input columns: ['close', 'high', 'low', 'open', 'timestamp', 'volume', 'future_breakout']
-
-================================================================================
-PROJECT ATLAS
-MODULE Monte Carlo Validation
-RESEARCH EXECUTION [111_1H]
-================================================================================
-[22:28:37] Loading from DataFrame: 111_1h
-[22:28:37] Loaded 21,681 rows from DataFrame (copy)
-
-------------------------------------------------------------
-  Data Validation
-------------------------------------------------------------
-[22:28:37] Validation passed
-
-------------------------------------------------------------
-  Running Computation Pipeline
-------------------------------------------------------------
-
-------------------------------------------------------------
-  Monte Carlo Validation Pipeline
-------------------------------------------------------------
-[22:28:37] Step: monte_carlo_validation
-[22:28:37] Step 1: Computing Monte Carlo validation
-[22:28:37] Computation failed: 'list' argument must have no negative elements
-2026-08-22 22:28:37 - ERROR -     ✗ FAILED: 'list' argument must have no negative elements
-2026-08-22 22:28:37 - ERROR - Traceback (most recent call last):
-  File "D:\delta bot\Project_Atlas\atlas\research\research_runner.py", line 282, in run
-    result = self.module_loader.run_module(
-        module,
-    ...<2 lines>...
-        output_dir=module_output_dir
-    )
-  File "D:\delta bot\Project_Atlas\atlas\research\module_loader.py", line 147, in run_module
-    return module.run_dataframe(df, dataset_id=dataset_id, output_dir=output_dir)
-           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\delta bot\Project_Atlas\atlas\modules\module111_monte_carlo_validation\module.py", line 221, in run_dataframe
-    return super().run_dataframe(df, dataset_id, output_dir)
-           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\delta bot\Project_Atlas\atlas\core\base_research_module.py", line 590, in run_dataframe
-    return self._execute_workflow(output_dir)
-           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
-  File "D:\delta bot\Project_Atlas\atlas\core\base_research_module.py", line 604, in _execute_workflow
-    results = self.compute()
-  File "D:\delta bot\Project_Atlas\atlas\modules\module111_monte_carlo_validation\module.py", line 212, in compute
-    results = self.execute_pipeline()
-  File "D:\delta bot\Project_Atlas\atlas\core\base_research_module.py", line 323, in execute_pipeline
-    result = step()
-  File "D:\delta bot\Project_Atlas\atlas\modules\module111_monte_carlo_validation\module.py", line 136, in _compute_validation
-    self.result_data = self.engine.compute(
-                       ~~~~~~~~~~~~~~~~~~~^
-        X=prepared["X"],
-        ^^^^^^^^^^^^^^^^
-        y=prepared["y"],
-        ^^^^^^^^^^^^^^^^
-        price_series=prepared["price_series"],
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "D:\delta bot\Project_Atlas\atlas\modules\module111_monte_carlo_validation\engine.py", line 1248, in compute
-    observed_score = self.compute_score(
-        X,
-        y,
-    )
-  File "D:\delta bot\Project_Atlas\atlas\modules\module111_monte_carlo_validation\engine.py", line 233, in compute_score
-    cv = self._get_cv(y, cv_folds)
-  File "D:\delta bot\Project_Atlas\atlas\modules\module111_monte_carlo_validation\engine.py", line 166, in _get_cv
-    class_counts = np.bincount(y.astype(int))
-ValueError: 'list' argument must have no negative elements
-
-2026-08-22 22:28:37 - INFO -
-============================================================
-2026-08-22 22:28:37 - INFO - PROCESSING DATASET: 4h
-2026-08-22 22:28:37 - INFO - ============================================================
-2026-08-22 22:28:37 - INFO -
-  Running module 005 on 4h...
-[22:28:37] Loaded 21 modules: ['001', '002', '003', '004', '005', '006', '007', '008', '009', '010', '011', '012', '013', '015', '016', '017', '018', '019', '020', '021', '022']
-[22:28:38] Loaded 3 datasets
-2026-08-22 22:28:38 - INFO -     Module 005 input shape: (5421, 6)
-2026-08-22 22:28:38 - INFO -     Module 005 input columns: ['close', 'high', 'low', 'open', 'timestamp', 'volume']
-
-================================================================================
-PROJECT ATLAS
-MODULE TrendPersistence
-RESEARCH EXECUTION [005_4H]
-================================================================================
-[22:28:38] Loading from DataFrame: 005_4h
-[22:28:38] Loaded 5,421 rows from DataFrame (copy)
-
-------------------------------------------------------------
-  Data Validation
-------------------------------------------------------------
-[22:28:38] Validation passed
-
-------------------------------------------------------------
-  Running Computation Pipeline
-------------------------------------------------------------
-[22:28:38] Step: returns
-[22:28:38] Calculating log returns from close prices
-    Return observations            5,420
-    Mean return                    0.00005079
-    Std return                     0.01013919
-[22:28:38] Step: trend_direction
-[22:28:38] Determining trend direction for each candle
-    Up candles                     2,699 (49.8%)
-    Down candles                   2,599 (48.0%)
-    Flat candles                   122 (2.3%)
-[22:28:38] Step: trend_segments
-[22:28:38] Segmenting consecutive trends (min length=3)
-    Total segments                 639
-    Up segments                    338
-    Down segments                  301
-    Mean length                    3.74
-    Max length                     11
-[22:28:38] Step: summary
-[22:28:38] Computing trend summary statistics
-[22:28:38]
-Trend Summary (min_length=3):
-[22:28:38]   Total segments: 639
-[22:28:38]   Up trends: 338 (mean: 3.76)
-[22:28:38]   Down trends: 301 (mean: 3.72)
-[22:28:38]   Overall mean: 3.74
-[22:28:38]   Overall median: 3.0
-[22:28:38]   Maximum: 11
-[22:28:38]   Expected under H0: 2.00
-[22:28:38]   Ratio: 1.87x
-[22:28:38]
-  Observed trends 1.9x longer than expected
-[22:28:38]   Evidence AGAINST H0 - trends exhibit persistence
-[22:28:40] Phase 1 complete: Trend segmentation finished
-[22:28:40] Created 'statistics' from result.statistics
-[22:28:40] Created 'report' from summary()
-[22:28:40] Created 'validation' with default values
-
-------------------------------------------------------------
-  Exporting Results
-------------------------------------------------------------
-[22:28:40] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module005\4h\trend_segments.csv (639 rows)
-[22:28:40] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module005\4h\trend_summary.csv (12 rows)
-[22:28:40] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module005\4h\features.csv (5,421 rows)
-[22:28:40] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module005\4h\statistics.csv (1 rows)
-[22:28:40] Text → D:\delta bot\Project_Atlas\research_results\raw\module005\4h\report.txt (1,216 chars)
-[22:28:40] JSON → D:\delta bot\Project_Atlas\research_results\raw\module005\4h\validation.json
-[22:28:40] Statistics → D:\delta bot\Project_Atlas\research_results\raw\module005\4h\statistics.csv
-[22:28:40] Report → D:\delta bot\Project_Atlas\research_results\raw\module005\4h\report.txt
-[22:28:40] Exported to D:\delta bot\Project_Atlas\research_results\raw\module005\4h
-
-------------------------------------------------------------
-  Summary
-------------------------------------------------------------
-============================================================
-MODULE: TrendPersistence
-VERSION: 0.1.0-phase1
-============================================================
-
-Dataset: 005_4h
-Status: completed
-
-Statistics:
-  total_segments: 639
-  mean_trend_length: 3.740219
-  median_trend_length: 3.000000
-  max_trend_length: 11
-  min_trend_length: 3
-  std_trend_length: 1.130149
-  up_trend_count: 338
-  up_mean_length: 3.760355
-  up_median_length: 3.000000
-  up_max_length: 10
-  down_trend_count: 301
-  down_mean_length: 3.717608
-  down_median_length: 3.000000
-  down_max_length: 11
-  length_p25: 3.000000
-  length_p50: 3.000000
-  length_p75: 4.000000
-  length_p90: 5.000000
-  length_p95: 6.000000
-  length_p99: 8.000000
-  expected_length_under_h0: 2.001426
-  observed_vs_expected_ratio: 1.868778
-  return_observations: 5420
-  return_mean: 0.000051
-  return_std: 0.010139
-  up_candles: 2699
-  down_candles: 2599
-  flat_candles: 122
-  up_segments: 338
-  down_segments: 301
-
-Artifacts:
-  ✓ features: DataFrame (5421 rows, 4 cols)
-  ✓ statistics: DataFrame (1 rows, 30 cols)
-  ✓ report: Text (1216 chars)
-  ✓ validation: Dict (3 keys)
-
-Data Sources:
-  market_df: 5421 rows, 6 cols (copy)
-  feature_df: None
-  df (merged): 5421 rows, 6 cols
-[22:28:40] Research complete
-2026-08-22 22:28:40 - INFO -     Stored 6 artifacts for 4h
-2026-08-22 22:28:40 - INFO -     ✓ PASSED in 2.58s (30 stats)
-2026-08-22 22:28:40 - INFO -
-  Running module 035 on 4h...
-[22:28:40] Loaded 21 modules: ['001', '002', '003', '004', '005', '006', '007', '008', '009', '010', '011', '012', '013', '015', '016', '017', '018', '019', '020', '021', '022']
-[22:28:40] Loaded 3 datasets
-2026-08-22 22:28:40 - INFO -     Module 035 input shape: (5421, 6)
-2026-08-22 22:28:40 - INFO -     Module 035 input columns: ['close', 'high', 'low', 'open', 'timestamp', 'volume']
-
-================================================================================
-PROJECT ATLAS
-MODULE Hurst Exponent
-RESEARCH EXECUTION [035_4H]
-================================================================================
-[22:28:40] Loading from DataFrame: 035_4h
-[22:28:40] Loaded 5,421 rows from DataFrame (copy)
-
-------------------------------------------------------------
-  Data Validation
-------------------------------------------------------------
-[22:28:40] Validation passed
-
-------------------------------------------------------------
-  Running Computation Pipeline
-------------------------------------------------------------
-
-------------------------------------------------------------
-  Hurst Exponent Pipeline
-------------------------------------------------------------
-[22:28:40] Step: hurst
-[22:28:40] Step 1: Computing Hurst exponent on log returns
-    Series type                    log_returns
-    Hurst exponent                 0.5727
-    Sample size                    5,420
-    Windows                        20
-[22:28:40] Hurst exponent computed
-[22:28:40]   Completed in 0.145s
-[22:28:40] Step: statistics
-[22:28:40] Step 2: Computing statistics
-    Regime                         Persistent
-    R-squared                      0.9991
-[22:28:40] Statistics computed
-[22:28:40] Step: validate
-[22:28:40] Step 3: Validation
-
-============================================================
-HURST VALIDATION
-============================================================
-
-  ✓ All validation checks passed
-============================================================
-[22:28:40] Validation complete
-[22:28:40] Step: export
-[22:28:40] Step 4: Export
-    Artifacts                      4
-[22:28:40] Export complete
-[22:28:40] Module 035 complete
-[22:28:40] Created 'statistics' from result.statistics
-[22:28:40] Created 'report' from summary()
-[22:28:40] Created 'validation' with default values
-
-------------------------------------------------------------
-  Exporting Results
-------------------------------------------------------------
-[22:28:40] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module035\4h\hurst_statistics.csv (1 rows)
-[22:28:40] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module035\4h\hurst_results.csv (20 rows)
-[22:28:40] Text → D:\delta bot\Project_Atlas\research_results\raw\module035\4h\hurst_report.txt (983 chars)
-[22:28:40] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module035\4h\features.csv (5,421 rows)
-[22:28:40] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module035\4h\statistics.csv (1 rows)
-[22:28:40] Text → D:\delta bot\Project_Atlas\research_results\raw\module035\4h\report.txt (1,036 chars)
-[22:28:40] JSON → D:\delta bot\Project_Atlas\research_results\raw\module035\4h\validation.json
-[22:28:40] Statistics → D:\delta bot\Project_Atlas\research_results\raw\module035\4h\statistics.csv
-[22:28:40] Report → D:\delta bot\Project_Atlas\research_results\raw\module035\4h\report.txt
-[22:28:40] Exported to D:\delta bot\Project_Atlas\research_results\raw\module035\4h
-
-------------------------------------------------------------
-  Summary
-------------------------------------------------------------
-============================================================
-MODULE: Hurst Exponent
-VERSION: 1.0.0
-============================================================
-
-Dataset: 035_4h
-Status: completed
-
-Step Timing:
-  hurst                0.145s
-  statistics           0.002s
-  validate             0.005s
-  export               0.006s
-  ──────────────────────────────
-  Total pipeline       0.158s
-
-Statistics:
-  hurst_exponent: 0.572744
-  sample_size: 5420
-  series_type: log_returns
-  slope: 0.572744
-  intercept: -0.215642
-  expected_random: 0.500000
-  deviation_from_random: 0.072700
-  regime: Persistent
-  is_persistent: True
-  is_mean_reverting: False
-  is_random_walk: False
-  r_squared: 0.999100
-  num_windows: 20
-  validation_passed: True
-  export_status: complete
-  artifact_count: 4
-
-Artifacts:
-  ✓ features: DataFrame (5421 rows, 2 cols)
-  ✓ statistics: DataFrame (1 rows, 16 cols)
-  ✓ report: Text (1036 chars)
-  ✓ validation: Dict (3 keys)
-
-Data Sources:
-  market_df: 5421 rows, 6 cols (copy)
-  feature_df: None
-  df (merged): 5421 rows, 6 cols
-[22:28:40] Research complete
-2026-08-22 22:28:40 - INFO -     Stored 7 artifacts for 4h
-2026-08-22 22:28:40 - INFO -     ✓ PASSED in 0.25s (13 stats)
-2026-08-22 22:28:40 - INFO -
-  Running module 036 on 4h...
-[22:28:40] Loaded 21 modules: ['001', '002', '003', '004', '005', '006', '007', '008', '009', '010', '011', '012', '013', '015', '016', '017', '018', '019', '020', '021', '022']
-[22:28:40] Loaded 3 datasets
-2026-08-22 22:28:40 - INFO -     Module 036 input shape: (5421, 6)
-2026-08-22 22:28:40 - INFO -     Module 036 input columns: ['close', 'high', 'low', 'open', 'timestamp', 'volume']
-
-================================================================================
-PROJECT ATLAS
-MODULE DFA Analysis
-RESEARCH EXECUTION [036_4H]
-================================================================================
-[22:28:40] Loading from DataFrame: 036_4h
-[22:28:40] Loaded 5,421 rows from DataFrame (copy)
-
-------------------------------------------------------------
-  Data Validation
-------------------------------------------------------------
-[22:28:40] Validation passed
-
-------------------------------------------------------------
-  Running Computation Pipeline
-------------------------------------------------------------
-
-------------------------------------------------------------
-  DFA Pipeline
-------------------------------------------------------------
-[22:28:40] Step: dfa
-[22:28:40] Step 1: Computing DFA on log returns
-    Series type                    log_returns
-    DFA Alpha                      0.5342
-    Sample size                    5,420
-    Windows                        20
-[22:28:41] DFA computed
-[22:28:41]   Completed in 0.286s
-[22:28:41] Step: statistics
-[22:28:41] Step 2: Computing statistics
-    Regime                         Random Walk
-    R-squared                      0.9951
-[22:28:41] Statistics computed
-[22:28:41] Step: validate
-[22:28:41] Step 3: Validation
-
-============================================================
-DFA VALIDATION
-============================================================
-
-  ✓ All validation checks passed
-============================================================
-[22:28:41] Validation complete
-[22:28:41] Step: export
-[22:28:41] Step 4: Export
-    Artifacts                      4
-[22:28:41] Export complete
-[22:28:41] Module 036 complete
-[22:28:41] Created 'statistics' from result.statistics
-[22:28:41] Created 'report' from summary()
-[22:28:41] Created 'validation' with default values
-
-------------------------------------------------------------
-  Exporting Results
-------------------------------------------------------------
-[22:28:41] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module036\4h\dfa_statistics.csv (1 rows)
-[22:28:41] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module036\4h\dfa_results.csv (20 rows)
-[22:28:41] Text → D:\delta bot\Project_Atlas\research_results\raw\module036\4h\dfa_report.txt (935 chars)
-[22:28:41] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module036\4h\features.csv (5,421 rows)
-[22:28:41] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module036\4h\statistics.csv (1 rows)
-[22:28:41] Text → D:\delta bot\Project_Atlas\research_results\raw\module036\4h\report.txt (1,026 chars)
-[22:28:41] JSON → D:\delta bot\Project_Atlas\research_results\raw\module036\4h\validation.json
-[22:28:41] Statistics → D:\delta bot\Project_Atlas\research_results\raw\module036\4h\statistics.csv
-[22:28:41] Report → D:\delta bot\Project_Atlas\research_results\raw\module036\4h\report.txt
-[22:28:41] Exported to D:\delta bot\Project_Atlas\research_results\raw\module036\4h
-
-------------------------------------------------------------
-  Summary
-------------------------------------------------------------
-============================================================
-MODULE: DFA Analysis
-VERSION: 1.0.0
-============================================================
-
-Dataset: 036_4h
-Status: completed
-
-Step Timing:
-  dfa                  0.286s
-  statistics           0.002s
-  validate             0.005s
-  export               0.008s
-  ──────────────────────────────
-  Total pipeline       0.300s
-
-Statistics:
-  dfa_alpha: 0.534202
-  sample_size: 5420
-  series_type: log_returns
-  alpha: 0.534202
-  slope: 0.534202
-  intercept: -6.110769
-  expected_random: 0.500000
-  deviation_from_random: 0.034200
-  regime: Random Walk
-  regime_detail: No long-range dependence detected
-  r_squared: 0.995100
-  num_windows: 20
-  validation_passed: True
-  export_status: complete
-  artifact_count: 4
-
-Artifacts:
-  ✓ features: DataFrame (5421 rows, 2 cols)
-  ✓ statistics: DataFrame (1 rows, 15 cols)
-  ✓ report: Text (1026 chars)
-  ✓ validation: Dict (3 keys)
-
-Data Sources:
-  market_df: 5421 rows, 6 cols (copy)
-  feature_df: None
-  df (merged): 5421 rows, 6 cols
-[22:28:41] Research complete
-2026-08-22 22:28:41 - INFO -     Stored 7 artifacts for 4h
-2026-08-22 22:28:41 - INFO -     ✓ PASSED in 0.38s (11 stats)
-2026-08-22 22:28:41 - INFO -
-  Running module 037 on 4h...
-[22:28:41] Loaded 21 modules: ['001', '002', '003', '004', '005', '006', '007', '008', '009', '010', '011', '012', '013', '015', '016', '017', '018', '019', '020', '021', '022']
-[22:28:41] Loaded 3 datasets
-2026-08-22 22:28:41 - INFO -     Module 037 input shape: (5421, 6)
-2026-08-22 22:28:41 - INFO -     Module 037 input columns: ['close', 'high', 'low', 'open', 'timestamp', 'volume']
-
-================================================================================
-PROJECT ATLAS
-MODULE Entropy Analysis
-RESEARCH EXECUTION [037_4H]
-================================================================================
-[22:28:41] Loading from DataFrame: 037_4h
-[22:28:41] Loaded 5,421 rows from DataFrame (copy)
-
-------------------------------------------------------------
-  Data Validation
-------------------------------------------------------------
-[22:28:41] Validation passed
-
-------------------------------------------------------------
-  Running Computation Pipeline
-------------------------------------------------------------
-
-------------------------------------------------------------
-  Entropy Analysis Pipeline
-------------------------------------------------------------
-[22:28:41] Step: entropy
-[22:28:41] Step 1: Computing Shannon entropy on log returns
-    Entropy                        5.1822 bits
-    Normalized                     0.7657
-    Max entropy                    6.7682 bits
-    Bins                           157
-[22:28:41] Entropy computed
-[22:28:41] Step: statistics
-[22:28:41] Step 2: Computing statistics
-    Regime                         Moderate Structure
-    Populated bins                 109/157
-[22:28:41] Statistics computed
-[22:28:41] Step: validate
-[22:28:41] Step 3: Validation
-
-============================================================
-ENTROPY VALIDATION
-============================================================
-
-  ✓ All validation checks passed
-============================================================
-[22:28:41] Validation complete
-[22:28:41] Step: export
-[22:28:41] Step 4: Export
-    Artifacts                      4
-[22:28:41] Export complete
-[22:28:41] Module 037 complete
-[22:28:41] Created 'statistics' from result.statistics
-[22:28:41] Created 'report' from summary()
-[22:28:41] Created 'validation' with default values
-
-------------------------------------------------------------
-  Exporting Results
-------------------------------------------------------------
-[22:28:41] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module037\4h\entropy_statistics.csv (1 rows)
-[22:28:41] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module037\4h\entropy_results.csv (157 rows)
-[22:28:41] Text → D:\delta bot\Project_Atlas\research_results\raw\module037\4h\entropy_report.txt (944 chars)
-[22:28:41] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module037\4h\features.csv (5,421 rows)
-[22:28:41] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module037\4h\statistics.csv (1 rows)
-[22:28:41] Text → D:\delta bot\Project_Atlas\research_results\raw\module037\4h\report.txt (976 chars)
-[22:28:41] JSON → D:\delta bot\Project_Atlas\research_results\raw\module037\4h\validation.json
-[22:28:41] Statistics → D:\delta bot\Project_Atlas\research_results\raw\module037\4h\statistics.csv
-[22:28:41] Report → D:\delta bot\Project_Atlas\research_results\raw\module037\4h\report.txt
-[22:28:41] Exported to D:\delta bot\Project_Atlas\research_results\raw\module037\4h
-
-------------------------------------------------------------
-  Summary
-------------------------------------------------------------
-============================================================
-MODULE: Entropy Analysis
-VERSION: 1.0.0
-============================================================
-
-Dataset: 037_4h
-Status: completed
-
-Step Timing:
-  entropy              0.006s
-  statistics           0.002s
-  validate             0.004s
-  export               0.006s
-  ──────────────────────────────
-  Total pipeline       0.018s
-
-Statistics:
-  entropy: 5.182152
-  normalized_entropy: 0.765664
-  sample_size: 5420
-  maximum_entropy: 6.768184
-  series_type: log_returns
-  regime: Moderate Structure
-  regime_detail: Returns show moderate predictability
-  num_bins: 157
-  num_nonzero_bins: 109
-  validation_passed: True
-  export_status: complete
-  artifact_count: 4
-
-Artifacts:
-  ✓ features: DataFrame (5421 rows, 2 cols)
-  ✓ statistics: DataFrame (1 rows, 12 cols)
-  ✓ report: Text (976 chars)
-  ✓ validation: Dict (3 keys)
-
-Data Sources:
-  market_df: 5421 rows, 6 cols (copy)
-  feature_df: None
-  df (merged): 5421 rows, 6 cols
-[22:28:41] Research complete
-2026-08-22 22:28:41 - INFO -     Stored 7 artifacts for 4h
-2026-08-22 22:28:41 - INFO -     ✓ PASSED in 0.11s (8 stats)
-2026-08-22 22:28:41 - INFO -
-  Running module 102 on 4h...
-[22:28:41] Loaded 21 modules: ['001', '002', '003', '004', '005', '006', '007', '008', '009', '010', '011', '012', '013', '015', '016', '017', '018', '019', '020', '021', '022']
-[22:28:41] Loaded 3 datasets
-2026-08-22 22:28:41 - INFO -     Module 102 input shape: (5421, 6)
-2026-08-22 22:28:41 - INFO -     Module 102 input columns: ['close', 'high', 'low', 'open', 'timestamp', 'volume']
-
-================================================================================
-PROJECT ATLAS
-MODULE Composite Compression Score
-RESEARCH EXECUTION [102_4H]
-================================================================================
-[22:28:41] Loading from DataFrame: 102_4h
-[22:28:41] Loaded 5,421 rows from DataFrame (copy)
-
-------------------------------------------------------------
-  Data Validation
-------------------------------------------------------------
-[22:28:41] Validation passed
-
-------------------------------------------------------------
-  Running Computation Pipeline
-------------------------------------------------------------
-
-------------------------------------------------------------
-  Compression Score Pipeline
-------------------------------------------------------------
-[22:28:41] Step: compression_score
-[22:28:41] Step 1: Computing composite compression score for each row
-[22:28:41] Computing metrics from OHLCV data
-    Mean Compression Score         61.28/100
-    Weights                        {'atr': 0.25, 'std': 0.25, 'entropy': 0.25, 'range': 0.25}
-[22:28:41] Compression scores computed
-[22:28:41]   Completed in 0.328s
-[22:28:41] Step: statistics
-[22:28:41] Step 2: Computing statistics
-    Mean                           61.28
-    Median                         61.39
-[22:28:41] Statistics computed
-[22:28:41] Step: validate
-[22:28:41] Step 3: Validation
-
-============================================================
-COMPRESSION SCORE VALIDATION
-============================================================
-
-  ✓ All validation checks passed
-============================================================
-[22:28:41] Validation complete
-[22:28:41] Step: export
-[22:28:41] Step 4: Export
-[22:28:41] Exported compression_score features (5421 rows)
-    Artifacts                      3
-[22:28:41] Export complete
-[22:28:41] Module 102 complete
-[22:28:41] Created 'statistics' from result.statistics
-[22:28:41] Created 'report' from summary()
-[22:28:41] Created 'validation' with default values
-
-------------------------------------------------------------
-  Exporting Results
-------------------------------------------------------------
-[22:28:41] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module102\4h\compression_score_statistics.csv (1 rows)
-[22:28:41] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module102\4h\features.csv (5,421 rows)
-[22:28:41] Text → D:\delta bot\Project_Atlas\research_results\raw\module102\4h\compression_score_report.txt (872 chars)
-[22:28:41] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module102\4h\statistics.csv (1 rows)
-[22:28:41] Text → D:\delta bot\Project_Atlas\research_results\raw\module102\4h\report.txt (838 chars)
-[22:28:41] JSON → D:\delta bot\Project_Atlas\research_results\raw\module102\4h\validation.json
-[22:28:41] Statistics → D:\delta bot\Project_Atlas\research_results\raw\module102\4h\statistics.csv
-[22:28:41] Report → D:\delta bot\Project_Atlas\research_results\raw\module102\4h\report.txt
-[22:28:41] Exported to D:\delta bot\Project_Atlas\research_results\raw\module102\4h
-
-------------------------------------------------------------
-  Summary
-------------------------------------------------------------
-============================================================
-MODULE: Composite Compression Score
-VERSION: 1.0.0
-============================================================
-
-Dataset: 102_4h
-Status: completed
-
-Step Timing:
-  compression_score    0.328s
-  statistics           0.003s
-  validate             0.005s
-  export               0.003s
-  ──────────────────────────────
-  Total pipeline       0.339s
-
-Statistics:
-  compression_score: 61.276881
-  weights: {'atr': 0.25, 'std': 0.25, 'entropy': 0.25, 'range': 0.25}
-  validation_passed: True
-  export_status: complete
-  artifact_count: 3
-
-Artifacts:
-  ✓ features: DataFrame (5421 rows, 1 cols)
-  ✓ statistics: DataFrame (1 rows, 5 cols)
-  ✓ report: Text (838 chars)
-  ✓ validation: Dict (3 keys)
-
-Data Sources:
-  market_df: 5421 rows, 6 cols (copy)
-  feature_df: None
-  df (merged): 5421 rows, 6 cols
-[22:28:41] Research complete
-2026-08-22 22:28:41 - INFO -     Stored 6 artifacts for 4h
-2026-08-22 22:28:41 - INFO -     ✓ PASSED in 0.41s (3 stats)
-2026-08-22 22:28:41 - INFO -
-  Running module 100 on 4h...
-[22:28:41] Loaded 21 modules: ['001', '002', '003', '004', '005', '006', '007', '008', '009', '010', '011', '012', '013', '015', '016', '017', '018', '019', '020', '021', '022']
-[22:28:41] Loaded 3 datasets
-
-============================================================
-DEPENDENCY INJECTION
-============================================================
-Module: 100
-Dataset: 4h
-Dependencies: ['005', '035', '036', '037']
-----------------------------------------
-✓ 005: 4 columns, 5421 rows
-  Columns: ['timestamp', 'trend_direction', 'trend_run_length', 'trend_persistence']
-  Has validation: True
-  Has statistics: True
-✓ 035: 2 columns, 5421 rows
-  Columns: ['timestamp', 'hurst_exponent']
-  Has validation: True
-  Has statistics: True
-✓ 036: 2 columns, 5421 rows
-  Columns: ['timestamp', 'dfa_alpha']
-  Has validation: True
-  Has statistics: True
-✓ 037: 2 columns, 5421 rows
-  Columns: ['timestamp', 'normalized_entropy']
-  Has validation: True
-  Has statistics: True
-============================================================
-[22:28:41] Injected 10 dependency features (copy) → df now has 10 columns
-2026-08-22 22:28:41 - INFO -     Injected 10 features from 4 modules
-2026-08-22 22:28:41 - INFO -     Module 100 input shape: (5421, 6)
-2026-08-22 22:28:41 - INFO -     Module 100 input columns: ['close', 'high', 'low', 'open', 'timestamp', 'volume']
-
-================================================================================
-PROJECT ATLAS
-MODULE Trend Score
-RESEARCH EXECUTION [100_4H]
-================================================================================
-[22:28:41] Loading from DataFrame: 100_4h
-[22:28:41] Loaded 5,421 rows from DataFrame (copy)
-
-------------------------------------------------------------
-  Data Validation
-------------------------------------------------------------
-[22:28:41] Validation passed
-
-------------------------------------------------------------
-  Running Computation Pipeline
-------------------------------------------------------------
-
-------------------------------------------------------------
-  Trend Score Pipeline
-------------------------------------------------------------
-[22:28:41] Step: compute_trend_score
-[22:28:41] Step 1: Computing trend score for each candle
-    Mean Trend Score               51.21
-    Sample Size                    5,421
-[22:28:42] Trend scores computed
-[22:28:42]   Completed in 0.931s
-[22:28:42] Step: statistics
-[22:28:42] Step 2: Computing statistics
-    Mean Score                     51.21
-    Median Score                   44.23
-    Std Score                      9.13
-    Trend Persistence              0.2794
-    Hurst                          0.5727
-    DFA Alpha                      0.5342
-    Normalized Entropy             0.7657
-[22:28:42] Statistics computed
-[22:28:42] Step: validate
-[22:28:42] Step 3: Validation
-
-============================================================
-TREND SCORE VALIDATION
-============================================================
-
-  ✓ All validation checks passed
-============================================================
-[22:28:42] Validation complete
-[22:28:42] Step: export
-[22:28:42] Step 4: Export
-    Artifacts                      3
-[22:28:42] Export complete
-[22:28:42] Module 100 complete
-[22:28:42] Created 'features' from feature_df
-[22:28:42] Created 'statistics' from result.statistics
-[22:28:42] Created 'report' from summary()
-[22:28:42] Created 'validation' with default values
-
-------------------------------------------------------------
-  Exporting Results
-------------------------------------------------------------
-[22:28:42] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module100\4h\trend_score_statistics.csv (1 rows)
-[22:28:42] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module100\4h\trend_score_features.csv (5,421 rows)
-[22:28:42] Text → D:\delta bot\Project_Atlas\research_results\raw\module100\4h\trend_score_report.txt (1,106 chars)
-[22:28:42] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module100\4h\features.csv (5,421 rows)
-[22:28:42] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module100\4h\statistics.csv (1 rows)
-[22:28:42] Text → D:\delta bot\Project_Atlas\research_results\raw\module100\4h\report.txt (1,106 chars)
-[22:28:42] JSON → D:\delta bot\Project_Atlas\research_results\raw\module100\4h\validation.json
-[22:28:42] Statistics → D:\delta bot\Project_Atlas\research_results\raw\module100\4h\statistics.csv
-[22:28:42] Report → D:\delta bot\Project_Atlas\research_results\raw\module100\4h\report.txt
-[22:28:42] Exported to D:\delta bot\Project_Atlas\research_results\raw\module100\4h
-
-------------------------------------------------------------
-  Summary
-------------------------------------------------------------
-============================================================
-MODULE: Trend Score
-VERSION: 1.0.0
-============================================================
-
-Dataset: 100_4h
-Status: completed
-
-Step Timing:
-  compute_trend_score  0.931s
-  statistics           0.015s
-  validate             0.005s
-  export               0.003s
-  ──────────────────────────────
-  Total pipeline       0.953s
-
-Statistics:
-  trend_score: 51.211088
-  trend_persistence: 0.279376
-  hurst: 0.572744
-  dfa_alpha: 0.534202
-  normalized_entropy: 0.765664
-  median_score: 44.226675
-  std_score: 9.133504
-  min_score: 44.226675
-  max_score: 69.226675
-  q25: 44.226675
-  q75: 59.226675
-  q90: 69.226675
-  sample_size: 5421
-  weights: {'trend': 0.25, 'hurst': 0.25, 'dfa': 0.25, 'entropy': 0.25}
-  validation_passed: True
-  export_status: complete
-  artifact_count: 3
-
-Artifacts:
-  ✓ features: DataFrame (5421 rows, 2 cols)
-  ✓ statistics: DataFrame (1 rows, 17 cols)
-  ✓ report: Text (1106 chars)
-  ✓ validation: Dict (3 keys)
-
-Data Sources:
-  market_df: 5421 rows, 6 cols (copy)
-  feature_df: 5421 rows, 2 cols (copy)
-  df (merged): 5421 rows, 16 cols
-[22:28:43] Research complete
-2026-08-22 22:28:43 - INFO -     Stored 7 artifacts for 4h
-2026-08-22 22:28:43 - INFO -     ✓ PASSED in 1.09s (15 stats)
-2026-08-22 22:28:43 - INFO -
-  Running module 103 on 4h...
-[22:28:43] Loaded 21 modules: ['001', '002', '003', '004', '005', '006', '007', '008', '009', '010', '011', '012', '013', '015', '016', '017', '018', '019', '020', '021', '022']
-[22:28:43] Loaded 3 datasets
-
-============================================================
-DEPENDENCY INJECTION
-============================================================
-Module: 103
-Dataset: 4h
-Dependencies: ['100', '102', '035', '037']
-----------------------------------------
-✓ 100: 2 columns, 5421 rows
-  Columns: ['timestamp', 'trend_score']
-  Has validation: True
-  Has statistics: True
-✓ 102: 1 columns, 5421 rows
-  Columns: ['compression_score']
-  Has validation: True
-  Has statistics: True
-✓ 035: 2 columns, 5421 rows
-  Columns: ['timestamp', 'hurst_exponent']
-  Has validation: True
-  Has statistics: True
-✓ 037: 2 columns, 5421 rows
-  Columns: ['timestamp', 'normalized_entropy']
-  Has validation: True
-  Has statistics: True
-============================================================
-[22:28:43] Injected 7 dependency features (copy) → df now has 7 columns
-2026-08-22 22:28:43 - INFO -     Injected 7 features from 4 modules
-2026-08-22 22:28:43 - INFO -     Module 103 input shape: (5421, 6)
-2026-08-22 22:28:43 - INFO -     Module 103 input columns: ['close', 'high', 'low', 'open', 'timestamp', 'volume']
-
-================================================================================
-PROJECT ATLAS
-MODULE Feature Combination Engine
-RESEARCH EXECUTION [103_4H]
-================================================================================
-[22:28:43] Loading from DataFrame: 103_4h
-[22:28:43] Loaded 5,421 rows from DataFrame (copy)
-
-------------------------------------------------------------
-  Data Validation
-------------------------------------------------------------
-[22:28:43] Validation passed
-
-------------------------------------------------------------
-  Running Computation Pipeline
-------------------------------------------------------------
-
-------------------------------------------------------------
-  Feature Combination Pipeline
-------------------------------------------------------------
-[22:28:43] Step: feature_combination
-[22:28:43] Step 1: Computing feature combination
-
-======================================================================
-MODULE 103 INPUT INSPECTION
-======================================================================
-
-market_df columns (6):
-['close', 'high', 'low', 'open', 'timestamp', 'volume']
-
-feature_df columns (7):
-['100_timestamp', 'trend_score', 'compression_score', '100_timestamp', 'hurst_exponent', '100_timestamp', 'normalized_entropy']
-
-df columns (13):
-['close', 'high', 'low', 'open', 'timestamp', 'volume', '100_timestamp', 'trend_score', 'compression_score', '100_timestamp', 'hurst_exponent', '100_timestamp', 'normalized_entropy']
-======================================================================
-
-============================================================
-FEATURE STATISTICS FOR STATE CREATION
-============================================================
-       trend_score  compression_score  hurst_exponent  normalized_entropy
-count  5421.000000        5421.000000     5421.000000        5.421000e+03
-mean     51.211088          61.276881        0.572744        7.656636e-01
-std       9.133504          13.499972        0.000000        1.110325e-16
-min      44.226675          34.739011        0.572744        7.656636e-01
-25%      44.226675          50.338916        0.572744        7.656636e-01
-50%      44.226675          61.387428        0.572744        7.656636e-01
-75%      59.226675          72.367039        0.572744        7.656636e-01
-max      69.226675          86.546048        0.572744        7.656636e-01
-============================================================
-
-BINARY CONDITION STATISTICS:
-  trend_high >= 60: 1,332 (24.6%)
-  compression_high >= 60: 2,880 (53.1%)
-  entropy_low <= 0.30: 0 (0.0%)
-  hurst_high >= 0.55: 5,421 (100.0%)
-
-============================================================
-STATE DISTRIBUTION
-============================================================
-Unique states: [ 1  5  9 13]
-Number of unique states: 4
-
-State counts:
-1     1864
-5     2225
-9      677
-13     655
-Name: count, dtype: int64
-============================================================
-
-========== ENGINE OUTPUT ==========
-type(result_data): <class 'atlas.modules.module103_feature_combination.engine.FeatureCombinationResult'>
-attributes: ['states', 'state_statistics', 'information_coefficient', 'ic_p_value', 'best_state', 'significant_states', 'total_states', 'sample_size', 'future_horizon', 'features_used', 'state_series', 'state_assignments']
-state_series exists
-state_series length: 5421
-0    5
-1    5
-2    5
-3    5
-4    5
-Name: state, dtype: int64
-state_assignments exists
-state_assignments length: 5411
-[5 5 5 5 5 5 5 5 5 5]
-states exists
-type(states): <class 'dict'>
-states keys: [1, 5, 9, 13]
-first state: StateResult(state=1, count=1864, mean=np.float64(-0.0005208980626535001), median=np.float64(0.00015195707728887786), std=np.float64(0.03222620651838137), win_rate=np.float64(0.5032188841201717), sharpe=np.float64(-0.016163803280420965), p_value=np.float64(0.48547071801069397), is_significant=np.False_)
-==================================
-    Total States                   4/16
-    Significant States             2
-    Information Coefficient        0.0115
-[22:28:43] Feature combination computed
-[22:28:43] Step: statistics
-[22:28:43] Step 2: Computing statistics
-    Predictive Power               None
-[22:28:43] Statistics computed
-[22:28:43] Step: validate
-[22:28:43] Step 3: Validation
-
-============================================================
-FEATURE COMBINATION VALIDATION
-============================================================
-
-  ✓ All validation checks passed
-============================================================
-[22:28:43] Validation complete
-[22:28:43] Step: export
-[22:28:43] Step 4: Export
-[22:28:43] Created feature artifact with timestamp and state (5421 rows)
-
-======================================================================
-MODULE 103 ARTIFACT INSPECTION
-======================================================================
-Artifacts keys:
-['features', 'state_statistics', 'statistics', 'report', 'feature_combination_report', 'validation', 'state_report', 'metadata', 'detailed_results']
-
-Feature artifact: 5421 rows, 2 columns
-Columns: ['timestamp', 'state']
-
-✓ All required artifacts present
-======================================================================
-    Artifacts                      9
-[22:28:43] Export complete
-[22:28:43] Module 103 complete
-
-------------------------------------------------------------
-  Exporting Results
-------------------------------------------------------------
-[22:28:43] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module103\4h\features.csv (5,421 rows)
-[22:28:43] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module103\4h\state_statistics.csv (4 rows)
-[22:28:43] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module103\4h\statistics.csv (1 rows)
-[22:28:43] Text → D:\delta bot\Project_Atlas\research_results\raw\module103\4h\report.txt (1,194 chars)
-[22:28:43] Text → D:\delta bot\Project_Atlas\research_results\raw\module103\4h\feature_combination_report.txt (1,194 chars)
-[22:28:43] Text → D:\delta bot\Project_Atlas\research_results\raw\module103\4h\state_report.txt (643 chars)
-[22:28:43] JSON → D:\delta bot\Project_Atlas\research_results\raw\module103\4h\detailed_results.json
-[22:28:43] JSON → D:\delta bot\Project_Atlas\research_results\raw\module103\4h\metadata.json
-[22:28:43] Statistics → D:\delta bot\Project_Atlas\research_results\raw\module103\4h\statistics.csv
-[22:28:43] Report → D:\delta bot\Project_Atlas\research_results\raw\module103\4h\report.txt
-[22:28:43] Exported to D:\delta bot\Project_Atlas\research_results\raw\module103\4h
-
-------------------------------------------------------------
-  Summary
-------------------------------------------------------------
-============================================================
-MODULE: Feature Combination Engine
-VERSION: 1.0.0
-============================================================
-
-Dataset: 103_4h
-Status: completed
-
-Step Timing:
-  feature_combination  0.089s
-  statistics           0.002s
-  validate             0.006s
-  export               0.012s
-  ──────────────────────────────
-  Total pipeline       0.109s
-
-Statistics:
-  total_states: 4
-  significant_states: 2
-  best_state: 13
-  information_coefficient: 0.011482
-  best_state_mean: 0.277868
-  best_state_win_rate: 51.301685
-  best_state_sharpe: 0.094347
-  best_state_samples: 653
-  predictive_power: None
-  sample_size: 5411
-  future_horizon: 10
-  features_used: ['trend_score', 'compression_score', 'hurst_exponent', 'normalized_entropy']
-  validation_passed: True
-  export_status: complete
-  artifact_count: 9
-
-Artifacts:
-  ✓ features: DataFrame (5421 rows, 2 cols)
-  ✓ statistics: DataFrame (1 rows, 12 cols)
-  ✓ report: Text (1194 chars)
-  ✓ validation: bool
-
-Data Sources:
-  market_df: 5421 rows, 6 cols (copy)
-  feature_df: 5421 rows, 7 cols (copy)
-  df (merged): 5421 rows, 13 cols
-[22:28:43] Research complete
-2026-08-22 22:28:43 - INFO -     Stored 9 artifacts for 4h
-2026-08-22 22:28:43 - INFO -     ✓ PASSED in 0.22s (10 stats)
-2026-08-22 22:28:43 - INFO -
-  Running module 108 on 4h...
-
-============================================================
-DEPENDENCY INJECTION
-============================================================
-Module: 108
-Dataset: 4h
-Dependencies: ['103']
-----------------------------------------
-✓ 103: 2 columns, 5421 rows
-  Columns: ['timestamp', 'state']
-  Has validation: True
-  Has statistics: True
-============================================================
-[22:28:43] Injected 2 dependency features (copy) → df now has 2 columns
-2026-08-22 22:28:43 - INFO -     Injected 2 features from 1 modules
-2026-08-22 22:28:43 - INFO -     Module 108 input shape: (5421, 6)
-2026-08-22 22:28:43 - INFO -     Module 108 input columns: ['close', 'high', 'low', 'open', 'timestamp', 'volume']
-[22:28:43] Loading from DataFrame: 108_4h
-[22:28:43] Loaded 5,421 rows from DataFrame (copy)
-
-  ✓ All validations passed
-  ✓ Exported results to D:\delta bot\Project_Atlas\research_results\raw\module108\4h
-2026-08-22 22:28:49 - INFO -     Stored 9 artifacts for 4h
-2026-08-22 22:28:49 - INFO -     ✓ PASSED in 6.31s (10 stats)
-2026-08-22 22:28:49 - INFO -
-  Running module 111 on 4h...
-[22:28:49] Loaded 21 modules: ['001', '002', '003', '004', '005', '006', '007', '008', '009', '010', '011', '012', '013', '015', '016', '017', '018', '019', '020', '021', '022']
-[22:28:49] Loaded 3 datasets
-
-============================================================
-DEPENDENCY INJECTION
-============================================================
-Module: 111
-Dataset: 4h
-Dependencies: ['100', '102', '035', '037', '108']
-----------------------------------------
-✓ 100: 2 columns, 5421 rows
-  Columns: ['timestamp', 'trend_score']
-  Has validation: True
-  Has statistics: True
-✓ 102: 1 columns, 5421 rows
-  Columns: ['compression_score']
-  Has validation: True
-  Has statistics: True
-✓ 035: 2 columns, 5421 rows
-  Columns: ['timestamp', 'hurst_exponent']
-  Has validation: True
-  Has statistics: True
-✓ 037: 2 columns, 5421 rows
-  Columns: ['timestamp', 'normalized_entropy']
-  Has validation: True
-  Has statistics: True
-✓ 108: 7 columns, 5421 rows
-  Columns: ['timestamp', 'state', 'breakout_1', 'breakout_3', 'breakout_5']...
-  Has validation: True
-  Has statistics: True
-============================================================
-[22:28:49] Injected 14 dependency features (copy) → df now has 14 columns
-2026-08-22 22:28:49 - INFO -     Injected 14 features from 5 modules
-2026-08-22 22:28:49 - INFO -     Target requirements for Module 111: ['future_breakout']
-2026-08-22 22:28:51 - INFO -     Verified required targets for Module 111: ['future_breakout']
-2026-08-22 22:28:51 - INFO -     Module 111 input shape: (5421, 7)
-2026-08-22 22:28:51 - INFO -     Module 111 input columns: ['close', 'high', 'low', 'open', 'timestamp', 'volume', 'future_breakout']
-
-================================================================================
-PROJECT ATLAS
-MODULE Monte Carlo Validation
-RESEARCH EXECUTION [111_4H]
-================================================================================
-[22:28:51] Loading from DataFrame: 111_4h
-[22:28:51] Loaded 5,421 rows from DataFrame (copy)
-
-------------------------------------------------------------
-  Data Validation
-------------------------------------------------------------
-[22:28:51] Validation passed
-
-------------------------------------------------------------
-  Running Computation Pipeline
-------------------------------------------------------------
-
-------------------------------------------------------------
-  Monte Carlo Validation Pipeline
-------------------------------------------------------------
-[22:28:51] Step: monte_carlo_validation
-[22:28:51] Step 1: Computing Monte Carlo validation
-[22:28:51] Computation failed: 'list' argument must have no negative elements
-2026-08-22 22:28:51 - ERROR -     ✗ FAILED: 'list' argument must have no negative elements
-2026-08-22 22:28:51 - ERROR - Traceback (most recent call last):
-  File "D:\delta bot\Project_Atlas\atlas\research\research_runner.py", line 282, in run
-    result = self.module_loader.run_module(
-        module,
-    ...<2 lines>...
-        output_dir=module_output_dir
-    )
-  File "D:\delta bot\Project_Atlas\atlas\research\module_loader.py", line 147, in run_module
-    return module.run_dataframe(df, dataset_id=dataset_id, output_dir=output_dir)
-           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\delta bot\Project_Atlas\atlas\modules\module111_monte_carlo_validation\module.py", line 221, in run_dataframe
-    return super().run_dataframe(df, dataset_id, output_dir)
-           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\delta bot\Project_Atlas\atlas\core\base_research_module.py", line 590, in run_dataframe
-    return self._execute_workflow(output_dir)
-           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
-  File "D:\delta bot\Project_Atlas\atlas\core\base_research_module.py", line 604, in _execute_workflow
-    results = self.compute()
-  File "D:\delta bot\Project_Atlas\atlas\modules\module111_monte_carlo_validation\module.py", line 212, in compute
-    results = self.execute_pipeline()
-  File "D:\delta bot\Project_Atlas\atlas\core\base_research_module.py", line 323, in execute_pipeline
-    result = step()
-  File "D:\delta bot\Project_Atlas\atlas\modules\module111_monte_carlo_validation\module.py", line 136, in _compute_validation
-    self.result_data = self.engine.compute(
-                       ~~~~~~~~~~~~~~~~~~~^
-        X=prepared["X"],
-        ^^^^^^^^^^^^^^^^
-        y=prepared["y"],
-        ^^^^^^^^^^^^^^^^
-        price_series=prepared["price_series"],
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "D:\delta bot\Project_Atlas\atlas\modules\module111_monte_carlo_validation\engine.py", line 1248, in compute
-    observed_score = self.compute_score(
-        X,
-        y,
-    )
-  File "D:\delta bot\Project_Atlas\atlas\modules\module111_monte_carlo_validation\engine.py", line 233, in compute_score
-    cv = self._get_cv(y, cv_folds)
-  File "D:\delta bot\Project_Atlas\atlas\modules\module111_monte_carlo_validation\engine.py", line 166, in _get_cv
-    class_counts = np.bincount(y.astype(int))
-ValueError: 'list' argument must have no negative elements
-
-2026-08-22 22:28:51 - INFO - Saved target log: D:\delta bot\Project_Atlas\research_results\target_log.json
-2026-08-22 22:28:51 - INFO - Saved master database: 300 rows
-2026-08-22 22:28:51 - INFO - Saved research index: 27 entries
-2026-08-22 22:28:51 - INFO - Saved injection log: D:\delta bot\Project_Atlas\research_results\injection_log.json
-2026-08-22 22:28:51 - INFO - Saved campaign summary: D:\delta bot\Project_Atlas\research_results\campaign_summary.txt
-2026-08-22 22:28:51 - INFO - Saved artifact summary: D:\delta bot\Project_Atlas\research_results\artifact_summary.json
-2026-08-22 22:28:51 - INFO -
-============================================================
-2026-08-22 22:28:51 - INFO - RESEARCH CAMPAIGN COMPLETE
-2026-08-22 22:28:51 - INFO - ============================================================
-2026-08-22 22:28:51 - INFO - Modules: 27
-2026-08-22 22:28:51 - INFO - Successful: 24
-2026-08-22 22:28:51 - INFO - Failed: 3
-2026-08-22 22:28:51 - INFO - Total Time: 281.6s
-2026-08-22 22:28:51 - INFO - Timestamp: 2026-08-22T22:28:51.266926
-
-D:\delta bot\Project_Atlas>
-D:\delta bot\Project_Atlas>
+[22:49:46] Step: monte_carlo_validation
+[22:49:46] Step 1: Computing Monte Carlo validation
+[22:49:46] Feature columns: ['trend_score', 'compression_score', 'hurst_exponent', 'normalized_entropy', 'state', 'breakout_1', 'breakout_3', 'breakout_5', 'breakout_10', 'breakout_20']
+[22:49:46] Total rows: 86548
+[22:49:46] Valid target rows: 86518
+[22:49:46] Excluded undefined target rows: 30
+[22:49:46] Target classes: [0, 1]
+[22:49:46] Feature matrix shape: (86518, 10)
+
+  Observed Score (roc_auc): 0.9069
+
+  Running Bootstrap Validation...
