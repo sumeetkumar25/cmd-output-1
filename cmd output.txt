@@ -16,105 +16,105 @@ Timeframes: ['15m', '1h', '4h']
 Modules: ['103', '105', '108', '111', '112']
 
 ------------------------------------------------------------
-[17:50:16] Loaded 21 modules: ['001', '002', '003', '004', '005', '006', '007', '008', '009', '010', '011', '012', '013', '015', '016', '017', '018', '019', '020', '021', '022']
-[17:50:16] Loaded 3 datasets
+[22:48:12] Loaded 21 modules: ['001', '002', '003', '004', '005', '006', '007', '008', '009', '010', '011', '012', '013', '015', '016', '017', '018', '019', '020', '021', '022']
+[22:48:13] Loaded 3 datasets
 [DEBUG] Modules path: D:\delta bot\Project_Atlas\atlas\modules
 [DEBUG] Exists: True
-2026-09-17 17:50:16 - INFO - Loading datasets...
+2026-09-17 22:48:13 - INFO - Loading datasets...
   ✓ Loaded BTCUSD_15m: 86548 rows
   ✓ Loaded BTCUSD_1h: 21681 rows
   ✓ Loaded BTCUSD_4h: 5421 rows
-2026-09-17 17:50:18 - INFO - Loaded 3 datasets: ['15m', '1h', '4h']
-2026-09-17 17:50:18 - INFO - Discovering modules...
+2026-09-17 22:48:14 - INFO - Loaded 3 datasets: ['15m', '1h', '4h']
+2026-09-17 22:48:14 - INFO - Discovering modules...
 
 [DEBUG] Scanning: D:\delta bot\Project_Atlas\atlas\modules
 
 [DEBUG] Total modules discovered: 71
-2026-09-17 17:50:24 - INFO - Filtering to modules: ['103', '105', '108', '111', '112']
-2026-09-17 17:50:24 - INFO - Found 71 modules
-2026-09-17 17:50:24 - INFO - Execution order: ['005', '035', '036', '037', '102', '100', '103', '105', '108', '111', '112']
-2026-09-17 17:50:24 - INFO - ============================================================
-2026-09-17 17:50:24 - INFO - RESEARCH CAMPAIGN: Research Campaign v1
-2026-09-17 17:50:24 - INFO - ============================================================
-2026-09-17 17:50:24 - INFO - Modules: 11
-2026-09-17 17:50:24 - INFO - Datasets: ['15m', '1h', '4h']
-2026-09-17 17:50:24 - INFO - Timestamp: 2026-09-17T17:50:24.772769
-2026-09-17 17:50:24 - INFO -
+2026-09-17 22:48:22 - INFO - Filtering to modules: ['103', '105', '108', '111', '112']
+2026-09-17 22:48:22 - INFO - Found 71 modules
+2026-09-17 22:48:22 - INFO - Execution order: ['005', '035', '036', '037', '102', '100', '103', '105', '108', '111', '112']
+2026-09-17 22:48:22 - INFO - ============================================================
+2026-09-17 22:48:22 - INFO - RESEARCH CAMPAIGN: Research Campaign v1
+2026-09-17 22:48:22 - INFO - ============================================================
+2026-09-17 22:48:22 - INFO - Modules: 11
+2026-09-17 22:48:22 - INFO - Datasets: ['15m', '1h', '4h']
+2026-09-17 22:48:22 - INFO - Timestamp: 2026-09-17T22:48:22.702476
+2026-09-17 22:48:22 - INFO -
 ============================================================
-2026-09-17 17:50:24 - INFO - PROCESSING DATASET: 15m
-2026-09-17 17:50:24 - INFO - ============================================================
-2026-09-17 17:50:24 - INFO -
+2026-09-17 22:48:22 - INFO - PROCESSING DATASET: 15m
+2026-09-17 22:48:22 - INFO - ============================================================
+2026-09-17 22:48:22 - INFO -
   Running module 005 on 15m...
-[17:50:24] Loaded 21 modules: ['001', '002', '003', '004', '005', '006', '007', '008', '009', '010', '011', '012', '013', '015', '016', '017', '018', '019', '020', '021', '022']
-[17:50:24] Loaded 3 datasets
-2026-09-17 17:50:24 - INFO -     Module 005 input shape: (86548, 6)
-2026-09-17 17:50:24 - INFO -     Module 005 input columns: ['close', 'high', 'low', 'open', 'timestamp', 'volume']
+[22:48:22] Loaded 21 modules: ['001', '002', '003', '004', '005', '006', '007', '008', '009', '010', '011', '012', '013', '015', '016', '017', '018', '019', '020', '021', '022']
+[22:48:22] Loaded 3 datasets
+2026-09-17 22:48:22 - INFO -     Module 005 input shape: (86548, 6)
+2026-09-17 22:48:22 - INFO -     Module 005 input columns: ['close', 'high', 'low', 'open', 'timestamp', 'volume']
 
 ================================================================================
 PROJECT ATLAS
 MODULE TrendPersistence
 RESEARCH EXECUTION [005_15M]
 ================================================================================
-[17:50:24] Loading from DataFrame: 005_15m
-[17:50:24] Loaded 86,548 rows from DataFrame (copy)
+[22:48:22] Loading from DataFrame: 005_15m
+[22:48:22] Loaded 86,548 rows from DataFrame (copy)
 
 ------------------------------------------------------------
   Data Validation
 ------------------------------------------------------------
-[17:50:24] Validation passed
+[22:48:22] Validation passed
 
 ------------------------------------------------------------
   Running Computation Pipeline
 ------------------------------------------------------------
-[17:50:24] Step: returns
-[17:50:24] Calculating log returns from close prices
+[22:48:22] Step: returns
+[22:48:22] Calculating log returns from close prices
     Return observations            86,547
     Mean return                    0.00000318
     Std return                     0.00259438
-[17:50:24] Step: trend_direction
-[17:50:24] Determining trend direction for each candle
+[22:48:22] Step: trend_direction
+[22:48:22] Determining trend direction for each candle
     Up candles                     42,117 (48.7%)
     Down candles                   41,979 (48.5%)
     Flat candles                   2,451 (2.8%)
-[17:50:24] Step: trend_segments
-[17:50:24] Segmenting consecutive trends (min length=3)
+[22:48:22] Step: trend_segments
+[22:48:22] Segmenting consecutive trends (min length=3)
     Total segments                 10,239
     Up segments                    5,167
     Down segments                  5,072
     Mean length                    3.80
     Max length                     16
-[17:50:28] Step: summary
-[17:50:28] Computing trend summary statistics
-[17:50:28]
+[22:48:26] Step: summary
+[22:48:26] Computing trend summary statistics
+[22:48:26]
 Trend Summary (min_length=3):
-[17:50:28]   Total segments: 10,239
-[17:50:28]   Up trends: 5,167 (mean: 3.78)
-[17:50:28]   Down trends: 5,072 (mean: 3.81)
-[17:50:28]   Overall mean: 3.80
-[17:50:28]   Overall median: 3.0
-[17:50:28]   Maximum: 16
-[17:50:28]   Expected under H0: 2.00
-[17:50:28]   Ratio: 1.90x
-[17:50:28]
+[22:48:26]   Total segments: 10,239
+[22:48:26]   Up trends: 5,167 (mean: 3.78)
+[22:48:26]   Down trends: 5,072 (mean: 3.81)
+[22:48:26]   Overall mean: 3.80
+[22:48:26]   Overall median: 3.0
+[22:48:26]   Maximum: 16
+[22:48:26]   Expected under H0: 2.00
+[22:48:26]   Ratio: 1.90x
+[22:48:26]
   Observed trends 1.9x longer than expected
-[17:50:28]   Evidence AGAINST H0 - trends exhibit persistence
-[17:51:17] Phase 1 complete: Trend segmentation finished
-[17:51:17] Created 'statistics' from result.statistics
-[17:51:17] Created 'report' from summary()
-[17:51:17] Created 'validation' with default values
+[22:48:26]   Evidence AGAINST H0 - trends exhibit persistence
+[22:49:16] Phase 1 complete: Trend segmentation finished
+[22:49:16] Created 'statistics' from result.statistics
+[22:49:16] Created 'report' from summary()
+[22:49:16] Created 'validation' with default values
 
 ------------------------------------------------------------
   Exporting Results
 ------------------------------------------------------------
-[17:51:18] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module005\15m\trend_segments.csv (10,239 rows)
-[17:51:18] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module005\15m\trend_summary.csv (12 rows)
-[17:51:18] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module005\15m\features.csv (86,548 rows)
-[17:51:18] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module005\15m\statistics.csv (1 rows)
-[17:51:18] Text → D:\delta bot\Project_Atlas\research_results\raw\module005\15m\report.txt (1,230 chars)
-[17:51:18] JSON → D:\delta bot\Project_Atlas\research_results\raw\module005\15m\validation.json
-[17:51:18] Statistics → D:\delta bot\Project_Atlas\research_results\raw\module005\15m\statistics.csv
-[17:51:18] Report → D:\delta bot\Project_Atlas\research_results\raw\module005\15m\report.txt
-[17:51:18] Exported to D:\delta bot\Project_Atlas\research_results\raw\module005\15m
+[22:49:16] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module005\15m\trend_segments.csv (10,239 rows)
+[22:49:16] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module005\15m\trend_summary.csv (12 rows)
+[22:49:17] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module005\15m\features.csv (86,548 rows)
+[22:49:17] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module005\15m\statistics.csv (1 rows)
+[22:49:17] Text → D:\delta bot\Project_Atlas\research_results\raw\module005\15m\report.txt (1,230 chars)
+[22:49:17] JSON → D:\delta bot\Project_Atlas\research_results\raw\module005\15m\validation.json
+[22:49:17] Statistics → D:\delta bot\Project_Atlas\research_results\raw\module005\15m\statistics.csv
+[22:49:17] Report → D:\delta bot\Project_Atlas\research_results\raw\module005\15m\report.txt
+[22:49:17] Exported to D:\delta bot\Project_Atlas\research_results\raw\module005\15m
 
 ------------------------------------------------------------
   Summary
@@ -169,28 +169,28 @@ Data Sources:
   market_df: 86548 rows, 6 cols (copy)
   feature_df: None
   df (merged): 86548 rows, 6 cols
-[17:51:18] Research complete
-2026-09-17 17:51:18 - INFO -     Stored 6 artifacts for 15m
-2026-09-17 17:51:18 - INFO -     ✓ PASSED in 53.65s (30 stats)
-2026-09-17 17:51:18 - INFO -
+[22:49:17] Research complete
+2026-09-17 22:49:17 - INFO -     Stored 6 artifacts for 15m
+2026-09-17 22:49:17 - INFO -     ✓ PASSED in 54.53s (30 stats)
+2026-09-17 22:49:17 - INFO -
   Running module 035 on 15m...
-[17:51:18] Loaded 21 modules: ['001', '002', '003', '004', '005', '006', '007', '008', '009', '010', '011', '012', '013', '015', '016', '017', '018', '019', '020', '021', '022']
-[17:51:18] Loaded 3 datasets
-2026-09-17 17:51:18 - INFO -     Module 035 input shape: (86548, 6)
-2026-09-17 17:51:18 - INFO -     Module 035 input columns: ['close', 'high', 'low', 'open', 'timestamp', 'volume']
+[22:49:17] Loaded 21 modules: ['001', '002', '003', '004', '005', '006', '007', '008', '009', '010', '011', '012', '013', '015', '016', '017', '018', '019', '020', '021', '022']
+[22:49:17] Loaded 3 datasets
+2026-09-17 22:49:17 - INFO -     Module 035 input shape: (86548, 6)
+2026-09-17 22:49:17 - INFO -     Module 035 input columns: ['close', 'high', 'low', 'open', 'timestamp', 'volume']
 
 ================================================================================
 PROJECT ATLAS
 MODULE Hurst Exponent
 RESEARCH EXECUTION [035_15M]
 ================================================================================
-[17:51:18] Loading from DataFrame: 035_15m
-[17:51:18] Loaded 86,548 rows from DataFrame (copy)
+[22:49:17] Loading from DataFrame: 035_15m
+[22:49:17] Loaded 86,548 rows from DataFrame (copy)
 
 ------------------------------------------------------------
   Data Validation
 ------------------------------------------------------------
-[17:51:18] Validation passed
+[22:49:17] Validation passed
 
 ------------------------------------------------------------
   Running Computation Pipeline
@@ -199,21 +199,21 @@ RESEARCH EXECUTION [035_15M]
 ------------------------------------------------------------
   Hurst Exponent Pipeline
 ------------------------------------------------------------
-[17:51:18] Step: hurst
-[17:51:18] Step 1: Computing Hurst exponent on log returns
+[22:49:17] Step: hurst
+[22:49:17] Step 1: Computing Hurst exponent on log returns
     Series type                    log_returns
     Hurst exponent                 0.5444
     Sample size                    86,547
     Windows                        20
-[17:51:20] Hurst exponent computed
-[17:51:20]   Completed in 1.530s
-[17:51:20] Step: statistics
-[17:51:20] Step 2: Computing statistics
+[22:49:19] Hurst exponent computed
+[22:49:19]   Completed in 1.543s
+[22:49:19] Step: statistics
+[22:49:19] Step 2: Computing statistics
     Regime                         Random Walk
     R-squared                      0.9994
-[17:51:20] Statistics computed
-[17:51:20] Step: validate
-[17:51:20] Step 3: Validation
+[22:49:19] Statistics computed
+[22:49:19] Step: validate
+[22:49:19] Step 3: Validation
 
 ============================================================
 HURST VALIDATION
@@ -221,29 +221,29 @@ HURST VALIDATION
 
   ✓ All validation checks passed
 ============================================================
-[17:51:20] Validation complete
-[17:51:20] Step: export
-[17:51:20] Step 4: Export
+[22:49:19] Validation complete
+[22:49:19] Step: export
+[22:49:19] Step 4: Export
     Artifacts                      4
-[17:51:20] Export complete
-[17:51:20] Module 035 complete
-[17:51:20] Created 'statistics' from result.statistics
-[17:51:20] Created 'report' from summary()
-[17:51:20] Created 'validation' with default values
+[22:49:19] Export complete
+[22:49:19] Module 035 complete
+[22:49:19] Created 'statistics' from result.statistics
+[22:49:19] Created 'report' from summary()
+[22:49:19] Created 'validation' with default values
 
 ------------------------------------------------------------
   Exporting Results
 ------------------------------------------------------------
-[17:51:20] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module035\15m\hurst_statistics.csv (1 rows)
-[17:51:20] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module035\15m\hurst_results.csv (20 rows)
-[17:51:20] Text → D:\delta bot\Project_Atlas\research_results\raw\module035\15m\hurst_report.txt (982 chars)
-[17:51:20] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module035\15m\features.csv (86,548 rows)
-[17:51:20] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module035\15m\statistics.csv (1 rows)
-[17:51:20] Text → D:\delta bot\Project_Atlas\research_results\raw\module035\15m\report.txt (1,042 chars)
-[17:51:20] JSON → D:\delta bot\Project_Atlas\research_results\raw\module035\15m\validation.json
-[17:51:20] Statistics → D:\delta bot\Project_Atlas\research_results\raw\module035\15m\statistics.csv
-[17:51:20] Report → D:\delta bot\Project_Atlas\research_results\raw\module035\15m\report.txt
-[17:51:20] Exported to D:\delta bot\Project_Atlas\research_results\raw\module035\15m
+[22:49:19] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module035\15m\hurst_statistics.csv (1 rows)
+[22:49:19] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module035\15m\hurst_results.csv (20 rows)
+[22:49:19] Text → D:\delta bot\Project_Atlas\research_results\raw\module035\15m\hurst_report.txt (982 chars)
+[22:49:19] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module035\15m\features.csv (86,548 rows)
+[22:49:19] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module035\15m\statistics.csv (1 rows)
+[22:49:19] Text → D:\delta bot\Project_Atlas\research_results\raw\module035\15m\report.txt (1,042 chars)
+[22:49:19] JSON → D:\delta bot\Project_Atlas\research_results\raw\module035\15m\validation.json
+[22:49:19] Statistics → D:\delta bot\Project_Atlas\research_results\raw\module035\15m\statistics.csv
+[22:49:19] Report → D:\delta bot\Project_Atlas\research_results\raw\module035\15m\report.txt
+[22:49:19] Exported to D:\delta bot\Project_Atlas\research_results\raw\module035\15m
 
 ------------------------------------------------------------
   Summary
@@ -257,12 +257,12 @@ Dataset: 035_15m
 Status: completed
 
 Step Timing:
-  hurst                1.530s
+  hurst                1.543s
   statistics           0.003s
   validate             0.005s
-  export               0.008s
+  export               0.006s
   ──────────────────────────────
-  Total pipeline       1.546s
+  Total pipeline       1.557s
 
 Statistics:
   hurst_exponent: 0.544384
@@ -292,28 +292,28 @@ Data Sources:
   market_df: 86548 rows, 6 cols (copy)
   feature_df: None
   df (merged): 86548 rows, 6 cols
-[17:51:20] Research complete
-2026-09-17 17:51:20 - INFO -     Stored 7 artifacts for 15m
-2026-09-17 17:51:21 - INFO -     ✓ PASSED in 1.98s (13 stats)
-2026-09-17 17:51:21 - INFO -
+[22:49:19] Research complete
+2026-09-17 22:49:19 - INFO -     Stored 7 artifacts for 15m
+2026-09-17 22:49:19 - INFO -     ✓ PASSED in 1.98s (13 stats)
+2026-09-17 22:49:19 - INFO -
   Running module 036 on 15m...
-[17:51:21] Loaded 21 modules: ['001', '002', '003', '004', '005', '006', '007', '008', '009', '010', '011', '012', '013', '015', '016', '017', '018', '019', '020', '021', '022']
-[17:51:21] Loaded 3 datasets
-2026-09-17 17:51:21 - INFO -     Module 036 input shape: (86548, 6)
-2026-09-17 17:51:21 - INFO -     Module 036 input columns: ['close', 'high', 'low', 'open', 'timestamp', 'volume']
+[22:49:19] Loaded 21 modules: ['001', '002', '003', '004', '005', '006', '007', '008', '009', '010', '011', '012', '013', '015', '016', '017', '018', '019', '020', '021', '022']
+[22:49:19] Loaded 3 datasets
+2026-09-17 22:49:20 - INFO -     Module 036 input shape: (86548, 6)
+2026-09-17 22:49:20 - INFO -     Module 036 input columns: ['close', 'high', 'low', 'open', 'timestamp', 'volume']
 
 ================================================================================
 PROJECT ATLAS
 MODULE DFA Analysis
 RESEARCH EXECUTION [036_15M]
 ================================================================================
-[17:51:21] Loading from DataFrame: 036_15m
-[17:51:21] Loaded 86,548 rows from DataFrame (copy)
+[22:49:20] Loading from DataFrame: 036_15m
+[22:49:20] Loaded 86,548 rows from DataFrame (copy)
 
 ------------------------------------------------------------
   Data Validation
 ------------------------------------------------------------
-[17:51:21] Validation passed
+[22:49:20] Validation passed
 
 ------------------------------------------------------------
   Running Computation Pipeline
@@ -322,21 +322,21 @@ RESEARCH EXECUTION [036_15M]
 ------------------------------------------------------------
   DFA Pipeline
 ------------------------------------------------------------
-[17:51:21] Step: dfa
-[17:51:21] Step 1: Computing DFA on log returns
+[22:49:20] Step: dfa
+[22:49:20] Step 1: Computing DFA on log returns
     Series type                    log_returns
     DFA Alpha                      0.5024
     Sample size                    86,547
     Windows                        20
-[17:51:24] DFA computed
-[17:51:24]   Completed in 3.024s
-[17:51:24] Step: statistics
-[17:51:24] Step 2: Computing statistics
+[22:49:23] DFA computed
+[22:49:23]   Completed in 3.073s
+[22:49:23] Step: statistics
+[22:49:23] Step 2: Computing statistics
     Regime                         Random Walk
     R-squared                      0.9983
-[17:51:24] Statistics computed
-[17:51:24] Step: validate
-[17:51:24] Step 3: Validation
+[22:49:23] Statistics computed
+[22:49:23] Step: validate
+[22:49:23] Step 3: Validation
 
 ============================================================
 DFA VALIDATION
@@ -344,29 +344,29 @@ DFA VALIDATION
 
   ✓ All validation checks passed
 ============================================================
-[17:51:24] Validation complete
-[17:51:24] Step: export
-[17:51:24] Step 4: Export
+[22:49:23] Validation complete
+[22:49:23] Step: export
+[22:49:23] Step 4: Export
     Artifacts                      4
-[17:51:24] Export complete
-[17:51:24] Module 036 complete
-[17:51:24] Created 'statistics' from result.statistics
-[17:51:24] Created 'report' from summary()
-[17:51:24] Created 'validation' with default values
+[22:49:23] Export complete
+[22:49:23] Module 036 complete
+[22:49:23] Created 'statistics' from result.statistics
+[22:49:23] Created 'report' from summary()
+[22:49:23] Created 'validation' with default values
 
 ------------------------------------------------------------
   Exporting Results
 ------------------------------------------------------------
-[17:51:24] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module036\15m\dfa_statistics.csv (1 rows)
-[17:51:24] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module036\15m\dfa_results.csv (20 rows)
-[17:51:24] Text → D:\delta bot\Project_Atlas\research_results\raw\module036\15m\dfa_report.txt (937 chars)
-[17:51:24] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module036\15m\features.csv (86,548 rows)
-[17:51:24] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module036\15m\statistics.csv (1 rows)
-[17:51:24] Text → D:\delta bot\Project_Atlas\research_results\raw\module036\15m\report.txt (1,031 chars)
-[17:51:24] JSON → D:\delta bot\Project_Atlas\research_results\raw\module036\15m\validation.json
-[17:51:24] Statistics → D:\delta bot\Project_Atlas\research_results\raw\module036\15m\statistics.csv
-[17:51:24] Report → D:\delta bot\Project_Atlas\research_results\raw\module036\15m\report.txt
-[17:51:24] Exported to D:\delta bot\Project_Atlas\research_results\raw\module036\15m
+[22:49:23] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module036\15m\dfa_statistics.csv (1 rows)
+[22:49:23] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module036\15m\dfa_results.csv (20 rows)
+[22:49:23] Text → D:\delta bot\Project_Atlas\research_results\raw\module036\15m\dfa_report.txt (937 chars)
+[22:49:23] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module036\15m\features.csv (86,548 rows)
+[22:49:23] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module036\15m\statistics.csv (1 rows)
+[22:49:23] Text → D:\delta bot\Project_Atlas\research_results\raw\module036\15m\report.txt (1,031 chars)
+[22:49:23] JSON → D:\delta bot\Project_Atlas\research_results\raw\module036\15m\validation.json
+[22:49:23] Statistics → D:\delta bot\Project_Atlas\research_results\raw\module036\15m\statistics.csv
+[22:49:23] Report → D:\delta bot\Project_Atlas\research_results\raw\module036\15m\report.txt
+[22:49:23] Exported to D:\delta bot\Project_Atlas\research_results\raw\module036\15m
 
 ------------------------------------------------------------
   Summary
@@ -380,12 +380,12 @@ Dataset: 036_15m
 Status: completed
 
 Step Timing:
-  dfa                  3.024s
+  dfa                  3.073s
   statistics           0.003s
   validate             0.005s
   export               0.007s
   ──────────────────────────────
-  Total pipeline       3.038s
+  Total pipeline       3.087s
 
 Statistics:
   dfa_alpha: 0.502443
@@ -414,28 +414,28 @@ Data Sources:
   market_df: 86548 rows, 6 cols (copy)
   feature_df: None
   df (merged): 86548 rows, 6 cols
-[17:51:24] Research complete
-2026-09-17 17:51:24 - INFO -     Stored 7 artifacts for 15m
-2026-09-17 17:51:24 - INFO -     ✓ PASSED in 3.47s (11 stats)
-2026-09-17 17:51:24 - INFO -
+[22:49:23] Research complete
+2026-09-17 22:49:23 - INFO -     Stored 7 artifacts for 15m
+2026-09-17 22:49:23 - INFO -     ✓ PASSED in 3.51s (11 stats)
+2026-09-17 22:49:23 - INFO -
   Running module 037 on 15m...
-[17:51:24] Loaded 21 modules: ['001', '002', '003', '004', '005', '006', '007', '008', '009', '010', '011', '012', '013', '015', '016', '017', '018', '019', '020', '021', '022']
-[17:51:24] Loaded 3 datasets
-2026-09-17 17:51:25 - INFO -     Module 037 input shape: (86548, 6)
-2026-09-17 17:51:25 - INFO -     Module 037 input columns: ['close', 'high', 'low', 'open', 'timestamp', 'volume']
+[22:49:23] Loaded 21 modules: ['001', '002', '003', '004', '005', '006', '007', '008', '009', '010', '011', '012', '013', '015', '016', '017', '018', '019', '020', '021', '022']
+[22:49:23] Loaded 3 datasets
+2026-09-17 22:49:23 - INFO -     Module 037 input shape: (86548, 6)
+2026-09-17 22:49:23 - INFO -     Module 037 input columns: ['close', 'high', 'low', 'open', 'timestamp', 'volume']
 
 ================================================================================
 PROJECT ATLAS
 MODULE Entropy Analysis
 RESEARCH EXECUTION [037_15M]
 ================================================================================
-[17:51:25] Loading from DataFrame: 037_15m
-[17:51:25] Loaded 86,548 rows from DataFrame (copy)
+[22:49:23] Loading from DataFrame: 037_15m
+[22:49:23] Loaded 86,548 rows from DataFrame (copy)
 
 ------------------------------------------------------------
   Data Validation
 ------------------------------------------------------------
-[17:51:25] Validation passed
+[22:49:23] Validation passed
 
 ------------------------------------------------------------
   Running Computation Pipeline
@@ -444,20 +444,20 @@ RESEARCH EXECUTION [037_15M]
 ------------------------------------------------------------
   Entropy Analysis Pipeline
 ------------------------------------------------------------
-[17:51:25] Step: entropy
-[17:51:25] Step 1: Computing Shannon entropy on log returns
+[22:49:23] Step: entropy
+[22:49:23] Step 1: Computing Shannon entropy on log returns
     Entropy                        6.4747 bits
     Normalized                     0.7393
     Max entropy                    8.7582 bits
     Bins                           1140
-[17:51:25] Entropy computed
-[17:51:25] Step: statistics
-[17:51:25] Step 2: Computing statistics
+[22:49:23] Entropy computed
+[22:49:23] Step: statistics
+[22:49:23] Step 2: Computing statistics
     Regime                         Moderate Structure
     Populated bins                 433/1140
-[17:51:25] Statistics computed
-[17:51:25] Step: validate
-[17:51:25] Step 3: Validation
+[22:49:23] Statistics computed
+[22:49:23] Step: validate
+[22:49:23] Step 3: Validation
 
 ============================================================
 ENTROPY VALIDATION
@@ -465,29 +465,29 @@ ENTROPY VALIDATION
 
   ✓ All validation checks passed
 ============================================================
-[17:51:25] Validation complete
-[17:51:25] Step: export
-[17:51:25] Step 4: Export
+[22:49:23] Validation complete
+[22:49:23] Step: export
+[22:49:23] Step 4: Export
     Artifacts                      4
-[17:51:25] Export complete
-[17:51:25] Module 037 complete
-[17:51:25] Created 'statistics' from result.statistics
-[17:51:25] Created 'report' from summary()
-[17:51:25] Created 'validation' with default values
+[22:49:23] Export complete
+[22:49:23] Module 037 complete
+[22:49:23] Created 'statistics' from result.statistics
+[22:49:23] Created 'report' from summary()
+[22:49:23] Created 'validation' with default values
 
 ------------------------------------------------------------
   Exporting Results
 ------------------------------------------------------------
-[17:51:25] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module037\15m\entropy_statistics.csv (1 rows)
-[17:51:25] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module037\15m\entropy_results.csv (1,140 rows)
-[17:51:25] Text → D:\delta bot\Project_Atlas\research_results\raw\module037\15m\entropy_report.txt (947 chars)
-[17:51:25] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module037\15m\features.csv (86,548 rows)
-[17:51:25] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module037\15m\statistics.csv (1 rows)
-[17:51:25] Text → D:\delta bot\Project_Atlas\research_results\raw\module037\15m\report.txt (982 chars)
-[17:51:25] JSON → D:\delta bot\Project_Atlas\research_results\raw\module037\15m\validation.json
-[17:51:25] Statistics → D:\delta bot\Project_Atlas\research_results\raw\module037\15m\statistics.csv
-[17:51:25] Report → D:\delta bot\Project_Atlas\research_results\raw\module037\15m\report.txt
-[17:51:25] Exported to D:\delta bot\Project_Atlas\research_results\raw\module037\15m
+[22:49:23] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module037\15m\entropy_statistics.csv (1 rows)
+[22:49:23] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module037\15m\entropy_results.csv (1,140 rows)
+[22:49:23] Text → D:\delta bot\Project_Atlas\research_results\raw\module037\15m\entropy_report.txt (947 chars)
+[22:49:24] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module037\15m\features.csv (86,548 rows)
+[22:49:24] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module037\15m\statistics.csv (1 rows)
+[22:49:24] Text → D:\delta bot\Project_Atlas\research_results\raw\module037\15m\report.txt (982 chars)
+[22:49:24] JSON → D:\delta bot\Project_Atlas\research_results\raw\module037\15m\validation.json
+[22:49:24] Statistics → D:\delta bot\Project_Atlas\research_results\raw\module037\15m\statistics.csv
+[22:49:24] Report → D:\delta bot\Project_Atlas\research_results\raw\module037\15m\report.txt
+[22:49:24] Exported to D:\delta bot\Project_Atlas\research_results\raw\module037\15m
 
 ------------------------------------------------------------
   Summary
@@ -501,12 +501,12 @@ Dataset: 037_15m
 Status: completed
 
 Step Timing:
-  entropy              0.012s
+  entropy              0.013s
   statistics           0.002s
   validate             0.010s
   export               0.006s
   ──────────────────────────────
-  Total pipeline       0.030s
+  Total pipeline       0.032s
 
 Statistics:
   entropy: 6.474706
@@ -532,28 +532,28 @@ Data Sources:
   market_df: 86548 rows, 6 cols (copy)
   feature_df: None
   df (merged): 86548 rows, 6 cols
-[17:51:25] Research complete
-2026-09-17 17:51:25 - INFO -     Stored 7 artifacts for 15m
-2026-09-17 17:51:25 - INFO -     ✓ PASSED in 0.47s (8 stats)
-2026-09-17 17:51:25 - INFO -
+[22:49:24] Research complete
+2026-09-17 22:49:24 - INFO -     Stored 7 artifacts for 15m
+2026-09-17 22:49:24 - INFO -     ✓ PASSED in 0.46s (8 stats)
+2026-09-17 22:49:24 - INFO -
   Running module 102 on 15m...
-[17:51:25] Loaded 21 modules: ['001', '002', '003', '004', '005', '006', '007', '008', '009', '010', '011', '012', '013', '015', '016', '017', '018', '019', '020', '021', '022']
-[17:51:25] Loaded 3 datasets
-2026-09-17 17:51:25 - INFO -     Module 102 input shape: (86548, 6)
-2026-09-17 17:51:25 - INFO -     Module 102 input columns: ['close', 'high', 'low', 'open', 'timestamp', 'volume']
+[22:49:24] Loaded 21 modules: ['001', '002', '003', '004', '005', '006', '007', '008', '009', '010', '011', '012', '013', '015', '016', '017', '018', '019', '020', '021', '022']
+[22:49:24] Loaded 3 datasets
+2026-09-17 22:49:24 - INFO -     Module 102 input shape: (86548, 6)
+2026-09-17 22:49:24 - INFO -     Module 102 input columns: ['close', 'high', 'low', 'open', 'timestamp', 'volume']
 
 ================================================================================
 PROJECT ATLAS
 MODULE Composite Compression Score
 RESEARCH EXECUTION [102_15M]
 ================================================================================
-[17:51:25] Loading from DataFrame: 102_15m
-[17:51:25] Loaded 86,548 rows from DataFrame (copy)
+[22:49:24] Loading from DataFrame: 102_15m
+[22:49:24] Loaded 86,548 rows from DataFrame (copy)
 
 ------------------------------------------------------------
   Data Validation
 ------------------------------------------------------------
-[17:51:25] Validation passed
+[22:49:24] Validation passed
 
 ------------------------------------------------------------
   Running Computation Pipeline
@@ -562,20 +562,20 @@ RESEARCH EXECUTION [102_15M]
 ------------------------------------------------------------
   Compression Score Pipeline
 ------------------------------------------------------------
-[17:51:25] Step: compression_score
-[17:51:25] Step 1: Computing composite compression score for each row
-[17:51:25] Computing metrics from OHLCV data
+[22:49:24] Step: compression_score
+[22:49:24] Step 1: Computing composite compression score for each row
+[22:49:24] Computing metrics from OHLCV data
     Mean Compression Score         67.86/100
     Weights                        {'atr': 0.25, 'std': 0.25, 'entropy': 0.25, 'range': 0.25}
-[17:51:31] Compression scores computed
-[17:51:31]   Completed in 5.287s
-[17:51:31] Step: statistics
-[17:51:31] Step 2: Computing statistics
+[22:49:29] Compression scores computed
+[22:49:29]   Completed in 5.102s
+[22:49:29] Step: statistics
+[22:49:29] Step 2: Computing statistics
     Mean                           67.86
     Median                         67.67
-[17:51:31] Statistics computed
-[17:51:31] Step: validate
-[17:51:31] Step 3: Validation
+[22:49:29] Statistics computed
+[22:49:29] Step: validate
+[22:49:29] Step 3: Validation
 
 ============================================================
 COMPRESSION SCORE VALIDATION
@@ -583,29 +583,29 @@ COMPRESSION SCORE VALIDATION
 
   ✓ All validation checks passed
 ============================================================
-[17:51:31] Validation complete
-[17:51:31] Step: export
-[17:51:31] Step 4: Export
-[17:51:31] Exported compression_score features (86548 rows)
+[22:49:29] Validation complete
+[22:49:29] Step: export
+[22:49:29] Step 4: Export
+[22:49:29] Exported compression_score features (86548 rows)
     Artifacts                      3
-[17:51:31] Export complete
-[17:51:31] Module 102 complete
-[17:51:31] Created 'statistics' from result.statistics
-[17:51:31] Created 'report' from summary()
-[17:51:31] Created 'validation' with default values
+[22:49:29] Export complete
+[22:49:29] Module 102 complete
+[22:49:29] Created 'statistics' from result.statistics
+[22:49:29] Created 'report' from summary()
+[22:49:29] Created 'validation' with default values
 
 ------------------------------------------------------------
   Exporting Results
 ------------------------------------------------------------
-[17:51:31] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module102\15m\compression_score_statistics.csv (1 rows)
-[17:51:31] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module102\15m\features.csv (86,548 rows)
-[17:51:31] Text → D:\delta bot\Project_Atlas\research_results\raw\module102\15m\compression_score_report.txt (873 chars)
-[17:51:31] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module102\15m\statistics.csv (1 rows)
-[17:51:31] Text → D:\delta bot\Project_Atlas\research_results\raw\module102\15m\report.txt (842 chars)
-[17:51:31] JSON → D:\delta bot\Project_Atlas\research_results\raw\module102\15m\validation.json
-[17:51:31] Statistics → D:\delta bot\Project_Atlas\research_results\raw\module102\15m\statistics.csv
-[17:51:31] Report → D:\delta bot\Project_Atlas\research_results\raw\module102\15m\report.txt
-[17:51:31] Exported to D:\delta bot\Project_Atlas\research_results\raw\module102\15m
+[22:49:29] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module102\15m\compression_score_statistics.csv (1 rows)
+[22:49:30] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module102\15m\features.csv (86,548 rows)
+[22:49:30] Text → D:\delta bot\Project_Atlas\research_results\raw\module102\15m\compression_score_report.txt (873 chars)
+[22:49:30] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module102\15m\statistics.csv (1 rows)
+[22:49:30] Text → D:\delta bot\Project_Atlas\research_results\raw\module102\15m\report.txt (842 chars)
+[22:49:30] JSON → D:\delta bot\Project_Atlas\research_results\raw\module102\15m\validation.json
+[22:49:30] Statistics → D:\delta bot\Project_Atlas\research_results\raw\module102\15m\statistics.csv
+[22:49:30] Report → D:\delta bot\Project_Atlas\research_results\raw\module102\15m\report.txt
+[22:49:30] Exported to D:\delta bot\Project_Atlas\research_results\raw\module102\15m
 
 ------------------------------------------------------------
   Summary
@@ -619,12 +619,12 @@ Dataset: 102_15m
 Status: completed
 
 Step Timing:
-  compression_score    5.287s
-  statistics           0.006s
-  validate             0.005s
-  export               0.004s
+  compression_score    5.102s
+  statistics           0.003s
+  validate             0.006s
+  export               0.010s
   ──────────────────────────────
-  Total pipeline       5.302s
+  Total pipeline       5.122s
 
 Statistics:
   compression_score: 67.859495
@@ -643,13 +643,13 @@ Data Sources:
   market_df: 86548 rows, 6 cols (copy)
   feature_df: None
   df (merged): 86548 rows, 6 cols
-[17:51:31] Research complete
-2026-09-17 17:51:31 - INFO -     Stored 6 artifacts for 15m
-2026-09-17 17:51:31 - INFO -     ✓ PASSED in 5.59s (3 stats)
-2026-09-17 17:51:31 - INFO -
+[22:49:30] Research complete
+2026-09-17 22:49:30 - INFO -     Stored 6 artifacts for 15m
+2026-09-17 22:49:30 - INFO -     ✓ PASSED in 5.41s (3 stats)
+2026-09-17 22:49:30 - INFO -
   Running module 100 on 15m...
-[17:51:31] Loaded 21 modules: ['001', '002', '003', '004', '005', '006', '007', '008', '009', '010', '011', '012', '013', '015', '016', '017', '018', '019', '020', '021', '022']
-[17:51:31] Loaded 3 datasets
+[22:49:30] Loaded 21 modules: ['001', '002', '003', '004', '005', '006', '007', '008', '009', '010', '011', '012', '013', '015', '016', '017', '018', '019', '020', '021', '022']
+[22:49:30] Loaded 3 datasets
 
 ============================================================
 DEPENDENCY INJECTION
@@ -675,23 +675,23 @@ Dependencies: ['005', '035', '036', '037']
   Has validation: True
   Has statistics: True
 ============================================================
-[17:51:31] Injected 10 dependency features (copy) → df now has 10 columns
-2026-09-17 17:51:31 - INFO -     Injected 10 features from 4 modules
-2026-09-17 17:51:31 - INFO -     Module 100 input shape: (86548, 6)
-2026-09-17 17:51:31 - INFO -     Module 100 input columns: ['close', 'high', 'low', 'open', 'timestamp', 'volume']
+[22:49:30] Injected 10 dependency features (copy) → df now has 10 columns
+2026-09-17 22:49:30 - INFO -     Injected 10 features from 4 modules
+2026-09-17 22:49:30 - INFO -     Module 100 input shape: (86548, 6)
+2026-09-17 22:49:30 - INFO -     Module 100 input columns: ['close', 'high', 'low', 'open', 'timestamp', 'volume']
 
 ================================================================================
 PROJECT ATLAS
 MODULE Trend Score
 RESEARCH EXECUTION [100_15M]
 ================================================================================
-[17:51:31] Loading from DataFrame: 100_15m
-[17:51:31] Loaded 86,548 rows from DataFrame (copy)
+[22:49:30] Loading from DataFrame: 100_15m
+[22:49:30] Loaded 86,548 rows from DataFrame (copy)
 
 ------------------------------------------------------------
   Data Validation
 ------------------------------------------------------------
-[17:51:31] Validation passed
+[22:49:30] Validation passed
 
 ------------------------------------------------------------
   Running Computation Pipeline
@@ -700,14 +700,14 @@ RESEARCH EXECUTION [100_15M]
 ------------------------------------------------------------
   Trend Score Pipeline
 ------------------------------------------------------------
-[17:51:31] Step: compute_trend_score
-[17:51:31] Step 1: Computing trend score for each candle
+[22:49:30] Step: compute_trend_score
+[22:49:30] Step 1: Computing trend score for each candle
     Mean Trend Score               44.46
     Sample Size                    86,548
-[17:51:46] Trend scores computed
-[17:51:46]   Completed in 14.572s
-[17:51:46] Step: statistics
-[17:51:46] Step 2: Computing statistics
+[22:49:44] Trend scores computed
+[22:49:44]   Completed in 14.537s
+[22:49:44] Step: statistics
+[22:49:44] Step 2: Computing statistics
     Mean Score                     44.46
     Median Score                   37.37
     Std Score                      9.15
@@ -715,9 +715,9 @@ RESEARCH EXECUTION [100_15M]
     Hurst                          0.5444
     DFA Alpha                      0.5024
     Normalized Entropy             0.7393
-[17:51:46] Statistics computed
-[17:51:46] Step: validate
-[17:51:46] Step 3: Validation
+[22:49:44] Statistics computed
+[22:49:44] Step: validate
+[22:49:44] Step 3: Validation
 
 ============================================================
 TREND SCORE VALIDATION
@@ -725,30 +725,30 @@ TREND SCORE VALIDATION
 
   ✓ All validation checks passed
 ============================================================
-[17:51:46] Validation complete
-[17:51:46] Step: export
-[17:51:46] Step 4: Export
+[22:49:44] Validation complete
+[22:49:44] Step: export
+[22:49:44] Step 4: Export
     Artifacts                      3
-[17:51:46] Export complete
-[17:51:46] Module 100 complete
-[17:51:46] Created 'features' from feature_df
-[17:51:46] Created 'statistics' from result.statistics
-[17:51:46] Created 'report' from summary()
-[17:51:46] Created 'validation' with default values
+[22:49:44] Export complete
+[22:49:44] Module 100 complete
+[22:49:44] Created 'features' from feature_df
+[22:49:44] Created 'statistics' from result.statistics
+[22:49:44] Created 'report' from summary()
+[22:49:44] Created 'validation' with default values
 
 ------------------------------------------------------------
   Exporting Results
 ------------------------------------------------------------
-[17:51:46] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module100\15m\trend_score_statistics.csv (1 rows)
-[17:51:46] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module100\15m\trend_score_features.csv (86,548 rows)
-[17:51:46] Text → D:\delta bot\Project_Atlas\research_results\raw\module100\15m\trend_score_report.txt (1,108 chars)
-[17:51:47] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module100\15m\features.csv (86,548 rows)
-[17:51:47] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module100\15m\statistics.csv (1 rows)
-[17:51:47] Text → D:\delta bot\Project_Atlas\research_results\raw\module100\15m\report.txt (1,114 chars)
-[17:51:47] JSON → D:\delta bot\Project_Atlas\research_results\raw\module100\15m\validation.json
-[17:51:47] Statistics → D:\delta bot\Project_Atlas\research_results\raw\module100\15m\statistics.csv
-[17:51:47] Report → D:\delta bot\Project_Atlas\research_results\raw\module100\15m\report.txt
-[17:51:47] Exported to D:\delta bot\Project_Atlas\research_results\raw\module100\15m
+[22:49:44] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module100\15m\trend_score_statistics.csv (1 rows)
+[22:49:45] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module100\15m\trend_score_features.csv (86,548 rows)
+[22:49:45] Text → D:\delta bot\Project_Atlas\research_results\raw\module100\15m\trend_score_report.txt (1,108 chars)
+[22:49:45] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module100\15m\features.csv (86,548 rows)
+[22:49:45] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module100\15m\statistics.csv (1 rows)
+[22:49:45] Text → D:\delta bot\Project_Atlas\research_results\raw\module100\15m\report.txt (1,114 chars)
+[22:49:45] JSON → D:\delta bot\Project_Atlas\research_results\raw\module100\15m\validation.json
+[22:49:45] Statistics → D:\delta bot\Project_Atlas\research_results\raw\module100\15m\statistics.csv
+[22:49:45] Report → D:\delta bot\Project_Atlas\research_results\raw\module100\15m\report.txt
+[22:49:45] Exported to D:\delta bot\Project_Atlas\research_results\raw\module100\15m
 
 ------------------------------------------------------------
   Summary
@@ -762,12 +762,12 @@ Dataset: 100_15m
 Status: completed
 
 Step Timing:
-  compute_trend_score  14.572s
-  statistics           0.014s
-  validate             0.007s
+  compute_trend_score  14.537s
+  statistics           0.015s
+  validate             0.009s
   export               0.003s
   ──────────────────────────────
-  Total pipeline       14.596s
+  Total pipeline       14.564s
 
 Statistics:
   trend_score: 44.463568
@@ -798,13 +798,13 @@ Data Sources:
   market_df: 86548 rows, 6 cols (copy)
   feature_df: 86548 rows, 2 cols (copy)
   df (merged): 86548 rows, 16 cols
-[17:51:47] Research complete
-2026-09-17 17:51:47 - INFO -     Stored 7 artifacts for 15m
-2026-09-17 17:51:47 - INFO -     ✓ PASSED in 15.40s (15 stats)
-2026-09-17 17:51:47 - INFO -
+[22:49:45] Research complete
+2026-09-17 22:49:45 - INFO -     Stored 7 artifacts for 15m
+2026-09-17 22:49:46 - INFO -     ✓ PASSED in 15.36s (15 stats)
+2026-09-17 22:49:46 - INFO -
   Running module 103 on 15m...
-[17:51:47] Loaded 21 modules: ['001', '002', '003', '004', '005', '006', '007', '008', '009', '010', '011', '012', '013', '015', '016', '017', '018', '019', '020', '021', '022']
-[17:51:47] Loaded 3 datasets
+[22:49:46] Loaded 21 modules: ['001', '002', '003', '004', '005', '006', '007', '008', '009', '010', '011', '012', '013', '015', '016', '017', '018', '019', '020', '021', '022']
+[22:49:46] Loaded 3 datasets
 
 ============================================================
 DEPENDENCY INJECTION
@@ -830,23 +830,23 @@ Dependencies: ['100', '102', '035', '037']
   Has validation: True
   Has statistics: True
 ============================================================
-[17:51:47] Injected 7 dependency features (copy) → df now has 7 columns
-2026-09-17 17:51:47 - INFO -     Injected 7 features from 4 modules
-2026-09-17 17:51:47 - INFO -     Module 103 input shape: (86548, 6)
-2026-09-17 17:51:47 - INFO -     Module 103 input columns: ['close', 'high', 'low', 'open', 'timestamp', 'volume']
+[22:49:46] Injected 7 dependency features (copy) → df now has 7 columns
+2026-09-17 22:49:46 - INFO -     Injected 7 features from 4 modules
+2026-09-17 22:49:46 - INFO -     Module 103 input shape: (86548, 6)
+2026-09-17 22:49:46 - INFO -     Module 103 input columns: ['close', 'high', 'low', 'open', 'timestamp', 'volume']
 
 ================================================================================
 PROJECT ATLAS
 MODULE Feature Combination Engine
 RESEARCH EXECUTION [103_15M]
 ================================================================================
-[17:51:47] Loading from DataFrame: 103_15m
-[17:51:47] Loaded 86,548 rows from DataFrame (copy)
+[22:49:46] Loading from DataFrame: 103_15m
+[22:49:46] Loaded 86,548 rows from DataFrame (copy)
 
 ------------------------------------------------------------
   Data Validation
 ------------------------------------------------------------
-[17:51:47] Validation passed
+[22:49:46] Validation passed
 
 ------------------------------------------------------------
   Running Computation Pipeline
@@ -855,8 +855,8 @@ RESEARCH EXECUTION [103_15M]
 ------------------------------------------------------------
   Feature Combination Pipeline
 ------------------------------------------------------------
-[17:51:47] Step: feature_combination
-[17:51:47] Step 1: Computing feature combination
+[22:49:46] Step: feature_combination
+[22:49:46] Step 1: Computing feature combination
 
 ======================================================================
 MODULE 103 INPUT INSPECTION
@@ -927,14 +927,14 @@ states keys: [0, 4, 8, 12]
     Total States                   4/16
     Significant States             2
     Information Coefficient        -0.0001
-[17:51:47] Feature combination computed
-[17:51:47]   Completed in 0.168s
-[17:51:47] Step: statistics
-[17:51:47] Step 2: Computing statistics
+[22:49:46] Feature combination computed
+[22:49:46]   Completed in 0.176s
+[22:49:46] Step: statistics
+[22:49:46] Step 2: Computing statistics
     Predictive Power               None
-[17:51:47] Statistics computed
-[17:51:47] Step: validate
-[17:51:47] Step 3: Validation
+[22:49:46] Statistics computed
+[22:49:46] Step: validate
+[22:49:46] Step 3: Validation
 
 ============================================================
 FEATURE COMBINATION VALIDATION
@@ -942,10 +942,10 @@ FEATURE COMBINATION VALIDATION
 
   ✓ All validation checks passed
 ============================================================
-[17:51:47] Validation complete
-[17:51:47] Step: export
-[17:51:47] Step 4: Export
-[17:51:47] Created feature artifact with timestamp and state (86548 rows)
+[22:49:46] Validation complete
+[22:49:46] Step: export
+[22:49:46] Step 4: Export
+[22:49:46] Created feature artifact with timestamp and state (86548 rows)
 
 ======================================================================
 MODULE 103 ARTIFACT INSPECTION
@@ -959,23 +959,23 @@ Columns: ['timestamp', 'state']
 ✓ All required artifacts present
 ======================================================================
     Artifacts                      9
-[17:51:47] Export complete
-[17:51:47] Module 103 complete
+[22:49:46] Export complete
+[22:49:46] Module 103 complete
 
 ------------------------------------------------------------
   Exporting Results
 ------------------------------------------------------------
-[17:51:48] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module103\15m\features.csv (86,548 rows)
-[17:51:48] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module103\15m\state_statistics.csv (4 rows)
-[17:51:48] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module103\15m\statistics.csv (1 rows)
-[17:51:48] Text → D:\delta bot\Project_Atlas\research_results\raw\module103\15m\report.txt (1,198 chars)
-[17:51:48] Text → D:\delta bot\Project_Atlas\research_results\raw\module103\15m\feature_combination_report.txt (1,198 chars)
-[17:51:48] Text → D:\delta bot\Project_Atlas\research_results\raw\module103\15m\state_report.txt (643 chars)
-[17:51:48] JSON → D:\delta bot\Project_Atlas\research_results\raw\module103\15m\detailed_results.json
-[17:51:48] JSON → D:\delta bot\Project_Atlas\research_results\raw\module103\15m\metadata.json
-[17:51:48] Statistics → D:\delta bot\Project_Atlas\research_results\raw\module103\15m\statistics.csv
-[17:51:48] Report → D:\delta bot\Project_Atlas\research_results\raw\module103\15m\report.txt
-[17:51:48] Exported to D:\delta bot\Project_Atlas\research_results\raw\module103\15m
+[22:49:46] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module103\15m\features.csv (86,548 rows)
+[22:49:46] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module103\15m\state_statistics.csv (4 rows)
+[22:49:46] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module103\15m\statistics.csv (1 rows)
+[22:49:46] Text → D:\delta bot\Project_Atlas\research_results\raw\module103\15m\report.txt (1,198 chars)
+[22:49:46] Text → D:\delta bot\Project_Atlas\research_results\raw\module103\15m\feature_combination_report.txt (1,198 chars)
+[22:49:46] Text → D:\delta bot\Project_Atlas\research_results\raw\module103\15m\state_report.txt (643 chars)
+[22:49:46] JSON → D:\delta bot\Project_Atlas\research_results\raw\module103\15m\detailed_results.json
+[22:49:46] JSON → D:\delta bot\Project_Atlas\research_results\raw\module103\15m\metadata.json
+[22:49:46] Statistics → D:\delta bot\Project_Atlas\research_results\raw\module103\15m\statistics.csv
+[22:49:46] Report → D:\delta bot\Project_Atlas\research_results\raw\module103\15m\report.txt
+[22:49:46] Exported to D:\delta bot\Project_Atlas\research_results\raw\module103\15m
 
 ------------------------------------------------------------
   Summary
@@ -989,12 +989,12 @@ Dataset: 103_15m
 Status: completed
 
 Step Timing:
-  feature_combination  0.168s
+  feature_combination  0.176s
   statistics           0.002s
-  validate             0.014s
-  export               0.017s
+  validate             0.011s
+  export               0.013s
   ──────────────────────────────
-  Total pipeline       0.201s
+  Total pipeline       0.202s
 
 Statistics:
   total_states: 4
@@ -1023,13 +1023,13 @@ Data Sources:
   market_df: 86548 rows, 6 cols (copy)
   feature_df: 86548 rows, 7 cols (copy)
   df (merged): 86548 rows, 13 cols
-[17:51:48] Research complete
-2026-09-17 17:51:48 - INFO -     Stored 9 artifacts for 15m
-2026-09-17 17:51:48 - INFO -     ✓ PASSED in 0.51s (10 stats)
-2026-09-17 17:51:48 - INFO -
+[22:49:46] Research complete
+2026-09-17 22:49:46 - INFO -     Stored 9 artifacts for 15m
+2026-09-17 22:49:47 - INFO -     ✓ PASSED in 0.50s (10 stats)
+2026-09-17 22:49:47 - INFO -
   Running module 105 on 15m...
-[17:51:48] Loaded 21 modules: ['001', '002', '003', '004', '005', '006', '007', '008', '009', '010', '011', '012', '013', '015', '016', '017', '018', '019', '020', '021', '022']
-[17:51:48] Loaded 3 datasets
+[22:49:47] Loaded 21 modules: ['001', '002', '003', '004', '005', '006', '007', '008', '009', '010', '011', '012', '013', '015', '016', '017', '018', '019', '020', '021', '022']
+[22:49:47] Loaded 3 datasets
 
 ============================================================
 DEPENDENCY INJECTION
@@ -1043,23 +1043,23 @@ Dependencies: ['103']
   Has validation: True
   Has statistics: True
 ============================================================
-[17:51:48] Injected 2 dependency features (copy) → df now has 2 columns
-2026-09-17 17:51:48 - INFO -     Injected 2 features from 1 modules
-2026-09-17 17:51:48 - INFO -     Module 105 input shape: (86548, 6)
-2026-09-17 17:51:48 - INFO -     Module 105 input columns: ['close', 'high', 'low', 'open', 'timestamp', 'volume']
+[22:49:47] Injected 2 dependency features (copy) → df now has 2 columns
+2026-09-17 22:49:47 - INFO -     Injected 2 features from 1 modules
+2026-09-17 22:49:47 - INFO -     Module 105 input shape: (86548, 6)
+2026-09-17 22:49:47 - INFO -     Module 105 input columns: ['close', 'high', 'low', 'open', 'timestamp', 'volume']
 
 ================================================================================
 PROJECT ATLAS
 MODULE State Persistence Analysis
 RESEARCH EXECUTION [105_15M]
 ================================================================================
-[17:51:48] Loading from DataFrame: 105_15m
-[17:51:48] Loaded 86,548 rows from DataFrame (copy)
+[22:49:47] Loading from DataFrame: 105_15m
+[22:49:47] Loaded 86,548 rows from DataFrame (copy)
 
 ------------------------------------------------------------
   Data Validation
 ------------------------------------------------------------
-[17:51:48] Validation passed
+[22:49:47] Validation passed
 
 ------------------------------------------------------------
   Running Computation Pipeline
@@ -1068,21 +1068,21 @@ RESEARCH EXECUTION [105_15M]
 ------------------------------------------------------------
   State Persistence Pipeline
 ------------------------------------------------------------
-[17:51:48] Step: state_persistence
-[17:51:48] Step 1: Computing state persistence
+[22:49:47] Step: state_persistence
+[22:49:47] Step 1: Computing state persistence
     Total Sequences                22287
     States Present                 4/16
     Average Duration               3.88 bars
     Longest Duration               1374 bars
-[17:51:48] State persistence computed
-[17:51:48]   Completed in 0.192s
-[17:51:48] Step: statistics
-[17:51:48] Step 2: Computing statistics
+[22:49:47] State persistence computed
+[22:49:47]   Completed in 0.198s
+[22:49:47] Step: statistics
+[22:49:47] Step 2: Computing statistics
     Persistent States              0/4
     Transient States               2/4
-[17:51:48] Statistics computed
-[17:51:48] Step: validate
-[17:51:48] Step 3: Validation
+[22:49:47] Statistics computed
+[22:49:47] Step: validate
+[22:49:47] Step 3: Validation
 
 ============================================================
 STATE PERSISTENCE VALIDATION
@@ -1090,31 +1090,31 @@ STATE PERSISTENCE VALIDATION
 
   ✓ All validation checks passed
 ============================================================
-[17:51:48] Validation complete
-[17:51:48] Step: export
-[17:51:48] Step 4: Export
+[22:49:47] Validation complete
+[22:49:47] Step: export
+[22:49:47] Step 4: Export
     Artifacts                      4
-[17:51:48] Export complete
-[17:51:48] Module 105 complete
-[17:51:48] Created 'features' from feature_df
-[17:51:48] Created 'statistics' from result.statistics
-[17:51:48] Created 'report' from summary()
-[17:51:48] Created 'validation' with default values
+[22:49:47] Export complete
+[22:49:47] Module 105 complete
+[22:49:47] Created 'features' from feature_df
+[22:49:47] Created 'statistics' from result.statistics
+[22:49:47] Created 'report' from summary()
+[22:49:47] Created 'validation' with default values
 
 ------------------------------------------------------------
   Exporting Results
 ------------------------------------------------------------
-[17:51:48] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module105\15m\persistence_table.csv (4 rows)
-[17:51:48] Text → D:\delta bot\Project_Atlas\research_results\raw\module105\15m\state_persistence_report.txt (1,008 chars)
-[17:51:48] Text → D:\delta bot\Project_Atlas\research_results\raw\module105\15m\state_report.txt (893 chars)
-[17:51:48] JSON → D:\delta bot\Project_Atlas\research_results\raw\module105\15m\detailed_results.json
-[17:51:48] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module105\15m\features.csv (86,548 rows)
-[17:51:48] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module105\15m\statistics.csv (1 rows)
-[17:51:48] Text → D:\delta bot\Project_Atlas\research_results\raw\module105\15m\report.txt (976 chars)
-[17:51:48] JSON → D:\delta bot\Project_Atlas\research_results\raw\module105\15m\validation.json
-[17:51:48] Statistics → D:\delta bot\Project_Atlas\research_results\raw\module105\15m\statistics.csv
-[17:51:48] Report → D:\delta bot\Project_Atlas\research_results\raw\module105\15m\report.txt
-[17:51:48] Exported to D:\delta bot\Project_Atlas\research_results\raw\module105\15m
+[22:49:47] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module105\15m\persistence_table.csv (4 rows)
+[22:49:47] Text → D:\delta bot\Project_Atlas\research_results\raw\module105\15m\state_persistence_report.txt (1,008 chars)
+[22:49:47] Text → D:\delta bot\Project_Atlas\research_results\raw\module105\15m\state_report.txt (893 chars)
+[22:49:47] JSON → D:\delta bot\Project_Atlas\research_results\raw\module105\15m\detailed_results.json
+[22:49:47] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module105\15m\features.csv (86,548 rows)
+[22:49:47] DataFrame → D:\delta bot\Project_Atlas\research_results\raw\module105\15m\statistics.csv (1 rows)
+[22:49:47] Text → D:\delta bot\Project_Atlas\research_results\raw\module105\15m\report.txt (976 chars)
+[22:49:47] JSON → D:\delta bot\Project_Atlas\research_results\raw\module105\15m\validation.json
+[22:49:47] Statistics → D:\delta bot\Project_Atlas\research_results\raw\module105\15m\statistics.csv
+[22:49:47] Report → D:\delta bot\Project_Atlas\research_results\raw\module105\15m\report.txt
+[22:49:47] Exported to D:\delta bot\Project_Atlas\research_results\raw\module105\15m
 
 ------------------------------------------------------------
   Summary
@@ -1128,10 +1128,10 @@ Dataset: 105_15m
 Status: completed
 
 Step Timing:
-  state_persistence    0.192s
-  statistics           0.008s
+  state_persistence    0.198s
+  statistics           0.003s
   validate             0.008s
-  export               0.007s
+  export               0.005s
   ──────────────────────────────
   Total pipeline       0.214s
 
@@ -1159,10 +1159,10 @@ Data Sources:
   market_df: 86548 rows, 6 cols (copy)
   feature_df: 86548 rows, 2 cols (copy)
   df (merged): 86548 rows, 8 cols
-[17:51:48] Research complete
-2026-09-17 17:51:48 - INFO -     Stored 8 artifacts for 15m
-2026-09-17 17:51:49 - INFO -     ✓ PASSED in 0.50s (11 stats)
-2026-09-17 17:51:49 - INFO -
+[22:49:47] Research complete
+2026-09-17 22:49:47 - INFO -     Stored 8 artifacts for 15m
+2026-09-17 22:49:47 - INFO -     ✓ PASSED in 0.51s (11 stats)
+2026-09-17 22:49:47 - INFO -
   Running module 108 on 15m...
 
 ============================================================
@@ -1177,21 +1177,21 @@ Dependencies: ['103']
   Has validation: True
   Has statistics: True
 ============================================================
-[17:51:49] Injected 2 dependency features (copy) → df now has 2 columns
-2026-09-17 17:51:49 - INFO -     Injected 2 features from 1 modules
-2026-09-17 17:51:49 - INFO -     Module 108 input shape: (86548, 6)
-2026-09-17 17:51:49 - INFO -     Module 108 input columns: ['close', 'high', 'low', 'open', 'timestamp', 'volume']
-[17:51:49] Loading from DataFrame: 108_15m
-[17:51:49] Loaded 86,548 rows from DataFrame (copy)
+[22:49:47] Injected 2 dependency features (copy) → df now has 2 columns
+2026-09-17 22:49:47 - INFO -     Injected 2 features from 1 modules
+2026-09-17 22:49:47 - INFO -     Module 108 input shape: (86548, 6)
+2026-09-17 22:49:47 - INFO -     Module 108 input columns: ['close', 'high', 'low', 'open', 'timestamp', 'volume']
+[22:49:47] Loading from DataFrame: 108_15m
+[22:49:47] Loaded 86,548 rows from DataFrame (copy)
 
   ✓ All validations passed
   ✓ Exported results to D:\delta bot\Project_Atlas\research_results\raw\module108\15m
-2026-09-17 17:53:27 - INFO -     Stored 9 artifacts for 15m
-2026-09-17 17:53:27 - INFO -     ✓ PASSED in 97.89s (10 stats)
-2026-09-17 17:53:27 - INFO -
+2026-09-17 22:51:25 - INFO -     Stored 9 artifacts for 15m
+2026-09-17 22:51:25 - INFO -     ✓ PASSED in 98.00s (10 stats)
+2026-09-17 22:51:25 - INFO -
   Running module 111 on 15m...
-[17:53:27] Loaded 21 modules: ['001', '002', '003', '004', '005', '006', '007', '008', '009', '010', '011', '012', '013', '015', '016', '017', '018', '019', '020', '021', '022']
-[17:53:27] Loaded 3 datasets
+[22:51:25] Loaded 21 modules: ['001', '002', '003', '004', '005', '006', '007', '008', '009', '010', '011', '012', '013', '015', '016', '017', '018', '019', '020', '021', '022']
+[22:51:25] Loaded 3 datasets
 
 ============================================================
 DEPENDENCY INJECTION
@@ -1221,25 +1221,25 @@ Dependencies: ['100', '102', '035', '037', '108']
   Has validation: True
   Has statistics: True
 ============================================================
-[17:53:27] Injected 14 dependency features (copy) → df now has 14 columns
-2026-09-17 17:53:27 - INFO -     Injected 14 features from 5 modules
-2026-09-17 17:53:27 - INFO -     Target requirements for Module 111: ['future_breakout']
-2026-09-17 17:53:49 - INFO -     Verified required targets for Module 111: ['future_breakout']
-2026-09-17 17:53:49 - INFO -     Module 111 input shape: (86548, 7)
-2026-09-17 17:53:49 - INFO -     Module 111 input columns: ['close', 'high', 'low', 'open', 'timestamp', 'volume', 'future_breakout']
+[22:51:26] Injected 14 dependency features (copy) → df now has 14 columns
+2026-09-17 22:51:26 - INFO -     Injected 14 features from 5 modules
+2026-09-17 22:51:26 - INFO -     Target requirements for Module 111: ['future_breakout']
+2026-09-17 22:51:48 - INFO -     Verified required targets for Module 111: ['future_breakout']
+2026-09-17 22:51:48 - INFO -     Module 111 input shape: (86548, 7)
+2026-09-17 22:51:48 - INFO -     Module 111 input columns: ['close', 'high', 'low', 'open', 'timestamp', 'volume', 'future_breakout']
 
 ================================================================================
 PROJECT ATLAS
 MODULE Monte Carlo Validation
 RESEARCH EXECUTION [111_15M]
 ================================================================================
-[17:53:49] Loading from DataFrame: 111_15m
-[17:53:49] Loaded 86,548 rows from DataFrame (copy)
+[22:51:48] Loading from DataFrame: 111_15m
+[22:51:48] Loaded 86,548 rows from DataFrame (copy)
 
 ------------------------------------------------------------
   Data Validation
 ------------------------------------------------------------
-[17:53:49] Validation passed
+[22:51:48] Validation passed
 
 ------------------------------------------------------------
   Running Computation Pipeline
@@ -1248,1176 +1248,21 @@ RESEARCH EXECUTION [111_15M]
 ------------------------------------------------------------
   Monte Carlo Validation Pipeline
 ------------------------------------------------------------
-[17:53:49] Step: monte_carlo_validation
-[17:53:49] Step 1: Computing Monte Carlo validation
-[17:53:49] Feature columns: ['trend_score', 'compression_score', 'hurst_exponent', 'normalized_entropy', 'state', 'breakout_1', 'breakout_3', 'breakout_5', 'breakout_10', 'breakout_20']
-[17:53:49] Total rows: 86548
-[17:53:49] Valid target rows: 86518
-[17:53:49] Excluded undefined target rows: 30
-[17:53:49] Target classes: [0, 1]
-[17:53:49] Feature matrix shape: (86518, 10)
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.906883 time=54.67s
+[22:51:48] Step: monte_carlo_validation
+[22:51:48] Step 1: Computing Monte Carlo validation
+[22:51:48] Feature columns: ['trend_score', 'compression_score', 'hurst_exponent', 'normalized_entropy', 'state', 'breakout_1', 'breakout_3', 'breakout_5', 'breakout_10', 'breakout_20']
+[22:51:48] Total rows: 86548
+[22:51:48] Valid target rows: 86518
+[22:51:48] Excluded undefined target rows: 30
+[22:51:48] Target classes: [0, 1]
+[22:51:48] Feature matrix shape: (86518, 10)
 
   Observed Score (roc_auc): 0.9069
 
   Running Bootstrap Validation...
-
-[BOOTSTRAP DIAGNOSTIC] starting iterations=200 rows=86518 features=10 n_jobs=2 estimators=100 cv_folds=5
-[BOOTSTRAP DIAGNOSTIC] running sequential diagnostic mode
-[BOOTSTRAP START] iteration=0 rows=86518
-[BOOTSTRAP SAMPLE] iteration=0 class_distribution={0: 43841, 1: 42677}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957792 time=49.89s
-[BOOTSTRAP DONE] iteration=0 score=0.957792 compute_time=49.89s total_time=49.90s
-[BOOTSTRAP START] iteration=1 rows=86518
-[BOOTSTRAP SAMPLE] iteration=1 class_distribution={0: 44081, 1: 42437}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958232 time=56.43s
-[BOOTSTRAP DONE] iteration=1 score=0.958232 compute_time=56.43s total_time=56.44s
-[BOOTSTRAP START] iteration=2 rows=86518
-[BOOTSTRAP SAMPLE] iteration=2 class_distribution={0: 43747, 1: 42771}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957966 time=50.59s
-[BOOTSTRAP DONE] iteration=2 score=0.957966 compute_time=50.59s total_time=50.60s
-[BOOTSTRAP START] iteration=3 rows=86518
-[BOOTSTRAP SAMPLE] iteration=3 class_distribution={0: 43871, 1: 42647}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957714 time=49.92s
-[BOOTSTRAP DONE] iteration=3 score=0.957714 compute_time=49.93s total_time=49.94s
-[BOOTSTRAP START] iteration=4 rows=86518
-[BOOTSTRAP SAMPLE] iteration=4 class_distribution={0: 43768, 1: 42750}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957228 time=49.17s
-[BOOTSTRAP DONE] iteration=4 score=0.957228 compute_time=49.17s total_time=49.18s
-[BOOTSTRAP START] iteration=5 rows=86518
-[BOOTSTRAP SAMPLE] iteration=5 class_distribution={0: 44133, 1: 42385}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958144 time=49.46s
-[BOOTSTRAP DONE] iteration=5 score=0.958144 compute_time=49.46s total_time=49.47s
-[BOOTSTRAP START] iteration=6 rows=86518
-[BOOTSTRAP SAMPLE] iteration=6 class_distribution={0: 43708, 1: 42810}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957940 time=49.72s
-[BOOTSTRAP DONE] iteration=6 score=0.957940 compute_time=49.72s total_time=49.73s
-[BOOTSTRAP START] iteration=7 rows=86518
-[BOOTSTRAP SAMPLE] iteration=7 class_distribution={0: 43929, 1: 42589}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958942 time=50.24s
-[BOOTSTRAP DONE] iteration=7 score=0.958942 compute_time=50.24s total_time=50.25s
-[BOOTSTRAP START] iteration=8 rows=86518
-[BOOTSTRAP SAMPLE] iteration=8 class_distribution={0: 44088, 1: 42430}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957340 time=49.54s
-[BOOTSTRAP DONE] iteration=8 score=0.957340 compute_time=49.54s total_time=49.55s
-[BOOTSTRAP START] iteration=9 rows=86518
-[BOOTSTRAP SAMPLE] iteration=9 class_distribution={0: 43750, 1: 42768}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.959285 time=50.10s
-[BOOTSTRAP DONE] iteration=9 score=0.959285 compute_time=50.10s total_time=50.11s
-[BOOTSTRAP START] iteration=10 rows=86518
-[BOOTSTRAP SAMPLE] iteration=10 class_distribution={0: 43835, 1: 42683}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957203 time=50.29s
-[BOOTSTRAP DONE] iteration=10 score=0.957203 compute_time=50.29s total_time=50.30s
-[BOOTSTRAP START] iteration=11 rows=86518
-[BOOTSTRAP SAMPLE] iteration=11 class_distribution={0: 43730, 1: 42788}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958333 time=49.89s
-[BOOTSTRAP DONE] iteration=11 score=0.958333 compute_time=49.89s total_time=49.90s
-[BOOTSTRAP START] iteration=12 rows=86518
-[BOOTSTRAP SAMPLE] iteration=12 class_distribution={0: 43696, 1: 42822}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958089 time=49.56s
-[BOOTSTRAP DONE] iteration=12 score=0.958089 compute_time=49.56s total_time=49.57s
-[BOOTSTRAP START] iteration=13 rows=86518
-[BOOTSTRAP SAMPLE] iteration=13 class_distribution={0: 44009, 1: 42509}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958236 time=49.40s
-[BOOTSTRAP DONE] iteration=13 score=0.958236 compute_time=49.40s total_time=49.42s
-[BOOTSTRAP START] iteration=14 rows=86518
-[BOOTSTRAP SAMPLE] iteration=14 class_distribution={0: 43733, 1: 42785}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.959048 time=50.26s
-[BOOTSTRAP DONE] iteration=14 score=0.959048 compute_time=50.26s total_time=50.28s
-[BOOTSTRAP START] iteration=15 rows=86518
-[BOOTSTRAP SAMPLE] iteration=15 class_distribution={0: 43846, 1: 42672}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.956916 time=50.05s
-[BOOTSTRAP DONE] iteration=15 score=0.956916 compute_time=50.05s total_time=50.06s
-[BOOTSTRAP START] iteration=16 rows=86518
-[BOOTSTRAP SAMPLE] iteration=16 class_distribution={0: 43882, 1: 42636}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957445 time=49.32s
-[BOOTSTRAP DONE] iteration=16 score=0.957445 compute_time=49.32s total_time=49.34s
-[BOOTSTRAP START] iteration=17 rows=86518
-[BOOTSTRAP SAMPLE] iteration=17 class_distribution={0: 43635, 1: 42883}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.956829 time=50.59s
-[BOOTSTRAP DONE] iteration=17 score=0.956829 compute_time=50.59s total_time=50.61s
-[BOOTSTRAP START] iteration=18 rows=86518
-[BOOTSTRAP SAMPLE] iteration=18 class_distribution={0: 43712, 1: 42806}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957626 time=50.77s
-[BOOTSTRAP DONE] iteration=18 score=0.957626 compute_time=50.77s total_time=50.78s
-[BOOTSTRAP START] iteration=19 rows=86518
-[BOOTSTRAP SAMPLE] iteration=19 class_distribution={0: 43846, 1: 42672}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958257 time=50.37s
-[BOOTSTRAP DONE] iteration=19 score=0.958257 compute_time=50.37s total_time=50.38s
-[BOOTSTRAP START] iteration=20 rows=86518
-[BOOTSTRAP SAMPLE] iteration=20 class_distribution={0: 43707, 1: 42811}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958148 time=49.51s
-[BOOTSTRAP DONE] iteration=20 score=0.958148 compute_time=49.51s total_time=49.52s
-[BOOTSTRAP START] iteration=21 rows=86518
-[BOOTSTRAP SAMPLE] iteration=21 class_distribution={0: 43893, 1: 42625}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958323 time=50.22s
-[BOOTSTRAP DONE] iteration=21 score=0.958323 compute_time=50.22s total_time=50.23s
-[BOOTSTRAP START] iteration=22 rows=86518
-[BOOTSTRAP SAMPLE] iteration=22 class_distribution={0: 43850, 1: 42668}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.956935 time=50.10s
-[BOOTSTRAP DONE] iteration=22 score=0.956935 compute_time=50.10s total_time=50.11s
-[BOOTSTRAP START] iteration=23 rows=86518
-[BOOTSTRAP SAMPLE] iteration=23 class_distribution={0: 44132, 1: 42386}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957777 time=49.31s
-[BOOTSTRAP DONE] iteration=23 score=0.957777 compute_time=49.31s total_time=49.32s
-[BOOTSTRAP START] iteration=24 rows=86518
-[BOOTSTRAP SAMPLE] iteration=24 class_distribution={0: 43890, 1: 42628}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958245 time=49.42s
-[BOOTSTRAP DONE] iteration=24 score=0.958245 compute_time=49.42s total_time=49.43s
-[BOOTSTRAP START] iteration=25 rows=86518
-[BOOTSTRAP SAMPLE] iteration=25 class_distribution={0: 43888, 1: 42630}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.959297 time=50.21s
-[BOOTSTRAP DONE] iteration=25 score=0.959297 compute_time=50.21s total_time=50.23s
-[BOOTSTRAP START] iteration=26 rows=86518
-[BOOTSTRAP SAMPLE] iteration=26 class_distribution={0: 43849, 1: 42669}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.956815 time=49.67s
-[BOOTSTRAP DONE] iteration=26 score=0.956815 compute_time=49.67s total_time=49.69s
-[BOOTSTRAP START] iteration=27 rows=86518
-[BOOTSTRAP SAMPLE] iteration=27 class_distribution={0: 43705, 1: 42813}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957397 time=49.94s
-[BOOTSTRAP DONE] iteration=27 score=0.957397 compute_time=49.94s total_time=49.95s
-[BOOTSTRAP START] iteration=28 rows=86518
-[BOOTSTRAP SAMPLE] iteration=28 class_distribution={0: 43811, 1: 42707}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958790 time=49.22s
-[BOOTSTRAP DONE] iteration=28 score=0.958790 compute_time=49.22s total_time=49.24s
-[BOOTSTRAP START] iteration=29 rows=86518
-[BOOTSTRAP SAMPLE] iteration=29 class_distribution={0: 43560, 1: 42958}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957741 time=49.01s
-[BOOTSTRAP DONE] iteration=29 score=0.957741 compute_time=49.01s total_time=49.03s
-[BOOTSTRAP START] iteration=30 rows=86518
-[BOOTSTRAP SAMPLE] iteration=30 class_distribution={0: 43952, 1: 42566}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.959041 time=49.74s
-[BOOTSTRAP DONE] iteration=30 score=0.959041 compute_time=49.74s total_time=49.75s
-[BOOTSTRAP START] iteration=31 rows=86518
-[BOOTSTRAP SAMPLE] iteration=31 class_distribution={0: 43563, 1: 42955}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958302 time=49.57s
-[BOOTSTRAP DONE] iteration=31 score=0.958302 compute_time=49.57s total_time=49.59s
-[BOOTSTRAP START] iteration=32 rows=86518
-[BOOTSTRAP SAMPLE] iteration=32 class_distribution={0: 44020, 1: 42498}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957916 time=49.31s
-[BOOTSTRAP DONE] iteration=32 score=0.957916 compute_time=49.31s total_time=49.33s
-[BOOTSTRAP START] iteration=33 rows=86518
-[BOOTSTRAP SAMPLE] iteration=33 class_distribution={0: 43822, 1: 42696}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957289 time=49.29s
-[BOOTSTRAP DONE] iteration=33 score=0.957289 compute_time=49.29s total_time=49.31s
-[BOOTSTRAP START] iteration=34 rows=86518
-[BOOTSTRAP SAMPLE] iteration=34 class_distribution={0: 43881, 1: 42637}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957251 time=49.90s
-[BOOTSTRAP DONE] iteration=34 score=0.957251 compute_time=49.90s total_time=49.91s
-[BOOTSTRAP START] iteration=35 rows=86518
-[BOOTSTRAP SAMPLE] iteration=35 class_distribution={0: 43793, 1: 42725}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957000 time=49.60s
-[BOOTSTRAP DONE] iteration=35 score=0.957000 compute_time=49.60s total_time=49.61s
-[BOOTSTRAP START] iteration=36 rows=86518
-[BOOTSTRAP SAMPLE] iteration=36 class_distribution={0: 43745, 1: 42773}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958899 time=49.57s
-[BOOTSTRAP DONE] iteration=36 score=0.958899 compute_time=49.57s total_time=49.59s
-[BOOTSTRAP START] iteration=37 rows=86518
-[BOOTSTRAP SAMPLE] iteration=37 class_distribution={0: 43964, 1: 42554}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957470 time=49.08s
-[BOOTSTRAP DONE] iteration=37 score=0.957470 compute_time=49.08s total_time=49.09s
-[BOOTSTRAP START] iteration=38 rows=86518
-[BOOTSTRAP SAMPLE] iteration=38 class_distribution={0: 43641, 1: 42877}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957767 time=49.34s
-[BOOTSTRAP DONE] iteration=38 score=0.957767 compute_time=49.34s total_time=49.35s
-[BOOTSTRAP START] iteration=39 rows=86518
-[BOOTSTRAP SAMPLE] iteration=39 class_distribution={0: 43972, 1: 42546}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958832 time=50.98s
-[BOOTSTRAP DONE] iteration=39 score=0.958832 compute_time=50.98s total_time=50.99s
-[BOOTSTRAP START] iteration=40 rows=86518
-[BOOTSTRAP SAMPLE] iteration=40 class_distribution={0: 43966, 1: 42552}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.959423 time=49.44s
-[BOOTSTRAP DONE] iteration=40 score=0.959423 compute_time=49.44s total_time=49.46s
-[BOOTSTRAP START] iteration=41 rows=86518
-[BOOTSTRAP SAMPLE] iteration=41 class_distribution={0: 44004, 1: 42514}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957960 time=48.97s
-[BOOTSTRAP DONE] iteration=41 score=0.957960 compute_time=48.97s total_time=48.98s
-[BOOTSTRAP START] iteration=42 rows=86518
-[BOOTSTRAP SAMPLE] iteration=42 class_distribution={0: 43726, 1: 42792}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957495 time=49.54s
-[BOOTSTRAP DONE] iteration=42 score=0.957495 compute_time=49.54s total_time=49.55s
-[BOOTSTRAP START] iteration=43 rows=86518
-[BOOTSTRAP SAMPLE] iteration=43 class_distribution={0: 43868, 1: 42650}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.959014 time=48.64s
-[BOOTSTRAP DONE] iteration=43 score=0.959014 compute_time=48.64s total_time=48.65s
-[BOOTSTRAP START] iteration=44 rows=86518
-[BOOTSTRAP SAMPLE] iteration=44 class_distribution={0: 43914, 1: 42604}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958764 time=50.42s
-[BOOTSTRAP DONE] iteration=44 score=0.958764 compute_time=50.42s total_time=50.43s
-[BOOTSTRAP START] iteration=45 rows=86518
-[BOOTSTRAP SAMPLE] iteration=45 class_distribution={0: 43985, 1: 42533}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957161 time=50.72s
-[BOOTSTRAP DONE] iteration=45 score=0.957161 compute_time=50.72s total_time=50.73s
-[BOOTSTRAP START] iteration=46 rows=86518
-[BOOTSTRAP SAMPLE] iteration=46 class_distribution={0: 43898, 1: 42620}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958854 time=51.25s
-[BOOTSTRAP DONE] iteration=46 score=0.958854 compute_time=51.25s total_time=51.26s
-[BOOTSTRAP START] iteration=47 rows=86518
-[BOOTSTRAP SAMPLE] iteration=47 class_distribution={0: 43884, 1: 42634}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.956504 time=49.43s
-[BOOTSTRAP DONE] iteration=47 score=0.956504 compute_time=49.43s total_time=49.44s
-[BOOTSTRAP START] iteration=48 rows=86518
-[BOOTSTRAP SAMPLE] iteration=48 class_distribution={0: 43837, 1: 42681}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958586 time=50.04s
-[BOOTSTRAP DONE] iteration=48 score=0.958586 compute_time=50.04s total_time=50.05s
-[BOOTSTRAP START] iteration=49 rows=86518
-[BOOTSTRAP SAMPLE] iteration=49 class_distribution={0: 43856, 1: 42662}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958036 time=49.20s
-[BOOTSTRAP DONE] iteration=49 score=0.958036 compute_time=49.20s total_time=49.21s
-[BOOTSTRAP START] iteration=50 rows=86518
-[BOOTSTRAP SAMPLE] iteration=50 class_distribution={0: 43758, 1: 42760}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958646 time=49.05s
-[BOOTSTRAP DONE] iteration=50 score=0.958646 compute_time=49.05s total_time=49.06s
-[BOOTSTRAP START] iteration=51 rows=86518
-[BOOTSTRAP SAMPLE] iteration=51 class_distribution={0: 44086, 1: 42432}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958492 time=49.13s
-[BOOTSTRAP DONE] iteration=51 score=0.958492 compute_time=49.13s total_time=49.14s
-[BOOTSTRAP START] iteration=52 rows=86518
-[BOOTSTRAP SAMPLE] iteration=52 class_distribution={0: 44017, 1: 42501}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.956807 time=50.00s
-[BOOTSTRAP DONE] iteration=52 score=0.956807 compute_time=50.00s total_time=50.01s
-[BOOTSTRAP START] iteration=53 rows=86518
-[BOOTSTRAP SAMPLE] iteration=53 class_distribution={0: 43693, 1: 42825}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957937 time=50.08s
-[BOOTSTRAP DONE] iteration=53 score=0.957937 compute_time=50.08s total_time=50.09s
-[BOOTSTRAP START] iteration=54 rows=86518
-[BOOTSTRAP SAMPLE] iteration=54 class_distribution={0: 43805, 1: 42713}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957473 time=49.19s
-[BOOTSTRAP DONE] iteration=54 score=0.957473 compute_time=49.19s total_time=49.20s
-[BOOTSTRAP START] iteration=55 rows=86518
-[BOOTSTRAP SAMPLE] iteration=55 class_distribution={0: 43886, 1: 42632}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958291 time=50.13s
-[BOOTSTRAP DONE] iteration=55 score=0.958291 compute_time=50.13s total_time=50.14s
-[BOOTSTRAP START] iteration=56 rows=86518
-[BOOTSTRAP SAMPLE] iteration=56 class_distribution={0: 43695, 1: 42823}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958066 time=48.55s
-[BOOTSTRAP DONE] iteration=56 score=0.958066 compute_time=48.55s total_time=48.56s
-[BOOTSTRAP START] iteration=57 rows=86518
-[BOOTSTRAP SAMPLE] iteration=57 class_distribution={0: 44080, 1: 42438}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958681 time=49.59s
-[BOOTSTRAP DONE] iteration=57 score=0.958681 compute_time=49.59s total_time=49.60s
-[BOOTSTRAP START] iteration=58 rows=86518
-[BOOTSTRAP SAMPLE] iteration=58 class_distribution={0: 44206, 1: 42312}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958870 time=49.51s
-[BOOTSTRAP DONE] iteration=58 score=0.958870 compute_time=49.51s total_time=49.52s
-[BOOTSTRAP START] iteration=59 rows=86518
-[BOOTSTRAP SAMPLE] iteration=59 class_distribution={0: 43865, 1: 42653}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958263 time=50.13s
-[BOOTSTRAP DONE] iteration=59 score=0.958263 compute_time=50.13s total_time=50.14s
-[BOOTSTRAP START] iteration=60 rows=86518
-[BOOTSTRAP SAMPLE] iteration=60 class_distribution={0: 43924, 1: 42594}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958780 time=50.02s
-[BOOTSTRAP DONE] iteration=60 score=0.958780 compute_time=50.02s total_time=50.03s
-[BOOTSTRAP START] iteration=61 rows=86518
-[BOOTSTRAP SAMPLE] iteration=61 class_distribution={0: 43916, 1: 42602}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957947 time=49.12s
-[BOOTSTRAP DONE] iteration=61 score=0.957947 compute_time=49.12s total_time=49.13s
-[BOOTSTRAP START] iteration=62 rows=86518
-[BOOTSTRAP SAMPLE] iteration=62 class_distribution={0: 44188, 1: 42330}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.956339 time=49.54s
-[BOOTSTRAP DONE] iteration=62 score=0.956339 compute_time=49.54s total_time=49.55s
-[BOOTSTRAP START] iteration=63 rows=86518
-[BOOTSTRAP SAMPLE] iteration=63 class_distribution={0: 44044, 1: 42474}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958348 time=49.81s
-[BOOTSTRAP DONE] iteration=63 score=0.958348 compute_time=49.81s total_time=49.82s
-[BOOTSTRAP START] iteration=64 rows=86518
-[BOOTSTRAP SAMPLE] iteration=64 class_distribution={0: 43965, 1: 42553}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.959128 time=49.66s
-[BOOTSTRAP DONE] iteration=64 score=0.959128 compute_time=49.66s total_time=49.67s
-[BOOTSTRAP START] iteration=65 rows=86518
-[BOOTSTRAP SAMPLE] iteration=65 class_distribution={0: 43822, 1: 42696}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957980 time=49.35s
-[BOOTSTRAP DONE] iteration=65 score=0.957980 compute_time=49.35s total_time=49.36s
-[BOOTSTRAP START] iteration=66 rows=86518
-[BOOTSTRAP SAMPLE] iteration=66 class_distribution={0: 43670, 1: 42848}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.956646 time=50.01s
-[BOOTSTRAP DONE] iteration=66 score=0.956646 compute_time=50.01s total_time=50.02s
-[BOOTSTRAP START] iteration=67 rows=86518
-[BOOTSTRAP SAMPLE] iteration=67 class_distribution={0: 44100, 1: 42418}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958447 time=49.02s
-[BOOTSTRAP DONE] iteration=67 score=0.958447 compute_time=49.02s total_time=49.03s
-[BOOTSTRAP START] iteration=68 rows=86518
-[BOOTSTRAP SAMPLE] iteration=68 class_distribution={0: 43615, 1: 42903}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958094 time=49.18s
-[BOOTSTRAP DONE] iteration=68 score=0.958094 compute_time=49.18s total_time=49.20s
-[BOOTSTRAP START] iteration=69 rows=86518
-[BOOTSTRAP SAMPLE] iteration=69 class_distribution={0: 43636, 1: 42882}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958046 time=49.57s
-[BOOTSTRAP DONE] iteration=69 score=0.958046 compute_time=49.57s total_time=49.58s
-[BOOTSTRAP START] iteration=70 rows=86518
-[BOOTSTRAP SAMPLE] iteration=70 class_distribution={0: 43799, 1: 42719}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958665 time=49.24s
-[BOOTSTRAP DONE] iteration=70 score=0.958665 compute_time=49.24s total_time=49.26s
-[BOOTSTRAP START] iteration=71 rows=86518
-[BOOTSTRAP SAMPLE] iteration=71 class_distribution={0: 43798, 1: 42720}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957580 time=49.00s
-[BOOTSTRAP DONE] iteration=71 score=0.957580 compute_time=49.00s total_time=49.01s
-[BOOTSTRAP START] iteration=72 rows=86518
-[BOOTSTRAP SAMPLE] iteration=72 class_distribution={0: 44102, 1: 42416}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958127 time=49.59s
-[BOOTSTRAP DONE] iteration=72 score=0.958127 compute_time=49.60s total_time=49.61s
-[BOOTSTRAP START] iteration=73 rows=86518
-[BOOTSTRAP SAMPLE] iteration=73 class_distribution={0: 44158, 1: 42360}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958190 time=49.21s
-[BOOTSTRAP DONE] iteration=73 score=0.958190 compute_time=49.21s total_time=49.22s
-[BOOTSTRAP START] iteration=74 rows=86518
-[BOOTSTRAP SAMPLE] iteration=74 class_distribution={0: 43567, 1: 42951}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957268 time=49.77s
-[BOOTSTRAP DONE] iteration=74 score=0.957268 compute_time=49.77s total_time=49.78s
-[BOOTSTRAP START] iteration=75 rows=86518
-[BOOTSTRAP SAMPLE] iteration=75 class_distribution={0: 43889, 1: 42629}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957725 time=48.39s
-[BOOTSTRAP DONE] iteration=75 score=0.957725 compute_time=48.39s total_time=48.40s
-[BOOTSTRAP START] iteration=76 rows=86518
-[BOOTSTRAP SAMPLE] iteration=76 class_distribution={0: 43640, 1: 42878}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957248 time=49.99s
-[BOOTSTRAP DONE] iteration=76 score=0.957248 compute_time=49.99s total_time=50.00s
-[BOOTSTRAP START] iteration=77 rows=86518
-[BOOTSTRAP SAMPLE] iteration=77 class_distribution={0: 43879, 1: 42639}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958455 time=48.94s
-[BOOTSTRAP DONE] iteration=77 score=0.958455 compute_time=48.94s total_time=48.95s
-[BOOTSTRAP START] iteration=78 rows=86518
-[BOOTSTRAP SAMPLE] iteration=78 class_distribution={0: 43962, 1: 42556}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957975 time=49.69s
-[BOOTSTRAP DONE] iteration=78 score=0.957975 compute_time=49.69s total_time=49.71s
-[BOOTSTRAP START] iteration=79 rows=86518
-[BOOTSTRAP SAMPLE] iteration=79 class_distribution={0: 43999, 1: 42519}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958742 time=49.78s
-[BOOTSTRAP DONE] iteration=79 score=0.958742 compute_time=49.78s total_time=49.80s
-[BOOTSTRAP START] iteration=80 rows=86518
-[BOOTSTRAP SAMPLE] iteration=80 class_distribution={0: 44102, 1: 42416}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958364 time=50.47s
-[BOOTSTRAP DONE] iteration=80 score=0.958364 compute_time=50.47s total_time=50.49s
-[BOOTSTRAP START] iteration=81 rows=86518
-[BOOTSTRAP SAMPLE] iteration=81 class_distribution={0: 43824, 1: 42694}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958044 time=49.65s
-[BOOTSTRAP DONE] iteration=81 score=0.958044 compute_time=49.65s total_time=49.66s
-[BOOTSTRAP START] iteration=82 rows=86518
-[BOOTSTRAP SAMPLE] iteration=82 class_distribution={0: 43976, 1: 42542}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.956897 time=50.10s
-[BOOTSTRAP DONE] iteration=82 score=0.956897 compute_time=50.10s total_time=50.12s
-[BOOTSTRAP START] iteration=83 rows=86518
-[BOOTSTRAP SAMPLE] iteration=83 class_distribution={0: 43727, 1: 42791}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957297 time=49.91s
-[BOOTSTRAP DONE] iteration=83 score=0.957297 compute_time=49.91s total_time=49.93s
-[BOOTSTRAP START] iteration=84 rows=86518
-[BOOTSTRAP SAMPLE] iteration=84 class_distribution={0: 43905, 1: 42613}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957780 time=49.81s
-[BOOTSTRAP DONE] iteration=84 score=0.957780 compute_time=49.82s total_time=49.83s
-[BOOTSTRAP START] iteration=85 rows=86518
-[BOOTSTRAP SAMPLE] iteration=85 class_distribution={0: 43975, 1: 42543}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958043 time=49.70s
-[BOOTSTRAP DONE] iteration=85 score=0.958043 compute_time=49.70s total_time=49.72s
-[BOOTSTRAP START] iteration=86 rows=86518
-[BOOTSTRAP SAMPLE] iteration=86 class_distribution={0: 44149, 1: 42369}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957986 time=49.58s
-[BOOTSTRAP DONE] iteration=86 score=0.957986 compute_time=49.58s total_time=49.60s
-[BOOTSTRAP START] iteration=87 rows=86518
-[BOOTSTRAP SAMPLE] iteration=87 class_distribution={0: 43989, 1: 42529}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957434 time=49.45s
-[BOOTSTRAP DONE] iteration=87 score=0.957434 compute_time=49.45s total_time=49.46s
-[BOOTSTRAP START] iteration=88 rows=86518
-[BOOTSTRAP SAMPLE] iteration=88 class_distribution={0: 44015, 1: 42503}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957266 time=48.86s
-[BOOTSTRAP DONE] iteration=88 score=0.957266 compute_time=48.86s total_time=48.88s
-[BOOTSTRAP START] iteration=89 rows=86518
-[BOOTSTRAP SAMPLE] iteration=89 class_distribution={0: 43800, 1: 42718}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957329 time=50.18s
-[BOOTSTRAP DONE] iteration=89 score=0.957329 compute_time=50.18s total_time=50.19s
-[BOOTSTRAP START] iteration=90 rows=86518
-[BOOTSTRAP SAMPLE] iteration=90 class_distribution={0: 43999, 1: 42519}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957850 time=49.46s
-[BOOTSTRAP DONE] iteration=90 score=0.957850 compute_time=49.46s total_time=49.47s
-[BOOTSTRAP START] iteration=91 rows=86518
-[BOOTSTRAP SAMPLE] iteration=91 class_distribution={0: 43897, 1: 42621}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957658 time=49.75s
-[BOOTSTRAP DONE] iteration=91 score=0.957658 compute_time=49.75s total_time=49.77s
-[BOOTSTRAP START] iteration=92 rows=86518
-[BOOTSTRAP SAMPLE] iteration=92 class_distribution={0: 44021, 1: 42497}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958483 time=49.79s
-[BOOTSTRAP DONE] iteration=92 score=0.958483 compute_time=49.79s total_time=49.81s
-[BOOTSTRAP START] iteration=93 rows=86518
-[BOOTSTRAP SAMPLE] iteration=93 class_distribution={0: 44174, 1: 42344}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957437 time=49.34s
-[BOOTSTRAP DONE] iteration=93 score=0.957437 compute_time=49.34s total_time=49.36s
-[BOOTSTRAP START] iteration=94 rows=86518
-[BOOTSTRAP SAMPLE] iteration=94 class_distribution={0: 43765, 1: 42753}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957667 time=49.51s
-[BOOTSTRAP DONE] iteration=94 score=0.957667 compute_time=49.51s total_time=49.53s
-[BOOTSTRAP START] iteration=95 rows=86518
-[BOOTSTRAP SAMPLE] iteration=95 class_distribution={0: 43937, 1: 42581}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958523 time=49.74s
-[BOOTSTRAP DONE] iteration=95 score=0.958523 compute_time=49.74s total_time=49.75s
-[BOOTSTRAP START] iteration=96 rows=86518
-[BOOTSTRAP SAMPLE] iteration=96 class_distribution={0: 43855, 1: 42663}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957190 time=49.72s
-[BOOTSTRAP DONE] iteration=96 score=0.957190 compute_time=49.72s total_time=49.73s
-[BOOTSTRAP START] iteration=97 rows=86518
-[BOOTSTRAP SAMPLE] iteration=97 class_distribution={0: 44082, 1: 42436}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957475 time=50.05s
-[BOOTSTRAP DONE] iteration=97 score=0.957475 compute_time=50.05s total_time=50.06s
-[BOOTSTRAP START] iteration=98 rows=86518
-[BOOTSTRAP SAMPLE] iteration=98 class_distribution={0: 43871, 1: 42647}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958847 time=50.28s
-[BOOTSTRAP DONE] iteration=98 score=0.958847 compute_time=50.28s total_time=50.30s
-[BOOTSTRAP START] iteration=99 rows=86518
-[BOOTSTRAP SAMPLE] iteration=99 class_distribution={0: 43766, 1: 42752}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958200 time=49.70s
-[BOOTSTRAP DONE] iteration=99 score=0.958200 compute_time=49.70s total_time=49.71s
-[BOOTSTRAP START] iteration=100 rows=86518
-[BOOTSTRAP SAMPLE] iteration=100 class_distribution={0: 43730, 1: 42788}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957679 time=49.47s
-[BOOTSTRAP DONE] iteration=100 score=0.957679 compute_time=49.47s total_time=49.49s
-[BOOTSTRAP START] iteration=101 rows=86518
-[BOOTSTRAP SAMPLE] iteration=101 class_distribution={0: 43662, 1: 42856}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957582 time=49.89s
-[BOOTSTRAP DONE] iteration=101 score=0.957582 compute_time=49.89s total_time=49.91s
-[BOOTSTRAP START] iteration=102 rows=86518
-[BOOTSTRAP SAMPLE] iteration=102 class_distribution={0: 43706, 1: 42812}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958270 time=50.20s
-[BOOTSTRAP DONE] iteration=102 score=0.958270 compute_time=50.20s total_time=50.22s
-[BOOTSTRAP START] iteration=103 rows=86518
-[BOOTSTRAP SAMPLE] iteration=103 class_distribution={0: 43830, 1: 42688}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958555 time=49.76s
-[BOOTSTRAP DONE] iteration=103 score=0.958555 compute_time=49.76s total_time=49.78s
-[BOOTSTRAP START] iteration=104 rows=86518
-[BOOTSTRAP SAMPLE] iteration=104 class_distribution={0: 43728, 1: 42790}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957601 time=50.45s
-[BOOTSTRAP DONE] iteration=104 score=0.957601 compute_time=50.46s total_time=50.47s
-[BOOTSTRAP START] iteration=105 rows=86518
-[BOOTSTRAP SAMPLE] iteration=105 class_distribution={0: 43654, 1: 42864}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957879 time=49.40s
-[BOOTSTRAP DONE] iteration=105 score=0.957879 compute_time=49.40s total_time=49.42s
-[BOOTSTRAP START] iteration=106 rows=86518
-[BOOTSTRAP SAMPLE] iteration=106 class_distribution={0: 43791, 1: 42727}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958128 time=49.41s
-[BOOTSTRAP DONE] iteration=106 score=0.958128 compute_time=49.41s total_time=49.43s
-[BOOTSTRAP START] iteration=107 rows=86518
-[BOOTSTRAP SAMPLE] iteration=107 class_distribution={0: 43484, 1: 43034}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958239 time=49.45s
-[BOOTSTRAP DONE] iteration=107 score=0.958239 compute_time=49.45s total_time=49.47s
-[BOOTSTRAP START] iteration=108 rows=86518
-[BOOTSTRAP SAMPLE] iteration=108 class_distribution={0: 44083, 1: 42435}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958996 time=50.38s
-[BOOTSTRAP DONE] iteration=108 score=0.958996 compute_time=50.38s total_time=50.40s
-[BOOTSTRAP START] iteration=109 rows=86518
-[BOOTSTRAP SAMPLE] iteration=109 class_distribution={0: 43975, 1: 42543}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957995 time=50.63s
-[BOOTSTRAP DONE] iteration=109 score=0.957995 compute_time=50.63s total_time=50.65s
-[BOOTSTRAP START] iteration=110 rows=86518
-[BOOTSTRAP SAMPLE] iteration=110 class_distribution={0: 43865, 1: 42653}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958216 time=50.51s
-[BOOTSTRAP DONE] iteration=110 score=0.958216 compute_time=50.51s total_time=50.53s
-[BOOTSTRAP START] iteration=111 rows=86518
-[BOOTSTRAP SAMPLE] iteration=111 class_distribution={0: 44078, 1: 42440}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958312 time=50.22s
-[BOOTSTRAP DONE] iteration=111 score=0.958312 compute_time=50.22s total_time=50.24s
-[BOOTSTRAP START] iteration=112 rows=86518
-[BOOTSTRAP SAMPLE] iteration=112 class_distribution={0: 43723, 1: 42795}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957467 time=49.95s
-[BOOTSTRAP DONE] iteration=112 score=0.957467 compute_time=49.95s total_time=49.97s
-[BOOTSTRAP START] iteration=113 rows=86518
-[BOOTSTRAP SAMPLE] iteration=113 class_distribution={0: 43752, 1: 42766}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957282 time=49.83s
-[BOOTSTRAP DONE] iteration=113 score=0.957282 compute_time=49.83s total_time=49.85s
-[BOOTSTRAP START] iteration=114 rows=86518
-[BOOTSTRAP SAMPLE] iteration=114 class_distribution={0: 43801, 1: 42717}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958992 time=49.04s
-[BOOTSTRAP DONE] iteration=114 score=0.958992 compute_time=49.04s total_time=49.06s
-[BOOTSTRAP START] iteration=115 rows=86518
-[BOOTSTRAP SAMPLE] iteration=115 class_distribution={0: 43962, 1: 42556}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.956856 time=49.41s
-[BOOTSTRAP DONE] iteration=115 score=0.956856 compute_time=49.41s total_time=49.42s
-[BOOTSTRAP START] iteration=116 rows=86518
-[BOOTSTRAP SAMPLE] iteration=116 class_distribution={0: 43644, 1: 42874}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958150 time=49.79s
-[BOOTSTRAP DONE] iteration=116 score=0.958150 compute_time=49.79s total_time=49.80s
-[BOOTSTRAP START] iteration=117 rows=86518
-[BOOTSTRAP SAMPLE] iteration=117 class_distribution={0: 44067, 1: 42451}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958064 time=50.66s
-[BOOTSTRAP DONE] iteration=117 score=0.958064 compute_time=50.66s total_time=50.67s
-[BOOTSTRAP START] iteration=118 rows=86518
-[BOOTSTRAP SAMPLE] iteration=118 class_distribution={0: 43882, 1: 42636}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957720 time=50.04s
-[BOOTSTRAP DONE] iteration=118 score=0.957720 compute_time=50.04s total_time=50.06s
-[BOOTSTRAP START] iteration=119 rows=86518
-[BOOTSTRAP SAMPLE] iteration=119 class_distribution={0: 43982, 1: 42536}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.956974 time=49.63s
-[BOOTSTRAP DONE] iteration=119 score=0.956974 compute_time=49.63s total_time=49.64s
-[BOOTSTRAP START] iteration=120 rows=86518
-[BOOTSTRAP SAMPLE] iteration=120 class_distribution={0: 43895, 1: 42623}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957743 time=50.43s
-[BOOTSTRAP DONE] iteration=120 score=0.957743 compute_time=50.43s total_time=50.44s
-[BOOTSTRAP START] iteration=121 rows=86518
-[BOOTSTRAP SAMPLE] iteration=121 class_distribution={0: 43991, 1: 42527}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957369 time=50.96s
-[BOOTSTRAP DONE] iteration=121 score=0.957369 compute_time=50.96s total_time=50.98s
-[BOOTSTRAP START] iteration=122 rows=86518
-[BOOTSTRAP SAMPLE] iteration=122 class_distribution={0: 43980, 1: 42538}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958754 time=49.73s
-[BOOTSTRAP DONE] iteration=122 score=0.958754 compute_time=49.73s total_time=49.75s
-[BOOTSTRAP START] iteration=123 rows=86518
-[BOOTSTRAP SAMPLE] iteration=123 class_distribution={0: 43870, 1: 42648}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.956603 time=49.74s
-[BOOTSTRAP DONE] iteration=123 score=0.956603 compute_time=49.74s total_time=49.76s
-[BOOTSTRAP START] iteration=124 rows=86518
-[BOOTSTRAP SAMPLE] iteration=124 class_distribution={0: 43915, 1: 42603}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957181 time=49.86s
-[BOOTSTRAP DONE] iteration=124 score=0.957181 compute_time=49.86s total_time=49.87s
-[BOOTSTRAP START] iteration=125 rows=86518
-[BOOTSTRAP SAMPLE] iteration=125 class_distribution={0: 43978, 1: 42540}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957945 time=50.01s
-[BOOTSTRAP DONE] iteration=125 score=0.957945 compute_time=50.01s total_time=50.02s
-[BOOTSTRAP START] iteration=126 rows=86518
-[BOOTSTRAP SAMPLE] iteration=126 class_distribution={0: 43752, 1: 42766}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957884 time=49.97s
-[BOOTSTRAP DONE] iteration=126 score=0.957884 compute_time=49.97s total_time=49.98s
-[BOOTSTRAP START] iteration=127 rows=86518
-[BOOTSTRAP SAMPLE] iteration=127 class_distribution={0: 44089, 1: 42429}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.956859 time=49.51s
-[BOOTSTRAP DONE] iteration=127 score=0.956859 compute_time=49.51s total_time=49.52s
-[BOOTSTRAP START] iteration=128 rows=86518
-[BOOTSTRAP SAMPLE] iteration=128 class_distribution={0: 44025, 1: 42493}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957566 time=50.69s
-[BOOTSTRAP DONE] iteration=128 score=0.957566 compute_time=50.69s total_time=50.70s
-[BOOTSTRAP START] iteration=129 rows=86518
-[BOOTSTRAP SAMPLE] iteration=129 class_distribution={0: 43883, 1: 42635}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957786 time=49.77s
-[BOOTSTRAP DONE] iteration=129 score=0.957786 compute_time=49.77s total_time=49.78s
-[BOOTSTRAP START] iteration=130 rows=86518
-[BOOTSTRAP SAMPLE] iteration=130 class_distribution={0: 43891, 1: 42627}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958714 time=49.26s
-[BOOTSTRAP DONE] iteration=130 score=0.958714 compute_time=49.26s total_time=49.27s
-[BOOTSTRAP START] iteration=131 rows=86518
-[BOOTSTRAP SAMPLE] iteration=131 class_distribution={0: 43773, 1: 42745}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958284 time=49.97s
-[BOOTSTRAP DONE] iteration=131 score=0.958284 compute_time=49.97s total_time=49.98s
-[BOOTSTRAP START] iteration=132 rows=86518
-[BOOTSTRAP SAMPLE] iteration=132 class_distribution={0: 43612, 1: 42906}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.959185 time=49.18s
-[BOOTSTRAP DONE] iteration=132 score=0.959185 compute_time=49.18s total_time=49.19s
-[BOOTSTRAP START] iteration=133 rows=86518
-[BOOTSTRAP SAMPLE] iteration=133 class_distribution={0: 44033, 1: 42485}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958135 time=49.75s
-[BOOTSTRAP DONE] iteration=133 score=0.958135 compute_time=49.75s total_time=49.76s
-[BOOTSTRAP START] iteration=134 rows=86518
-[BOOTSTRAP SAMPLE] iteration=134 class_distribution={0: 44012, 1: 42506}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958100 time=50.37s
-[BOOTSTRAP DONE] iteration=134 score=0.958100 compute_time=50.37s total_time=50.39s
-[BOOTSTRAP START] iteration=135 rows=86518
-[BOOTSTRAP SAMPLE] iteration=135 class_distribution={0: 43987, 1: 42531}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.956898 time=49.53s
-[BOOTSTRAP DONE] iteration=135 score=0.956898 compute_time=49.53s total_time=49.55s
-[BOOTSTRAP START] iteration=136 rows=86518
-[BOOTSTRAP SAMPLE] iteration=136 class_distribution={0: 43746, 1: 42772}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958361 time=49.24s
-[BOOTSTRAP DONE] iteration=136 score=0.958361 compute_time=49.24s total_time=49.26s
-[BOOTSTRAP START] iteration=137 rows=86518
-[BOOTSTRAP SAMPLE] iteration=137 class_distribution={0: 43801, 1: 42717}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958332 time=50.98s
-[BOOTSTRAP DONE] iteration=137 score=0.958332 compute_time=50.98s total_time=51.00s
-[BOOTSTRAP START] iteration=138 rows=86518
-[BOOTSTRAP SAMPLE] iteration=138 class_distribution={0: 43837, 1: 42681}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.959443 time=49.94s
-[BOOTSTRAP DONE] iteration=138 score=0.959443 compute_time=49.94s total_time=49.96s
-[BOOTSTRAP START] iteration=139 rows=86518
-[BOOTSTRAP SAMPLE] iteration=139 class_distribution={0: 43829, 1: 42689}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957711 time=49.72s
-[BOOTSTRAP DONE] iteration=139 score=0.957711 compute_time=49.72s total_time=49.73s
-[BOOTSTRAP START] iteration=140 rows=86518
-[BOOTSTRAP SAMPLE] iteration=140 class_distribution={0: 43854, 1: 42664}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957969 time=50.74s
-[BOOTSTRAP DONE] iteration=140 score=0.957969 compute_time=50.74s total_time=50.76s
-[BOOTSTRAP START] iteration=141 rows=86518
-[BOOTSTRAP SAMPLE] iteration=141 class_distribution={0: 43977, 1: 42541}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957336 time=50.23s
-[BOOTSTRAP DONE] iteration=141 score=0.957336 compute_time=50.23s total_time=50.25s
-[BOOTSTRAP START] iteration=142 rows=86518
-[BOOTSTRAP SAMPLE] iteration=142 class_distribution={0: 44025, 1: 42493}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957782 time=50.50s
-[BOOTSTRAP DONE] iteration=142 score=0.957782 compute_time=50.50s total_time=50.52s
-[BOOTSTRAP START] iteration=143 rows=86518
-[BOOTSTRAP SAMPLE] iteration=143 class_distribution={0: 43970, 1: 42548}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958445 time=50.44s
-[BOOTSTRAP DONE] iteration=143 score=0.958445 compute_time=50.44s total_time=50.46s
-[BOOTSTRAP START] iteration=144 rows=86518
-[BOOTSTRAP SAMPLE] iteration=144 class_distribution={0: 43872, 1: 42646}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957381 time=50.37s
-[BOOTSTRAP DONE] iteration=144 score=0.957381 compute_time=50.37s total_time=50.39s
-[BOOTSTRAP START] iteration=145 rows=86518
-[BOOTSTRAP SAMPLE] iteration=145 class_distribution={0: 43757, 1: 42761}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.956859 time=49.92s
-[BOOTSTRAP DONE] iteration=145 score=0.956859 compute_time=49.92s total_time=49.94s
-[BOOTSTRAP START] iteration=146 rows=86518
-[BOOTSTRAP SAMPLE] iteration=146 class_distribution={0: 43636, 1: 42882}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.959405 time=49.91s
-[BOOTSTRAP DONE] iteration=146 score=0.959405 compute_time=49.91s total_time=49.92s
-[BOOTSTRAP START] iteration=147 rows=86518
-[BOOTSTRAP SAMPLE] iteration=147 class_distribution={0: 44058, 1: 42460}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957782 time=49.73s
-[BOOTSTRAP DONE] iteration=147 score=0.957782 compute_time=49.73s total_time=49.75s
-[BOOTSTRAP START] iteration=148 rows=86518
-[BOOTSTRAP SAMPLE] iteration=148 class_distribution={0: 43704, 1: 42814}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958739 time=50.07s
-[BOOTSTRAP DONE] iteration=148 score=0.958739 compute_time=50.07s total_time=50.08s
-[BOOTSTRAP START] iteration=149 rows=86518
-[BOOTSTRAP SAMPLE] iteration=149 class_distribution={0: 43714, 1: 42804}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958477 time=49.71s
-[BOOTSTRAP DONE] iteration=149 score=0.958477 compute_time=49.71s total_time=49.73s
-[BOOTSTRAP START] iteration=150 rows=86518
-[BOOTSTRAP SAMPLE] iteration=150 class_distribution={0: 43892, 1: 42626}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958135 time=50.54s
-[BOOTSTRAP DONE] iteration=150 score=0.958135 compute_time=50.54s total_time=50.55s
-[BOOTSTRAP START] iteration=151 rows=86518
-[BOOTSTRAP SAMPLE] iteration=151 class_distribution={0: 44065, 1: 42453}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.959062 time=49.41s
-[BOOTSTRAP DONE] iteration=151 score=0.959062 compute_time=49.41s total_time=49.42s
-[BOOTSTRAP START] iteration=152 rows=86518
-[BOOTSTRAP SAMPLE] iteration=152 class_distribution={0: 43941, 1: 42577}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958451 time=49.41s
-[BOOTSTRAP DONE] iteration=152 score=0.958451 compute_time=49.41s total_time=49.43s
-[BOOTSTRAP START] iteration=153 rows=86518
-[BOOTSTRAP SAMPLE] iteration=153 class_distribution={0: 44002, 1: 42516}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957525 time=50.39s
-[BOOTSTRAP DONE] iteration=153 score=0.957525 compute_time=50.40s total_time=50.41s
-[BOOTSTRAP START] iteration=154 rows=86518
-[BOOTSTRAP SAMPLE] iteration=154 class_distribution={0: 43838, 1: 42680}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957826 time=49.77s
-[BOOTSTRAP DONE] iteration=154 score=0.957826 compute_time=49.78s total_time=49.79s
-[BOOTSTRAP START] iteration=155 rows=86518
-[BOOTSTRAP SAMPLE] iteration=155 class_distribution={0: 43765, 1: 42753}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957446 time=49.69s
-[BOOTSTRAP DONE] iteration=155 score=0.957446 compute_time=49.69s total_time=49.71s
-[BOOTSTRAP START] iteration=156 rows=86518
-[BOOTSTRAP SAMPLE] iteration=156 class_distribution={0: 43780, 1: 42738}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958141 time=50.36s
-[BOOTSTRAP DONE] iteration=156 score=0.958141 compute_time=50.36s total_time=50.37s
-[BOOTSTRAP START] iteration=157 rows=86518
-[BOOTSTRAP SAMPLE] iteration=157 class_distribution={0: 43888, 1: 42630}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957839 time=50.47s
-[BOOTSTRAP DONE] iteration=157 score=0.957839 compute_time=50.47s total_time=50.49s
-[BOOTSTRAP START] iteration=158 rows=86518
-[BOOTSTRAP SAMPLE] iteration=158 class_distribution={0: 43906, 1: 42612}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.959729 time=50.60s
-[BOOTSTRAP DONE] iteration=158 score=0.959729 compute_time=50.60s total_time=50.61s
-[BOOTSTRAP START] iteration=159 rows=86518
-[BOOTSTRAP SAMPLE] iteration=159 class_distribution={0: 43972, 1: 42546}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.956242 time=54.33s
-[BOOTSTRAP DONE] iteration=159 score=0.956242 compute_time=54.33s total_time=54.35s
-[BOOTSTRAP START] iteration=160 rows=86518
-[BOOTSTRAP SAMPLE] iteration=160 class_distribution={0: 43856, 1: 42662}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958362 time=49.96s
-[BOOTSTRAP DONE] iteration=160 score=0.958362 compute_time=49.96s total_time=49.98s
-[BOOTSTRAP START] iteration=161 rows=86518
-[BOOTSTRAP SAMPLE] iteration=161 class_distribution={0: 43552, 1: 42966}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958608 time=49.64s
-[BOOTSTRAP DONE] iteration=161 score=0.958608 compute_time=49.64s total_time=49.65s
-[BOOTSTRAP START] iteration=162 rows=86518
-[BOOTSTRAP SAMPLE] iteration=162 class_distribution={0: 43860, 1: 42658}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957812 time=49.14s
-[BOOTSTRAP DONE] iteration=162 score=0.957812 compute_time=49.14s total_time=49.15s
-[BOOTSTRAP START] iteration=163 rows=86518
-[BOOTSTRAP SAMPLE] iteration=163 class_distribution={0: 43872, 1: 42646}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958274 time=49.90s
-[BOOTSTRAP DONE] iteration=163 score=0.958274 compute_time=49.90s total_time=49.92s
-[BOOTSTRAP START] iteration=164 rows=86518
-[BOOTSTRAP SAMPLE] iteration=164 class_distribution={0: 43978, 1: 42540}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957817 time=49.81s
-[BOOTSTRAP DONE] iteration=164 score=0.957817 compute_time=49.81s total_time=49.82s
-[BOOTSTRAP START] iteration=165 rows=86518
-[BOOTSTRAP SAMPLE] iteration=165 class_distribution={0: 43870, 1: 42648}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957518 time=51.43s
-[BOOTSTRAP DONE] iteration=165 score=0.957518 compute_time=51.43s total_time=51.44s
-[BOOTSTRAP START] iteration=166 rows=86518
-[BOOTSTRAP SAMPLE] iteration=166 class_distribution={0: 43823, 1: 42695}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957226 time=50.20s
-[BOOTSTRAP DONE] iteration=166 score=0.957226 compute_time=50.20s total_time=50.21s
-[BOOTSTRAP START] iteration=167 rows=86518
-[BOOTSTRAP SAMPLE] iteration=167 class_distribution={0: 43706, 1: 42812}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958032 time=50.58s
-[BOOTSTRAP DONE] iteration=167 score=0.958032 compute_time=50.58s total_time=50.59s
-[BOOTSTRAP START] iteration=168 rows=86518
-[BOOTSTRAP SAMPLE] iteration=168 class_distribution={0: 43773, 1: 42745}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.956976 time=50.12s
-[BOOTSTRAP DONE] iteration=168 score=0.956976 compute_time=50.12s total_time=50.13s
-[BOOTSTRAP START] iteration=169 rows=86518
-[BOOTSTRAP SAMPLE] iteration=169 class_distribution={0: 43436, 1: 43082}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.956600 time=50.36s
-[BOOTSTRAP DONE] iteration=169 score=0.956600 compute_time=50.36s total_time=50.37s
-[BOOTSTRAP START] iteration=170 rows=86518
-[BOOTSTRAP SAMPLE] iteration=170 class_distribution={0: 43925, 1: 42593}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.956957 time=50.50s
-[BOOTSTRAP DONE] iteration=170 score=0.956957 compute_time=50.50s total_time=50.51s
-[BOOTSTRAP START] iteration=171 rows=86518
-[BOOTSTRAP SAMPLE] iteration=171 class_distribution={0: 43764, 1: 42754}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957532 time=50.49s
-[BOOTSTRAP DONE] iteration=171 score=0.957532 compute_time=50.49s total_time=50.50s
-[BOOTSTRAP START] iteration=172 rows=86518
-[BOOTSTRAP SAMPLE] iteration=172 class_distribution={0: 43756, 1: 42762}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958056 time=50.06s
-[BOOTSTRAP DONE] iteration=172 score=0.958056 compute_time=50.06s total_time=50.07s
-[BOOTSTRAP START] iteration=173 rows=86518
-[BOOTSTRAP SAMPLE] iteration=173 class_distribution={0: 43793, 1: 42725}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957156 time=50.12s
-[BOOTSTRAP DONE] iteration=173 score=0.957156 compute_time=50.12s total_time=50.13s
-[BOOTSTRAP START] iteration=174 rows=86518
-[BOOTSTRAP SAMPLE] iteration=174 class_distribution={0: 43888, 1: 42630}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958505 time=51.29s
-[BOOTSTRAP DONE] iteration=174 score=0.958505 compute_time=51.29s total_time=51.30s
-[BOOTSTRAP START] iteration=175 rows=86518
-[BOOTSTRAP SAMPLE] iteration=175 class_distribution={0: 43975, 1: 42543}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958822 time=50.45s
-[BOOTSTRAP DONE] iteration=175 score=0.958822 compute_time=50.45s total_time=50.46s
-[BOOTSTRAP START] iteration=176 rows=86518
-[BOOTSTRAP SAMPLE] iteration=176 class_distribution={0: 43910, 1: 42608}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957493 time=50.07s
-[BOOTSTRAP DONE] iteration=176 score=0.957493 compute_time=50.07s total_time=50.08s
-[BOOTSTRAP START] iteration=177 rows=86518
-[BOOTSTRAP SAMPLE] iteration=177 class_distribution={0: 43971, 1: 42547}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958439 time=49.78s
-[BOOTSTRAP DONE] iteration=177 score=0.958439 compute_time=49.78s total_time=49.79s
-[BOOTSTRAP START] iteration=178 rows=86518
-[BOOTSTRAP SAMPLE] iteration=178 class_distribution={0: 43980, 1: 42538}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958039 time=50.04s
-[BOOTSTRAP DONE] iteration=178 score=0.958039 compute_time=50.04s total_time=50.06s
-[BOOTSTRAP START] iteration=179 rows=86518
-[BOOTSTRAP SAMPLE] iteration=179 class_distribution={0: 43797, 1: 42721}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957879 time=50.67s
-[BOOTSTRAP DONE] iteration=179 score=0.957879 compute_time=50.67s total_time=50.69s
-[BOOTSTRAP START] iteration=180 rows=86518
-[BOOTSTRAP SAMPLE] iteration=180 class_distribution={0: 43872, 1: 42646}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957085 time=50.90s
-[BOOTSTRAP DONE] iteration=180 score=0.957085 compute_time=50.90s total_time=50.91s
-[BOOTSTRAP START] iteration=181 rows=86518
-[BOOTSTRAP SAMPLE] iteration=181 class_distribution={0: 44090, 1: 42428}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957367 time=50.49s
-[BOOTSTRAP DONE] iteration=181 score=0.957367 compute_time=50.49s total_time=50.50s
-[BOOTSTRAP START] iteration=182 rows=86518
-[BOOTSTRAP SAMPLE] iteration=182 class_distribution={0: 43876, 1: 42642}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958800 time=50.46s
-[BOOTSTRAP DONE] iteration=182 score=0.958800 compute_time=50.46s total_time=50.47s
-[BOOTSTRAP START] iteration=183 rows=86518
-[BOOTSTRAP SAMPLE] iteration=183 class_distribution={0: 43887, 1: 42631}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957682 time=49.90s
-[BOOTSTRAP DONE] iteration=183 score=0.957682 compute_time=49.90s total_time=49.91s
-[BOOTSTRAP START] iteration=184 rows=86518
-[BOOTSTRAP SAMPLE] iteration=184 class_distribution={0: 43954, 1: 42564}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958323 time=49.73s
-[BOOTSTRAP DONE] iteration=184 score=0.958323 compute_time=49.73s total_time=49.74s
-[BOOTSTRAP START] iteration=185 rows=86518
-[BOOTSTRAP SAMPLE] iteration=185 class_distribution={0: 43812, 1: 42706}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958203 time=49.50s
-[BOOTSTRAP DONE] iteration=185 score=0.958203 compute_time=49.50s total_time=49.52s
-[BOOTSTRAP START] iteration=186 rows=86518
-[BOOTSTRAP SAMPLE] iteration=186 class_distribution={0: 43688, 1: 42830}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957847 time=49.82s
-[BOOTSTRAP DONE] iteration=186 score=0.957847 compute_time=49.82s total_time=49.84s
-[BOOTSTRAP START] iteration=187 rows=86518
-[BOOTSTRAP SAMPLE] iteration=187 class_distribution={0: 44074, 1: 42444}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958475 time=50.00s
-[BOOTSTRAP DONE] iteration=187 score=0.958475 compute_time=50.00s total_time=50.01s
-[BOOTSTRAP START] iteration=188 rows=86518
-[BOOTSTRAP SAMPLE] iteration=188 class_distribution={0: 43838, 1: 42680}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958707 time=50.45s
-[BOOTSTRAP DONE] iteration=188 score=0.958707 compute_time=50.45s total_time=50.46s
-[BOOTSTRAP START] iteration=189 rows=86518
-[BOOTSTRAP SAMPLE] iteration=189 class_distribution={0: 43750, 1: 42768}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957850 time=49.94s
-[BOOTSTRAP DONE] iteration=189 score=0.957850 compute_time=49.94s total_time=49.96s
-[BOOTSTRAP START] iteration=190 rows=86518
-[BOOTSTRAP SAMPLE] iteration=190 class_distribution={0: 43737, 1: 42781}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957048 time=50.53s
-[BOOTSTRAP DONE] iteration=190 score=0.957048 compute_time=50.53s total_time=50.54s
-[BOOTSTRAP START] iteration=191 rows=86518
-[BOOTSTRAP SAMPLE] iteration=191 class_distribution={0: 43874, 1: 42644}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958484 time=49.26s
-[BOOTSTRAP DONE] iteration=191 score=0.958484 compute_time=49.26s total_time=49.28s
-[BOOTSTRAP START] iteration=192 rows=86518
-[BOOTSTRAP SAMPLE] iteration=192 class_distribution={0: 44011, 1: 42507}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957440 time=50.65s
-[BOOTSTRAP DONE] iteration=192 score=0.957440 compute_time=50.65s total_time=50.67s
-[BOOTSTRAP START] iteration=193 rows=86518
-[BOOTSTRAP SAMPLE] iteration=193 class_distribution={0: 44006, 1: 42512}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957780 time=49.80s
-[BOOTSTRAP DONE] iteration=193 score=0.957780 compute_time=49.80s total_time=49.82s
-[BOOTSTRAP START] iteration=194 rows=86518
-[BOOTSTRAP SAMPLE] iteration=194 class_distribution={0: 43871, 1: 42647}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957523 time=49.29s
-[BOOTSTRAP DONE] iteration=194 score=0.957523 compute_time=49.30s total_time=49.31s
-[BOOTSTRAP START] iteration=195 rows=86518
-[BOOTSTRAP SAMPLE] iteration=195 class_distribution={0: 44104, 1: 42414}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958198 time=54.69s
-[BOOTSTRAP DONE] iteration=195 score=0.958198 compute_time=54.69s total_time=54.70s
-[BOOTSTRAP START] iteration=196 rows=86518
-[BOOTSTRAP SAMPLE] iteration=196 class_distribution={0: 43875, 1: 42643}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958568 time=51.16s
-[BOOTSTRAP DONE] iteration=196 score=0.958568 compute_time=51.16s total_time=51.18s
-[BOOTSTRAP START] iteration=197 rows=86518
-[BOOTSTRAP SAMPLE] iteration=197 class_distribution={0: 43698, 1: 42820}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.957820 time=49.89s
-[BOOTSTRAP DONE] iteration=197 score=0.957820 compute_time=49.89s total_time=49.91s
-[BOOTSTRAP START] iteration=198 rows=86518
-[BOOTSTRAP SAMPLE] iteration=198 class_distribution={0: 44130, 1: 42388}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.958227 time=50.45s
-[BOOTSTRAP DONE] iteration=198 score=0.958227 compute_time=50.45s total_time=50.47s
-[BOOTSTRAP START] iteration=199 rows=86518
-[BOOTSTRAP SAMPLE] iteration=199 class_distribution={0: 43595, 1: 42923}
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.959082 time=48.76s
-[BOOTSTRAP DONE] iteration=199 score=0.959082 compute_time=48.76s total_time=48.77s
-[BOOTSTRAP DIAGNOSTIC] Sequential execution returned after 9992.52s
   Running Permutation Test...
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.504139 time=89.78s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.499954 time=90.05s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.499794 time=90.03s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.501615 time=90.19s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.495579 time=88.20s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.501629 time=91.16s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.497949 time=89.91s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.502512 time=88.54s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.500820 time=87.48s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.503164 time=89.07s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.494462 time=88.83s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.501988 time=88.25s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.504324 time=87.63s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.501066 time=86.72s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.503622 time=90.46s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.504439 time=90.53s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.497987 time=88.26s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.501620 time=86.59s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.499045 time=88.43s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.500804 time=89.63s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.499304 time=87.82s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.498828 time=90.12s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.501172 time=90.91s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.501540 time=90.59s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.499652 time=89.47s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.502553 time=88.05s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.496911 time=86.68s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.499956 time=86.81s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.501537 time=90.07s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.498853 time=90.76s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.499280 time=87.22s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.498185 time=89.78s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.500828 time=88.71s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.501799 time=88.61s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.498475 time=88.91s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.496923 time=87.25s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.503006 time=87.23s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.496519 time=89.20s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.501922 time=90.31s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.496936 time=90.27s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.496444 time=89.98s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.497906 time=89.88s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.496015 time=89.79s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.500459 time=89.18s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.499384 time=86.94s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.498191 time=84.84s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.502689 time=86.26s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.500896 time=88.30s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.498936 time=88.55s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.501025 time=89.16s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.497873 time=89.12s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.498394 time=89.62s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.501443 time=88.12s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.498852 time=87.43s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.500948 time=87.98s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.497453 time=88.84s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.499846 time=91.12s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.503452 time=91.89s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.502011 time=92.27s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.496076 time=92.58s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.500650 time=89.21s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.497133 time=89.39s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.499754 time=90.75s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.499188 time=92.81s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.502300 time=89.17s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.497731 time=89.44s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.501528 time=90.35s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.505772 time=92.49s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.501900 time=91.00s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.498920 time=89.51s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.501316 time=88.72s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.502303 time=89.76s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.499786 time=89.31s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.501342 time=89.75s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.498977 time=89.07s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
-[COMPUTE SCORE] rows=86518 features=10 score=0.498178 time=88.16s
-[COMPUTE SCORE START CV] rows=86518 features=10 cv_folds=5 estimators=100 metric=roc_auc
+  Running Label Shuffle Test...
+  Running Feature Shuffle Test...
+  Running Block Bootstrap...
+  Running Time Shuffle Test...
+  Running Noise Injection...
